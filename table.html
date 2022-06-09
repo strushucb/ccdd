@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Consumer Data Dictionary</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
+<link href="fresh-bootstrap-table.css" rel="stylesheet" />
+<link href="demo.css" rel="stylesheet" />
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<link href="http://fonts.googleapis.com/css?family=Roboto:400,700,300" rel="stylesheet" type="text/css">
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/bootstrap-table/dist/bootstrap-table.min.js"></script>
+<script src="https://unpkg.com/bootstrap-table@1.20.2/dist/extensions/print/bootstrap-table-print.min.js"></script>
+</head>
+<body>
+<div id="wrapper">
+<!-- Sidebar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                       <small>Consumer Data Dictionary</small>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home Surveillance<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-header">Device Maker</li>
+                    <li><a href="table.html">Ring</a></li>
+                  </ul>
+                </li>
+            </ul>
+        </nav>    
+ <div id="page-content-wrapper">
+            <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+                <span class="hamb-top"></span>
+                <span class="hamb-middle"></span>
+                <span class="hamb-bottom"></span>
+            </button>
+    <div class="container">
+        <div class="row">
+
+<div class="logo-container"><h3>Ring</h3></div>
+    <div class="fresh-table full-screen-table toolbar-color-red ">
+          <table id="fresh-table" class="table" data-sort-name="source" data-sort-order="asc" data-total-field="count" data-data-field="items">
+            <thead>
+              
+              <th data-field="source" data-sortable="true">Source File</th>
+
+              <th data-field="name" data-sortable="true">Name</th>
+
+              <th data-field="type" data-sortable="true">Type</th>
+
+              <th data-field="example" data-sortable="false">Example</th>
+
+              
+            </thead>
+            <tbody>
+              <tr>
+<td>datarequest\other_events.csv</td>
+<td>Event</td>
+<td>String</td>
+<td>Login</td>
+</tr>
+<tr>
+<td>datarequest\other_events.csv</td>
+<td>Properties</td>
+<td>String</td>
+<td>{"Application": "ring web site", "Harware Id": "23613f4a-939d-4c96-9723-39c482735c46", "Ip Address": "66.6.66.666"}</td>
+</tr>
+<tr>
+<td>datarequest\other_events.csv</td>
+<td>Timestamp</td>
+<td>String</td>
+<td>2022-05-16 17:27:01</td>
+</tr>
+<tr>
+<td>datarequest\app_events\YYYY-MM-DD\ring_app.csv</td>
+<td>Event</td>
+<td>String</td>
+<td>Neighbors Session</td>
+</tr>
+<tr>
+<td>datarequest\app_events\YYYY-MM-DD\ring_app.csv</td>
+<td>Properties</td>
+<td>String</td>
+<td>{"Ip Address": "66.6.66.666", "App Version": "v5.49.0 (5.49.0.12)", "OS": "ios", "Hardware ID": "9BDB97CB-DD8E-4896-8001-15EE15072AE7", "App Brand": "Ring"}</td>
+</tr>
+<tr>
+<td>datarequest\app_events\YYYY-MM-DD\ring_app.csv</td>
+<td>Timestamp</td>
+<td>String</td>
+<td>2022-03-09 05:39:29</td>
+</tr>
+<tr>
+<td>datarequest\users.csv</td>
+<td>Created At</td>
+<td>String</td>
+<td>2022-02-13 22:39:50.346000</td>
+</tr>
+<tr>
+<td>datarequest\users.csv</td>
+<td>Email</td>
+<td>String</td>
+<td>user_redacted_@gmail.com</td>
+</tr>
+<tr>
+<td>datarequest\users.csv</td>
+<td>First Name</td>
+<td>String</td>
+<td>John</td>
+</tr>
+<tr>
+<td>datarequest\users.csv</td>
+<td>Last Name</td>
+<td>String</td>
+<td>Smith</td>
+</tr>
+<tr>
+<td>datarequest\users.csv</td>
+<td>Phone Number</td>
+<td>Unknown</td>
+<td>No Example Given</td>
+</tr>
+<tr>
+<td>datarequest\subscriptions.csv</td>
+<td>Cancel At Period End</td>
+<td>Boolean</td>
+<td>False</td>
+</tr>
+<tr>
+<td>datarequest\subscriptions.csv</td>
+<td>Created</td>
+<td>String</td>
+<td>2022-02-13 22:58:10</td>
+</tr>
+<tr>
+<td>datarequest\subscriptions.csv</td>
+<td>Current Period End</td>
+<td>String</td>
+<td>2022-04-15 07:00:00</td>
+</tr>
+<tr>
+<td>datarequest\subscriptions.csv</td>
+<td>Current Period Start</td>
+<td>String</td>
+<td>2022-03-15 07:00:00</td>
+</tr>
+<tr>
+<td>datarequest\subscriptions.csv</td>
+<td>Plan Id</td>
+<td>String</td>
+<td>ring-trial</td>
+</tr>
+<tr>
+<td>datarequest\subscriptions.csv</td>
+<td>Quantity</td>
+<td>Integer</td>
+<td>1</td>
+</tr>
+<tr>
+<td>datarequest\subscriptions.csv</td>
+<td>Start</td>
+<td>String</td>
+<td>2022-02-13 22:58:10</td>
+</tr>
+<tr>
+<td>datarequest\subscriptions.csv</td>
+<td>Status</td>
+<td>String</td>
+<td>canceled</td>
+</tr>
+<tr>
+<td>datarequest\user_linked_accounts.csv</td>
+<td>isLinkedWithAmazon</td>
+<td>Boolean</td>
+<td>False</td>
+</tr>
+<tr>
+<td>datarequest\user_linked_accounts.csv</td>
+<td>linkedWithAmazonDate</td>
+<td>Unknown</td>
+<td>No Example Given</td>
+</tr>
+<tr>
+<td>datarequest\ring_neighbors\neighbors_users.csv</td>
+<td>Unnamed: 0</td>
+<td>Integer</td>
+<td>0</td>
+</tr>
+<tr>
+<td>datarequest\ring_neighbors\neighbors_users.csv</td>
+<td>activated</td>
+<td>Boolean</td>
+<td>False</td>
+</tr>
+<tr>
+<td>datarequest\ring_neighbors\neighbors_users.csv</td>
+<td>admin_review_required</td>
+<td>Boolean</td>
+<td>False</td>
+</tr>
+<tr>
+<td>datarequest\ring_neighbors\neighbors_users.csv</td>
+<td>created_at</td>
+<td>String</td>
+<td>2022-02-13T22:43:19.874Z</td>
+</tr>
+<tr>
+<td>datarequest\ring_neighbors\neighbors_users.csv</td>
+<td>last_notification_at</td>
+<td>Unknown</td>
+<td>No Example Given</td>
+</tr>
+<tr>
+<td>datarequest\ring_neighbors\neighbors_users.csv</td>
+<td>last_sync</td>
+<td>String</td>
+<td>2022-03-09T05:39:14.214Z</td>
+</tr>
+<tr>
+<td>datarequest\ring_neighbors\neighbors_users.csv</td>
+<td>manually_disabled</td>
+<td>Boolean</td>
+<td>False</td>
+</tr>
+<tr>
+<td>datarequest\ring_neighbors\neighbors_users.csv</td>
+<td>notifications_enabled</td>
+<td>Boolean</td>
+<td>True</td>
+</tr>
+<tr>
+<td>datarequest\ring_neighbors\neighbors_users.csv</td>
+<td>notifications_last_checked_at</td>
+<td>String</td>
+<td>2022-03-09T05:39:14.884Z</td>
+</tr>
+<tr>
+<td>datarequest\ring_neighbors\neighbors_users.csv</td>
+<td>subscribed_or_in_trial</td>
+<td>String</td>
+<td>eligible</td>
+</tr>
+<tr>
+<td>datarequest\ring_neighbors\neighbors_users.csv</td>
+<td>user_upvote</td>
+<td>Boolean</td>
+<td>False</td>
+</tr>
+<tr>
+<td>datarequest\client_devices.csv</td>
+<td>Api Version</td>
+<td>Real</td>
+<td>11.0</td>
+</tr>
+<tr>
+<td>datarequest\client_devices.csv</td>
+<td>App Build</td>
+<td>String</td>
+<td>en_US</td>
+</tr>
+<tr>
+<td>datarequest\client_devices.csv</td>
+<td>App Installation Date</td>
+<td>String</td>
+<td>2022-02-13 22:27:28 +0000</td>
+</tr>
+<tr>
+<td>datarequest\client_devices.csv</td>
+<td>App Version</td>
+<td>String</td>
+<td>v5.49.0 (5.49.0.12)</td>
+</tr>
+<tr>
+<td>datarequest\client_devices.csv</td>
+<td>Architecture</td>
+<td>String</td>
+<td>iPhone</td>
+</tr>
+<tr>
+<td>datarequest\client_devices.csv</td>
+<td>Created At</td>
+<td>String</td>
+<td>2022-02-13 22:39:50.430839</td>
+</tr>
+<tr>
+<td>datarequest\client_devices.csv</td>
+<td>Current Sign In At</td>
+<td>Unknown</td>
+<td>No Example Given</td>
+</tr>
+<tr>
+<td>datarequest\client_devices.csv</td>
+<td>Current Sign In Ip</td>
+<td>Unknown</td>
+<td>No Example Given</td>
+</tr>
+<tr>
+<td>datarequest\client_devices.csv</td>
+<td>Device Model</td>
+<td>String</td>
+<td>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KH</td>
+</tr>
+<tr>
+<td>datarequest\client_devices.csv</td>
+<td>Device Type</td>
+<td>String</td>
+<td>John's iPhone</td>
+</tr>
+<tr>
+<td>datarequest\client_devices.csv</td>
+<td>Device Version</td>
+<td>Real</td>
+<td>15.1</td>
+</tr>
+<tr>
+<td>datarequest\client_devices.csv</td>
+<td>H264</td>
+<td>String</td>
+<td>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML</td>
+</tr>
+<tr>
+<td>datarequest\client_devices.csv</td>
+<td>Hardware Id</td>
+<td>String</td>
+<td>23613f4a-939d-4c96-9723-39c482735c46</td>
+</tr>
+<tr>
+<td>datarequest\client_devices.csv</td>
+<td>Is Tablet</td>
+<td>Boolean</td>
+<td>False</td>
+</tr>
+<tr>
+<td>datarequest\client_devices.csv</td>
+<td>Language</td>
+<td>String</td>
+<td>en_US</td>
+</tr>
+<tr>
+<td>datarequest\client_devices.csv</td>
+<td>Last Sign In At</td>
+<td>Unknown</td>
+<td>No Example Given</td>
+</tr>
+<tr>
+<td>datarequest\client_devices.csv</td>
+<td>Last Sign In Ip</td>
+<td>Unknown</td>
+<td>No Example Given</td>
+</tr>
+<tr>
+<td>datarequest\client_devices.csv</td>
+<td>Linphone Initialized</td>
+<td>String</td>
+<td>2022-02-13 22:27:28 +0000</td>
+</tr>
+<tr>
+<td>datarequest\client_devices.csv</td>
+<td>Manufacturer</td>
+<td>String</td>
+<td>iPhone9</td>
+</tr>
+<tr>
+<td>datarequest\client_devices.csv</td>
+<td>Os</td>
+<td>String</td>
+<td>ring-site</td>
+</tr>
+<tr>
+<td>datarequest\client_devices.csv</td>
+<td>Pn Service</td>
+<td>Real</td>
+<td>11.0</td>
+</tr>
+<tr>
+<td>datarequest\client_devices.csv</td>
+<td>Registered At</td>
+<td>String</td>
+<td>2022-02-13 22:39:52.325092</td>
+</tr>
+<tr>
+<td>datarequest\client_devices.csv</td>
+<td>Resolution</td>
+<td>String</td>
+<td>375x667</td>
+</tr>
+<tr>
+<td>datarequest\client_devices.csv</td>
+<td>Sign In Count</td>
+<td>Integer</td>
+<td>0</td>
+</tr>
+<tr>
+<td>datarequest\client_devices.csv</td>
+<td>Signed In</td>
+<td>Boolean</td>
+<td>True</td>
+</tr>
+<tr>
+<td>datarequest\client_devices.csv</td>
+<td>Supports Echo Canceler</td>
+<td>Unknown</td>
+<td>No Example Given</td>
+</tr>
+<tr>
+<td>datarequest\users.client_devices.csv</td>
+<td>app_brand</td>
+<td>String</td>
+<td>ring</td>
+</tr>
+<tr>
+<td>datarequest\users.client_devices.csv</td>
+<td>metadata</td>
+<td>String</td>
+<td>{""api_version"":""11"",""app_brand"":""ring"",""app_installation_date"":""2022-02-13 22:27:28 +0000"",""app_version"":""v5.49.0 (5.49.0.12)"",""build_profile"":""store_production"",""device_identifier"":""iPhone9,1"",""device_model"":""iPhone"",""device_name"":""John's iPhone"",""ios_version"":""15.1"",""language"":""en_US"",""resolution"":""375x667"",""retina"":""true"",""scale"":""2""}</td>
+</tr>
+<tr>
+<td>datarequest\users.client_devices.csv</td>
+<td>os</td>
+<td>String</td>
+<td>ios</td>
+</tr>
+<tr>
+<td>datarequest\users.client_devices.csv</td>
+<td>remember_me</td>
+<td>Boolean</td>
+<td>False</td>
+</tr>
+<tr>
+<td>in 'metadata' field of datarequest\users.client_devices.csv</td>
+<td>api_version</td>
+<td>String</td>
+<td>11</td>
+</tr>
+<tr>
+<td>in 'metadata' field of datarequest\users.client_devices.csv</td>
+<td>app_brand</td>
+<td>String</td>
+<td>ring</td>
+</tr>
+<tr>
+<td>in 'metadata' field of datarequest\users.client_devices.csv</td>
+<td>app_installation_date</td>
+<td>String</td>
+<td>2022-02-13 22:27:28 +0000</td>
+</tr>
+<tr>
+<td>in 'metadata' field of datarequest\users.client_devices.csv</td>
+<td>app_version</td>
+<td>String</td>
+<td>v5.49.0 (5.49.0.12)</td>
+</tr>
+<tr>
+<td>in 'metadata' field of datarequest\users.client_devices.csv</td>
+<td>build_profile</td>
+<td>String</td>
+<td>browser</td>
+</tr>
+<tr>
+<td>in 'metadata' field of datarequest\users.client_devices.csv</td>
+<td>device_identifier</td>
+<td>String</td>
+<td>iPhone9,1</td>
+</tr>
+<tr>
+<td>in 'metadata' field of datarequest\users.client_devices.csv</td>
+<td>device_model</td>
+<td>String</td>
+<td>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36</td>
+</tr>
+<tr>
+<td>in 'metadata' field of datarequest\users.client_devices.csv</td>
+<td>device_name</td>
+<td>String</td>
+<td>John's iPhone</td>
+</tr>
+<tr>
+<td>in 'metadata' field of datarequest\users.client_devices.csv</td>
+<td>ios_version</td>
+<td>String</td>
+<td>15.1</td>
+</tr>
+<tr>
+<td>in 'metadata' field of datarequest\users.client_devices.csv</td>
+<td>language</td>
+<td>String</td>
+<td>en_US</td>
+</tr>
+<tr>
+<td>in 'metadata' field of datarequest\users.client_devices.csv</td>
+<td>resolution</td>
+<td>String</td>
+<td>375x667</td>
+</tr>
+<tr>
+<td>in 'metadata' field of datarequest\users.client_devices.csv</td>
+<td>retina</td>
+<td>String</td>
+<td>true</td>
+</tr>
+<tr>
+<td>in 'metadata' field of datarequest\users.client_devices.csv</td>
+<td>scale</td>
+<td>String</td>
+<td>2</td>
+</tr>
+<tr>
+<td>datarequest\notification_client_devices.csv</td>
+<td>Hardware Id</td>
+<td>String</td>
+<td>9BDB97CB-DD8E-4896-8001-15EE15072AE7</td>
+</tr>
+<tr>
+<td>datarequest\notification_client_devices.csv</td>
+<td>Push Notification Token</td>
+<td>String</td>
+<td>7adf02b8539836d5e11a037ffda3f2710fa4c331dd4a4525efaa042ec498ba37</td>
+</tr>
+<tr>
+<td>in 'Properties' field of ring_app.csv or other_events.csv</td>
+<td>Ip Address</td>
+<td>String</td>
+<td>66.6.66.666</td>
+</tr>
+<tr>
+<td>in 'Properties' field of ring_app.csv or other_events.csv</td>
+<td>App Version</td>
+<td>String</td>
+<td>v5.49.0 (5.49.0.12)</td>
+</tr>
+<tr>
+<td>in 'Properties' field of ring_app.csv or other_events.csv</td>
+<td>OS</td>
+<td>String</td>
+<td>ios</td>
+</tr>
+<tr>
+<td>in 'Properties' field of ring_app.csv or other_events.csv</td>
+<td>Hardware ID</td>
+<td>String</td>
+<td>9BDB97CB-DD8E-4896-8001-15EE15072AE7</td>
+</tr>
+<tr>
+<td>in 'Properties' field of ring_app.csv or other_events.csv</td>
+<td>App Brand</td>
+<td>String</td>
+<td>Ring</td>
+</tr>
+<tr>
+<td>in 'Properties' field of ring_app.csv or other_events.csv</td>
+<td>Device ID</td>
+<td>String</td>
+<td>8c76a38576f</td>
+</tr>
+<tr>
+<td>in 'Properties' field of ring_app.csv or other_events.csv</td>
+<td>Device Name</td>
+<td>String</td>
+<td>Front Door</td>
+</tr>
+<tr>
+<td>in 'Properties' field of ring_app.csv or other_events.csv</td>
+<td>Carrier</td>
+<td>String</td>
+<td>CellProviderRedacted</td>
+</tr>
+<tr>
+<td>in 'Properties' field of ring_app.csv or other_events.csv</td>
+<td>Model</td>
+<td>String</td>
+<td>iPhone9,1</td>
+</tr>
+<tr>
+<td>in 'Properties' field of ring_app.csv or other_events.csv</td>
+<td>OS Version</td>
+<td>String</td>
+<td>15.1</td>
+</tr>
+<tr>
+<td>in 'Properties' field of ring_app.csv or other_events.csv</td>
+<td>Connectivity Type</td>
+<td>String</td>
+<td>WiFi</td>
+</tr>
+<tr>
+<td>in 'Properties' field of ring_app.csv or other_events.csv</td>
+<td>Application</td>
+<td>String</td>
+<td>ring web site</td>
+</tr>
+<tr>
+<td>in 'Properties' field of ring_app.csv or other_events.csv</td>
+<td>Harware Id</td>
+<td>String</td>
+<td>23613f4a-939d-4c96-9723-39c482735c46</td>
+</tr>
+<tr>
+<td>datarequest\setups.csv</td>
+<td>Created At</td>
+<td>String</td>
+<td>2022-02-13 22:55:49.423349</td>
+</tr>
+<tr>
+<td>datarequest\setups.csv</td>
+<td>Description</td>
+<td>String</td>
+<td>Front Door</td>
+</tr>
+<tr>
+<td>datarequest\setups.csv</td>
+<td>Device Id</td>
+<td>String</td>
+<td>8c76a38576f</td>
+</tr>
+<tr>
+<td>datarequest\setups.csv</td>
+<td>Latitude</td>
+<td>Real</td>
+<td>12.34567</td>
+</tr>
+<tr>
+<td>datarequest\setups.csv</td>
+<td>Longitude</td>
+<td>Real</td>
+<td>-123.456789</td>
+</tr>
+<tr>
+<td>datarequest\setups.csv</td>
+<td>Ssid</td>
+<td>String</td>
+<td>MyWiFiNetwork</td>
+</tr>
+<tr>
+<td>datarequest\setups.csv</td>
+<td>Status</td>
+<td>String</td>
+<td>valid</td>
+</tr>
+<tr>
+<td>datarequest\setups.csv</td>
+<td>Updated At</td>
+<td>String</td>
+<td>2022-02-13 22:57:56.713289</td>
+</tr>
+<tr>
+<td>datarequest\device.csv</td>
+<td>continuous_video_recording_subscribed</td>
+<td>String</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>datarequest\device.csv</td>
+<td>created_at</td>
+<td>String</td>
+<td>2022-02-13T22:58:09Z</td>
+</tr>
+<tr>
+<td>datarequest\device.csv</td>
+<td>device_id</td>
+<td>Integer</td>
+<td>98873957</td>
+</tr>
+<tr>
+<td>datarequest\device.csv</td>
+<td>device_name</td>
+<td>String</td>
+<td>Front Door</td>
+</tr>
+<tr>
+<td>datarequest\device.csv</td>
+<td>latitude</td>
+<td>Real</td>
+<td>12.34567</td>
+</tr>
+<tr>
+<td>datarequest\device.csv</td>
+<td>longitude</td>
+<td>Real</td>
+<td>-123.456789</td>
+</tr>
+<tr>
+<td>datarequest\device.csv</td>
+<td>max_days_video_is_stored</td>
+<td>String</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>datarequest\device.csv</td>
+<td>offline_motion_recording_subscribed</td>
+<td>String</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>datarequest\device.csv</td>
+<td>people_detection_eligible</td>
+<td>String</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>datarequest\device.csv</td>
+<td>rich_notifications_eligible</td>
+<td>String</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>datarequest\device.csv</td>
+<td>show_video_enabled</td>
+<td>String</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>datarequest\device.csv</td>
+<td>timezone</td>
+<td>String</td>
+<td>America/Los_Angeles</td>
+</tr>
+<tr>
+<td>datarequest\device.csv</td>
+<td>video_storage_enabled</td>
+<td>String</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>datarequest\location.csv</td>
+<td>address</td>
+<td>String</td>
+<td>1600 Pennsylvania Ave </td>
+</tr>
+<tr>
+<td>datarequest\location.csv</td>
+<td>city</td>
+<td>String</td>
+<td>Los Angeles</td>
+</tr>
+<tr>
+<td>datarequest\location.csv</td>
+<td>country</td>
+<td>String</td>
+<td>US</td>
+</tr>
+<tr>
+<td>datarequest\location.csv</td>
+<td>latitude</td>
+<td>Real</td>
+<td>12.34567</td>
+</tr>
+<tr>
+<td>datarequest\location.csv</td>
+<td>location_name</td>
+<td>String</td>
+<td>Los Angeles</td>
+</tr>
+<tr>
+<td>datarequest\location.csv</td>
+<td>longitude</td>
+<td>Real</td>
+<td>-123.456789</td>
+</tr>
+<tr>
+<td>datarequest\location.csv</td>
+<td>state</td>
+<td>String</td>
+<td>CA</td>
+</tr>
+<tr>
+<td>datarequest\location.csv</td>
+<td>timezone</td>
+<td>String</td>
+<td>America/Los_Angeles</td>
+</tr>
+<tr>
+<td>datarequest\location.csv</td>
+<td>zip_code</td>
+<td>Integer</td>
+<td>90210</td>
+</tr>
+<tr>
+<td>datarequest\group.csv</td>
+<td>devices</td>
+<td>Unknown</td>
+<td>No Example Given</td>
+</tr>
+<tr>
+<td>datarequest\group.csv</td>
+<td>group_name</td>
+<td>Unknown</td>
+<td>No Example Given</td>
+</tr>
+<tr>
+<td>datarequest\authorization.csv</td>
+<td>Device/Group</td>
+<td>String</td>
+<td>Front Door</td>
+</tr>
+<tr>
+<td>datarequest\authorization.csv</td>
+<td>has_shared_user</td>
+<td>String</td>
+<td>no</td>
+</tr>
+<tr>
+<td>datarequest\events.csv</td>
+<td>Created At</td>
+<td>String</td>
+<td>2022-02-14 14:30:01.677000</td>
+</tr>
+<tr>
+<td>datarequest\events.csv</td>
+<td>Device Id</td>
+<td>String</td>
+<td>8c76a38576f</td>
+</tr>
+<tr>
+<td>datarequest\events.csv</td>
+<td>Device State</td>
+<td>String</td>
+<td>timed_out</td>
+</tr>
+<tr>
+<td>datarequest\events.csv</td>
+<td>Duration</td>
+<td>Real</td>
+<td>20.0</td>
+</tr>
+<tr>
+<td>datarequest\events.csv</td>
+<td>Event Id</td>
+<td>Integer</td>
+<td>7066332348713054821</td>
+</tr>
+<tr>
+<td>datarequest\events.csv</td>
+<td>Event Kind</td>
+<td>String</td>
+<td>motion</td>
+</tr>
+<tr>
+<td>datarequest\ring_neighbors\neighbors_alert_areas.csv</td>
+<td>Unnamed: 0</td>
+<td>Integer</td>
+<td>0</td>
+</tr>
+<tr>
+<td>datarequest\ring_neighbors\neighbors_alert_areas.csv</td>
+<td>alert_content_allowed</td>
+<td>String</td>
+<td>[safety crime lostpets environmental community publicassistance]</td>
+</tr>
+<tr>
+<td>datarequest\ring_neighbors\neighbors_alert_areas.csv</td>
+<td>comment_notifications</td>
+<td>Boolean</td>
+<td>True</td>
+</tr>
+<tr>
+<td>datarequest\ring_neighbors\neighbors_alert_areas.csv</td>
+<td>country_code</td>
+<td>String</td>
+<td>US</td>
+</tr>
+<tr>
+<td>datarequest\ring_neighbors\neighbors_alert_areas.csv</td>
+<td>created_at</td>
+<td>String</td>
+<td>2022-02-13T22:43:19.956Z</td>
+</tr>
+<tr>
+<td>datarequest\ring_neighbors\neighbors_alert_areas.csv</td>
+<td>custom_area</td>
+<td>Boolean</td>
+<td>False</td>
+</tr>
+<tr>
+<td>datarequest\ring_neighbors\neighbors_alert_areas.csv</td>
+<td>enabled</td>
+<td>Boolean</td>
+<td>True</td>
+</tr>
+<tr>
+<td>datarequest\ring_neighbors\neighbors_alert_areas.csv</td>
+<td>feed_content_allowed</td>
+<td>String</td>
+<td>[safety crime lostpets environmental community publicassistance]</td>
+</tr>
+<tr>
+<td>datarequest\ring_neighbors\neighbors_alert_areas.csv</td>
+<td>geog</td>
+<td>String</td>
+<td>POLYGON ((-123.45678901234567 12.34567890123456, -123.45678901234567 12.34567890123456, -123.45678901234567 12.34567890123456, -123.45678901234567 12.34567890123456, -123.45678901234567 12.34567890123456, -123.45678901234567 12.34567890123456, -123.45678901234567 12.34567890123456, -123.45678901234567 12.34567890123456, -123.45678901234567 12.34567890123456))</td>
+</tr>
+<tr>
+<td>datarequest\ring_neighbors\neighbors_alert_areas.csv</td>
+<td>location_verified</td>
+<td>Boolean</td>
+<td>True</td>
+</tr>
+<tr>
+<td>datarequest\ring_neighbors\neighbors_alert_areas.csv</td>
+<td>mac_id_added_at</td>
+<td>String</td>
+<td>2022-03-09T05:39:14.047Z</td>
+</tr>
+<tr>
+<td>datarequest\ring_neighbors\neighbors_alert_areas.csv</td>
+<td>mac_ids</td>
+<td>String</td>
+<td>[8c76a38576f]</td>
+</tr>
+<tr>
+<td>datarequest\ring_neighbors\neighbors_alert_areas.csv</td>
+<td>name</td>
+<td>String</td>
+<td>Los Angeles</td>
+</tr>
+<tr>
+<td>datarequest\ring_neighbors\neighbors_alert_areas.csv</td>
+<td>notification_sound</td>
+<td>String</td>
+<td>community.wav</td>
+</tr>
+<tr>
+<td>datarequest\ring_neighbors\neighbors_alert_areas.csv</td>
+<td>pn_poly</td>
+<td>Unknown</td>
+<td>No Example Given</td>
+</tr>
+<tr>
+<td>datarequest\ring_neighbors\neighbors_alert_areas.csv</td>
+<td>pn_radius</td>
+<td>Unknown</td>
+<td>No Example Given</td>
+</tr>
+<tr>
+<td>datarequest\ring_neighbors\neighbors_alert_areas.csv</td>
+<td>publisher_alert_roles_allowed</td>
+<td>Unknown</td>
+<td>No Example Given</td>
+</tr>
+<tr>
+<td>datarequest\ring_neighbors\neighbors_alert_areas.csv</td>
+<td>publisher_roles_allowed</td>
+<td>Unknown</td>
+<td>No Example Given</td>
+</tr>
+<tr>
+<td>datarequest\ring_neighbors\neighbors_alert_areas.csv</td>
+<td>push_notifications</td>
+<td>Boolean</td>
+<td>True</td>
+</tr>
+<tr>
+<td>datarequest\ring_neighbors\neighbors_alert_areas.csv</td>
+<td>time_zone</td>
+<td>String</td>
+<td>America/Los_Angeles</td>
+</tr>
+<tr>
+<td>datarequest\ring_neighbors\neighbors_alert_areas.csv</td>
+<td>user_generated</td>
+<td>Boolean</td>
+<td>False</td>
+</tr>
+
+          </tbody>
+      </table>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</body>
+  <script type="text/javascript">
+
+/*
+  Derived from Fresh Bootstrap Table demo by Creative Tim http://www.creative-tim.com @CreativeTim
+  and "Fancy Sidebar Navigation" Bootstrap 3.3.0 Snippet https://bootsnipp.com/snippets/Qb83E by maridlcrmn
+*/
+
+  var $table = $('#fresh-table')
+
+  window.operateEvents = {
+    'click .like': function (e, value, row, index) {
+      alert('You click like icon, row: ' + JSON.stringify(row))
+      console.log(value, row, index)
+    },
+    'click .edit': function (e, value, row, index) {
+      alert('You click edit icon, row: ' + JSON.stringify(row))
+      console.log(value, row, index)
+    },
+    'click .remove': function (e, value, row, index) {
+      $table.bootstrapTable('remove', {
+        field: 'id',
+        values: [row.id]
+      })
+    }
+  }
+
+  function operateFormatter(value, row, index) {
+    return [
+      '<a rel="tooltip" title="Like" class="table-action like" href="javascript:void(0)" title="Like">',
+        '<i class="fa fa-heart"></i>',
+      '</a>',
+      '<a rel="tooltip" title="Edit" class="table-action edit" href="javascript:void(0)" title="Edit">',
+        '<i class="fa fa-edit"></i>',
+      '</a>',
+      '<a rel="tooltip" title="Remove" class="table-action remove" href="javascript:void(0)" title="Remove">',
+        '<i class="fa fa-remove"></i>',
+      '</a>'
+    ].join('')
+  }
+
+  $(function () {
+    $table.bootstrapTable({
+      classes: 'table table-hover table-striped',
+      toolbar: '.toolbar',
+
+      search: true,
+      showPrint: true,
+      showToggle: true,
+      showColumns: true,
+      pagination: true,
+      striped: true,
+      sortable: true,
+      height: $(window).height(),
+      pageSize: 25,
+      pageList: [25, 50, 100],
+
+      formatShowingRows: function (pageFrom, pageTo, totalRows) {
+        return ''
+      },
+      formatRecordsPerPage: function (pageNumber) {
+        return pageNumber + ' rows visible'
+      }
+    })
+
+
+    $(window).resize(function () {
+      $table.bootstrapTable('resetView', {
+        height: $(window).height()
+      })
+    })
+  })
+
+  $(document).ready(function () {
+  var trigger = $('.hamburger'),
+      overlay = $('.overlay'),
+     isClosed = false;
+
+    trigger.click(function () {
+      hamburger_cross();      
+    });
+
+    function hamburger_cross() {
+
+      if (isClosed == true) {          
+        overlay.hide();
+        trigger.removeClass('is-open');
+        trigger.addClass('is-closed');
+        isClosed = false;
+      } else {   
+        overlay.show();
+        trigger.removeClass('is-closed');
+        trigger.addClass('is-open');
+        isClosed = true;
+      }
+  }
+  
+  $('[data-toggle="offcanvas"]').click(function () {
+        $('#wrapper').toggleClass('toggled');
+  });  
+});
+</script>
+</html>
