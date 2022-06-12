@@ -15,6 +15,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script src="https://unpkg.com/bootstrap-table/dist/bootstrap-table.min.js"></script>
 <script src="https://unpkg.com/bootstrap-table@1.20.2/dist/extensions/print/bootstrap-table-print.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/tableexport.jquery.plugin@1.10.21/tableExport.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tableexport.jquery.plugin@1.10.21/libs/jsPDF/jspdf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tableexport.jquery.plugin@1.10.21/libs/jsPDF-AutoTable/jspdf.plugin.autotable.js"></script>
+<script src="https://unpkg.com/bootstrap-table@1.20.2/dist/extensions/export/bootstrap-table-export.min.js"></script>
 </head>
 <body>
 <div id="wrapper">
@@ -63,7 +68,13 @@
 
               <th data-field="type" data-sortable="true">Type</th>
 
+              <th data-field="description" data-sortable="false">Description</th>
+
               <th data-field="example" data-sortable="false">Example</th>
+
+              <th data-field="firstseen" data-sortable="true">Date of Request First Seen</th>
+
+              <th data-field="lastseen" data-sortable="true">Date of Request Last Seen</th>
 
               
             </thead>
@@ -72,907 +83,1360 @@
 <td>datarequest\other_events.csv</td>
 <td>Event</td>
 <td>String</td>
+<td>None</td>
 <td>Login</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\other_events.csv</td>
 <td>Properties</td>
 <td>String</td>
-<td>{"Application": "ring web site", "Harware Id": "23613f4a-939d-4c96-9723-39c482735c46", "Ip Address": "66.6.66.666"}</td>
+<td>None</td>
+<td>{"Application": "ring web site", "Harware Id": "23613f4a-939d-4c96-9723-39c12345678", "Ip Address": "66.6.66.666"}</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\other_events.csv</td>
 <td>Timestamp</td>
 <td>String</td>
+<td>None</td>
 <td>2022-05-16 17:27:01</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\app_events\YYYY-MM-DD\ring_app.csv</td>
 <td>Event</td>
 <td>String</td>
-<td>Neighbors Session</td>
+<td>None</td>
+<td>NH Push Notification - Opened</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\app_events\YYYY-MM-DD\ring_app.csv</td>
 <td>Properties</td>
 <td>String</td>
-<td>{"Ip Address": "66.6.66.666", "App Version": "v5.49.0 (5.49.0.12)", "OS": "ios", "Hardware ID": "9BDB97CB-DD8E-4896-8001-15EE15072AE7", "App Brand": "Ring"}</td>
+<td>None</td>
+<td>{"Ip Address": "66.6.66.666", "App Version": "v5.49.0 (5.49.0.12)", "OS": "ios", "Hardware ID": "23613f4a-939d-4c96-9723-39c12345678", "App Brand": "Ring"}</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\app_events\YYYY-MM-DD\ring_app.csv</td>
 <td>Timestamp</td>
 <td>String</td>
-<td>2022-03-09 05:39:29</td>
+<td>None</td>
+<td>2022-03-09 05:39:14</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\users.csv</td>
 <td>Created At</td>
 <td>String</td>
+<td>None</td>
 <td>2022-02-13 22:39:50.346000</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\users.csv</td>
 <td>Email</td>
 <td>String</td>
-<td>user_redacted_@gmail.com</td>
+<td>None</td>
+<td>REDACTED_email@gmail.com</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\users.csv</td>
 <td>First Name</td>
 <td>String</td>
+<td>None</td>
 <td>John</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\users.csv</td>
 <td>Last Name</td>
 <td>String</td>
+<td>None</td>
 <td>Smith</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\users.csv</td>
 <td>Phone Number</td>
 <td>Unknown</td>
+<td>None</td>
 <td>No Example Given</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\subscriptions.csv</td>
 <td>Cancel At Period End</td>
 <td>Boolean</td>
+<td>None</td>
 <td>False</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\subscriptions.csv</td>
 <td>Created</td>
 <td>String</td>
+<td>None</td>
 <td>2022-02-13 22:58:10</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\subscriptions.csv</td>
 <td>Current Period End</td>
 <td>String</td>
+<td>None</td>
 <td>2022-04-15 07:00:00</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\subscriptions.csv</td>
 <td>Current Period Start</td>
 <td>String</td>
+<td>None</td>
 <td>2022-03-15 07:00:00</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\subscriptions.csv</td>
 <td>Plan Id</td>
 <td>String</td>
+<td>None</td>
 <td>ring-trial</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\subscriptions.csv</td>
 <td>Quantity</td>
 <td>Integer</td>
+<td>None</td>
 <td>1</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\subscriptions.csv</td>
 <td>Start</td>
 <td>String</td>
+<td>None</td>
 <td>2022-02-13 22:58:10</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\subscriptions.csv</td>
 <td>Status</td>
 <td>String</td>
+<td>None</td>
 <td>canceled</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\user_linked_accounts.csv</td>
 <td>isLinkedWithAmazon</td>
 <td>Boolean</td>
+<td>None</td>
 <td>False</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\user_linked_accounts.csv</td>
 <td>linkedWithAmazonDate</td>
 <td>Unknown</td>
+<td>None</td>
 <td>No Example Given</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\ring_neighbors\neighbors_users.csv</td>
 <td>Unnamed: 0</td>
 <td>Integer</td>
+<td>None</td>
 <td>0</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\ring_neighbors\neighbors_users.csv</td>
 <td>activated</td>
 <td>Boolean</td>
+<td>None</td>
 <td>False</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\ring_neighbors\neighbors_users.csv</td>
 <td>admin_review_required</td>
 <td>Boolean</td>
+<td>None</td>
 <td>False</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\ring_neighbors\neighbors_users.csv</td>
 <td>created_at</td>
 <td>String</td>
+<td>None</td>
 <td>2022-02-13T22:43:19.874Z</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\ring_neighbors\neighbors_users.csv</td>
 <td>last_notification_at</td>
 <td>Unknown</td>
+<td>None</td>
 <td>No Example Given</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\ring_neighbors\neighbors_users.csv</td>
 <td>last_sync</td>
 <td>String</td>
+<td>None</td>
 <td>2022-03-09T05:39:14.214Z</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\ring_neighbors\neighbors_users.csv</td>
 <td>manually_disabled</td>
 <td>Boolean</td>
+<td>None</td>
 <td>False</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\ring_neighbors\neighbors_users.csv</td>
 <td>notifications_enabled</td>
 <td>Boolean</td>
+<td>None</td>
 <td>True</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\ring_neighbors\neighbors_users.csv</td>
 <td>notifications_last_checked_at</td>
 <td>String</td>
+<td>None</td>
 <td>2022-03-09T05:39:14.884Z</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\ring_neighbors\neighbors_users.csv</td>
 <td>subscribed_or_in_trial</td>
 <td>String</td>
+<td>None</td>
 <td>eligible</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\ring_neighbors\neighbors_users.csv</td>
 <td>user_upvote</td>
 <td>Boolean</td>
+<td>None</td>
 <td>False</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\client_devices.csv</td>
 <td>Api Version</td>
 <td>Real</td>
+<td>None</td>
 <td>11.0</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\client_devices.csv</td>
 <td>App Build</td>
 <td>String</td>
-<td>en_US</td>
+<td>None</td>
+<td>browser</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\client_devices.csv</td>
 <td>App Installation Date</td>
 <td>String</td>
+<td>None</td>
 <td>2022-02-13 22:27:28 +0000</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\client_devices.csv</td>
 <td>App Version</td>
 <td>String</td>
+<td>None</td>
 <td>v5.49.0 (5.49.0.12)</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\client_devices.csv</td>
 <td>Architecture</td>
 <td>String</td>
+<td>None</td>
 <td>iPhone</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\client_devices.csv</td>
 <td>Created At</td>
 <td>String</td>
+<td>None</td>
 <td>2022-02-13 22:39:50.430839</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\client_devices.csv</td>
 <td>Current Sign In At</td>
 <td>Unknown</td>
+<td>None</td>
 <td>No Example Given</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\client_devices.csv</td>
 <td>Current Sign In Ip</td>
 <td>Unknown</td>
+<td>None</td>
 <td>No Example Given</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\client_devices.csv</td>
 <td>Device Model</td>
 <td>String</td>
-<td>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KH</td>
+<td>None</td>
+<td>iPhone</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\client_devices.csv</td>
 <td>Device Type</td>
 <td>String</td>
+<td>None</td>
 <td>John's iPhone</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\client_devices.csv</td>
 <td>Device Version</td>
 <td>Real</td>
+<td>None</td>
 <td>15.1</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\client_devices.csv</td>
 <td>H264</td>
 <td>String</td>
+<td>None</td>
 <td>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\client_devices.csv</td>
 <td>Hardware Id</td>
 <td>String</td>
-<td>23613f4a-939d-4c96-9723-39c482735c46</td>
+<td>None</td>
+<td>23613f4a-939d-4c96-9723-39c12345678</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\client_devices.csv</td>
 <td>Is Tablet</td>
 <td>Boolean</td>
+<td>None</td>
 <td>False</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\client_devices.csv</td>
 <td>Language</td>
 <td>String</td>
+<td>None</td>
 <td>en_US</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\client_devices.csv</td>
 <td>Last Sign In At</td>
 <td>Unknown</td>
+<td>None</td>
 <td>No Example Given</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\client_devices.csv</td>
 <td>Last Sign In Ip</td>
 <td>Unknown</td>
+<td>None</td>
 <td>No Example Given</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\client_devices.csv</td>
 <td>Linphone Initialized</td>
 <td>String</td>
+<td>None</td>
 <td>2022-02-13 22:27:28 +0000</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\client_devices.csv</td>
 <td>Manufacturer</td>
 <td>String</td>
+<td>None</td>
 <td>iPhone9</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\client_devices.csv</td>
 <td>Os</td>
 <td>String</td>
-<td>ring-site</td>
+<td>None</td>
+<td>ios</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\client_devices.csv</td>
 <td>Pn Service</td>
 <td>Real</td>
+<td>None</td>
 <td>11.0</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\client_devices.csv</td>
 <td>Registered At</td>
 <td>String</td>
+<td>None</td>
 <td>2022-02-13 22:39:52.325092</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\client_devices.csv</td>
 <td>Resolution</td>
 <td>String</td>
+<td>None</td>
 <td>375x667</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\client_devices.csv</td>
 <td>Sign In Count</td>
 <td>Integer</td>
+<td>None</td>
 <td>0</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\client_devices.csv</td>
 <td>Signed In</td>
 <td>Boolean</td>
+<td>None</td>
 <td>True</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\client_devices.csv</td>
 <td>Supports Echo Canceler</td>
 <td>Unknown</td>
+<td>None</td>
 <td>No Example Given</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\users.client_devices.csv</td>
 <td>app_brand</td>
 <td>String</td>
+<td>None</td>
 <td>ring</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\users.client_devices.csv</td>
 <td>metadata</td>
 <td>String</td>
+<td>None</td>
 <td>{""api_version"":""11"",""app_brand"":""ring"",""app_installation_date"":""2022-02-13 22:27:28 +0000"",""app_version"":""v5.49.0 (5.49.0.12)"",""build_profile"":""store_production"",""device_identifier"":""iPhone9,1"",""device_model"":""iPhone"",""device_name"":""John's iPhone"",""ios_version"":""15.1"",""language"":""en_US"",""resolution"":""375x667"",""retina"":""true"",""scale"":""2""}</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\users.client_devices.csv</td>
 <td>os</td>
 <td>String</td>
+<td>None</td>
 <td>ios</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\users.client_devices.csv</td>
 <td>remember_me</td>
 <td>Boolean</td>
+<td>None</td>
 <td>False</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>in 'metadata' field of datarequest\users.client_devices.csv</td>
 <td>api_version</td>
 <td>String</td>
+<td>None</td>
 <td>11</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>in 'metadata' field of datarequest\users.client_devices.csv</td>
 <td>app_brand</td>
 <td>String</td>
+<td>None</td>
 <td>ring</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>in 'metadata' field of datarequest\users.client_devices.csv</td>
 <td>app_installation_date</td>
 <td>String</td>
+<td>None</td>
 <td>2022-02-13 22:27:28 +0000</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>in 'metadata' field of datarequest\users.client_devices.csv</td>
 <td>app_version</td>
 <td>String</td>
+<td>None</td>
 <td>v5.49.0 (5.49.0.12)</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>in 'metadata' field of datarequest\users.client_devices.csv</td>
 <td>build_profile</td>
 <td>String</td>
+<td>None</td>
 <td>browser</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>in 'metadata' field of datarequest\users.client_devices.csv</td>
 <td>device_identifier</td>
 <td>String</td>
+<td>None</td>
 <td>iPhone9,1</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>in 'metadata' field of datarequest\users.client_devices.csv</td>
 <td>device_model</td>
 <td>String</td>
+<td>None</td>
 <td>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>in 'metadata' field of datarequest\users.client_devices.csv</td>
 <td>device_name</td>
 <td>String</td>
+<td>None</td>
 <td>John's iPhone</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>in 'metadata' field of datarequest\users.client_devices.csv</td>
 <td>ios_version</td>
 <td>String</td>
+<td>None</td>
 <td>15.1</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>in 'metadata' field of datarequest\users.client_devices.csv</td>
 <td>language</td>
 <td>String</td>
+<td>None</td>
 <td>en_US</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>in 'metadata' field of datarequest\users.client_devices.csv</td>
 <td>resolution</td>
 <td>String</td>
+<td>None</td>
 <td>375x667</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>in 'metadata' field of datarequest\users.client_devices.csv</td>
 <td>retina</td>
 <td>String</td>
+<td>None</td>
 <td>true</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>in 'metadata' field of datarequest\users.client_devices.csv</td>
 <td>scale</td>
 <td>String</td>
+<td>None</td>
 <td>2</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\notification_client_devices.csv</td>
 <td>Hardware Id</td>
 <td>String</td>
-<td>9BDB97CB-DD8E-4896-8001-15EE15072AE7</td>
+<td>None</td>
+<td>9BDB97CB-DD8E-4896-8001-123456789</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\notification_client_devices.csv</td>
 <td>Push Notification Token</td>
 <td>String</td>
+<td>None</td>
 <td>7adf02b8539836d5e11a037ffda3f2710fa4c331dd4a4525efaa042ec498ba37</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>in 'Properties' field of ring_app.csv or other_events.csv</td>
 <td>Ip Address</td>
 <td>String</td>
+<td>None</td>
 <td>66.6.66.666</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>in 'Properties' field of ring_app.csv or other_events.csv</td>
 <td>App Version</td>
 <td>String</td>
+<td>None</td>
 <td>v5.49.0 (5.49.0.12)</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>in 'Properties' field of ring_app.csv or other_events.csv</td>
 <td>OS</td>
 <td>String</td>
+<td>None</td>
 <td>ios</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>in 'Properties' field of ring_app.csv or other_events.csv</td>
 <td>Hardware ID</td>
 <td>String</td>
-<td>9BDB97CB-DD8E-4896-8001-15EE15072AE7</td>
+<td>None</td>
+<td>9BDB97CB-DD8E-4896-8001-123456789</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>in 'Properties' field of ring_app.csv or other_events.csv</td>
 <td>App Brand</td>
 <td>String</td>
+<td>None</td>
 <td>Ring</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>in 'Properties' field of ring_app.csv or other_events.csv</td>
 <td>Device ID</td>
 <td>String</td>
-<td>8c76a38576f</td>
+<td>None</td>
+<td>9c123456eea</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>in 'Properties' field of ring_app.csv or other_events.csv</td>
 <td>Device Name</td>
 <td>String</td>
+<td>None</td>
 <td>Front Door</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>in 'Properties' field of ring_app.csv or other_events.csv</td>
 <td>Carrier</td>
 <td>String</td>
-<td>CellProviderRedacted</td>
+<td>None</td>
+<td>T-Mobile</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>in 'Properties' field of ring_app.csv or other_events.csv</td>
 <td>Model</td>
 <td>String</td>
+<td>None</td>
 <td>iPhone9,1</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>in 'Properties' field of ring_app.csv or other_events.csv</td>
 <td>OS Version</td>
 <td>String</td>
+<td>None</td>
 <td>15.1</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>in 'Properties' field of ring_app.csv or other_events.csv</td>
 <td>Connectivity Type</td>
 <td>String</td>
+<td>None</td>
 <td>WiFi</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>in 'Properties' field of ring_app.csv or other_events.csv</td>
 <td>Application</td>
 <td>String</td>
+<td>None</td>
 <td>ring web site</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>in 'Properties' field of ring_app.csv or other_events.csv</td>
 <td>Harware Id</td>
 <td>String</td>
-<td>23613f4a-939d-4c96-9723-39c482735c46</td>
+<td>None</td>
+<td>23613f4a-939d-4c96-9723-39c12345678</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\setups.csv</td>
 <td>Created At</td>
 <td>String</td>
+<td>None</td>
 <td>2022-02-13 22:55:49.423349</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\setups.csv</td>
 <td>Description</td>
 <td>String</td>
+<td>None</td>
 <td>Front Door</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\setups.csv</td>
 <td>Device Id</td>
 <td>String</td>
-<td>8c76a38576f</td>
+<td>None</td>
+<td>9c123456eea</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\setups.csv</td>
 <td>Latitude</td>
 <td>Real</td>
-<td>12.34567</td>
+<td>None</td>
+<td>12.12345</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\setups.csv</td>
 <td>Longitude</td>
 <td>Real</td>
-<td>-123.456789</td>
+<td>None</td>
+<td>-123.123456</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\setups.csv</td>
 <td>Ssid</td>
 <td>String</td>
+<td>None</td>
 <td>MyWiFiNetwork</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\setups.csv</td>
 <td>Status</td>
 <td>String</td>
+<td>None</td>
 <td>valid</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\setups.csv</td>
 <td>Updated At</td>
 <td>String</td>
+<td>None</td>
 <td>2022-02-13 22:57:56.713289</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\device.csv</td>
 <td>continuous_video_recording_subscribed</td>
 <td>String</td>
+<td>None</td>
 <td>yes</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\device.csv</td>
 <td>created_at</td>
 <td>String</td>
+<td>None</td>
 <td>2022-02-13T22:58:09Z</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\device.csv</td>
 <td>device_id</td>
 <td>Integer</td>
-<td>98873957</td>
+<td>None</td>
+<td>98765432</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\device.csv</td>
 <td>device_name</td>
 <td>String</td>
+<td>None</td>
 <td>Front Door</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\device.csv</td>
 <td>latitude</td>
 <td>Real</td>
-<td>12.34567</td>
+<td>None</td>
+<td>12.12345</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\device.csv</td>
 <td>longitude</td>
 <td>Real</td>
-<td>-123.456789</td>
+<td>None</td>
+<td>-123.123456</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\device.csv</td>
 <td>max_days_video_is_stored</td>
 <td>String</td>
+<td>None</td>
 <td>yes</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\device.csv</td>
 <td>offline_motion_recording_subscribed</td>
 <td>String</td>
+<td>None</td>
 <td>yes</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\device.csv</td>
 <td>people_detection_eligible</td>
 <td>String</td>
+<td>None</td>
 <td>yes</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\device.csv</td>
 <td>rich_notifications_eligible</td>
 <td>String</td>
+<td>None</td>
 <td>yes</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\device.csv</td>
 <td>show_video_enabled</td>
 <td>String</td>
+<td>None</td>
 <td>yes</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\device.csv</td>
 <td>timezone</td>
 <td>String</td>
+<td>None</td>
 <td>America/Los_Angeles</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\device.csv</td>
 <td>video_storage_enabled</td>
 <td>String</td>
+<td>None</td>
 <td>yes</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\location.csv</td>
 <td>address</td>
 <td>String</td>
+<td>None</td>
 <td>1600 Pennsylvania Ave </td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\location.csv</td>
 <td>city</td>
 <td>String</td>
+<td>None</td>
 <td>Los Angeles</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\location.csv</td>
 <td>country</td>
 <td>String</td>
+<td>None</td>
 <td>US</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\location.csv</td>
 <td>latitude</td>
 <td>Real</td>
-<td>12.34567</td>
+<td>None</td>
+<td>12.12345</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\location.csv</td>
 <td>location_name</td>
 <td>String</td>
+<td>None</td>
 <td>Los Angeles</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\location.csv</td>
 <td>longitude</td>
 <td>Real</td>
-<td>-123.456789</td>
+<td>None</td>
+<td>-123.123456</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\location.csv</td>
 <td>state</td>
 <td>String</td>
+<td>None</td>
 <td>CA</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\location.csv</td>
 <td>timezone</td>
 <td>String</td>
+<td>None</td>
 <td>America/Los_Angeles</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\location.csv</td>
 <td>zip_code</td>
 <td>Integer</td>
+<td>None</td>
 <td>90210</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\group.csv</td>
 <td>devices</td>
 <td>Unknown</td>
+<td>None</td>
 <td>No Example Given</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\group.csv</td>
 <td>group_name</td>
 <td>Unknown</td>
+<td>None</td>
 <td>No Example Given</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\authorization.csv</td>
 <td>Device/Group</td>
 <td>String</td>
+<td>None</td>
 <td>Front Door</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\authorization.csv</td>
 <td>has_shared_user</td>
 <td>String</td>
+<td>None</td>
 <td>no</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\events.csv</td>
 <td>Created At</td>
 <td>String</td>
-<td>2022-02-14 14:30:01.677000</td>
+<td>None</td>
+<td>2022-02-17 01:32:38.138000</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\events.csv</td>
 <td>Device Id</td>
 <td>String</td>
-<td>8c76a38576f</td>
+<td>None</td>
+<td>9c123456eea</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\events.csv</td>
 <td>Device State</td>
 <td>String</td>
+<td>None</td>
 <td>timed_out</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\events.csv</td>
 <td>Duration</td>
 <td>Real</td>
+<td>None</td>
 <td>20.0</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\events.csv</td>
 <td>Event Id</td>
 <td>Integer</td>
-<td>7066332348713054821</td>
+<td>None</td>
+<td>7065198777994621541</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\events.csv</td>
 <td>Event Kind</td>
 <td>String</td>
+<td>None</td>
 <td>motion</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\ring_neighbors\neighbors_alert_areas.csv</td>
 <td>Unnamed: 0</td>
 <td>Integer</td>
+<td>None</td>
 <td>0</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\ring_neighbors\neighbors_alert_areas.csv</td>
 <td>alert_content_allowed</td>
 <td>String</td>
+<td>None</td>
 <td>[safety crime lostpets environmental community publicassistance]</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\ring_neighbors\neighbors_alert_areas.csv</td>
 <td>comment_notifications</td>
 <td>Boolean</td>
+<td>None</td>
 <td>True</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\ring_neighbors\neighbors_alert_areas.csv</td>
 <td>country_code</td>
 <td>String</td>
+<td>None</td>
 <td>US</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\ring_neighbors\neighbors_alert_areas.csv</td>
 <td>created_at</td>
 <td>String</td>
+<td>None</td>
 <td>2022-02-13T22:43:19.956Z</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\ring_neighbors\neighbors_alert_areas.csv</td>
 <td>custom_area</td>
 <td>Boolean</td>
+<td>None</td>
 <td>False</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\ring_neighbors\neighbors_alert_areas.csv</td>
 <td>enabled</td>
 <td>Boolean</td>
+<td>None</td>
 <td>True</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\ring_neighbors\neighbors_alert_areas.csv</td>
 <td>feed_content_allowed</td>
 <td>String</td>
+<td>None</td>
 <td>[safety crime lostpets environmental community publicassistance]</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\ring_neighbors\neighbors_alert_areas.csv</td>
 <td>geog</td>
 <td>String</td>
-<td>POLYGON ((-123.45678901234567 12.34567890123456, -123.45678901234567 12.34567890123456, -123.45678901234567 12.34567890123456, -123.45678901234567 12.34567890123456, -123.45678901234567 12.34567890123456, -123.45678901234567 12.34567890123456, -123.45678901234567 12.34567890123456, -123.45678901234567 12.34567890123456, -123.45678901234567 12.34567890123456))</td>
+<td>None</td>
+<td>POLYGON ((-123.12345678901234 12.12345678901234, -123.12345678901234 12.12345678901234, -123.12345678901234 12.12345678901234, -123.12345678901234 12.12345678901234, -123.12345678901234 12.12345678901234, -123.12345678901234 12.12345678901234, -123.12345678901234 12.12345678901234, -123.12345678901234 12.12345678901234, -123.12345678901234 12.12345678901234))</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\ring_neighbors\neighbors_alert_areas.csv</td>
 <td>location_verified</td>
 <td>Boolean</td>
+<td>None</td>
 <td>True</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\ring_neighbors\neighbors_alert_areas.csv</td>
 <td>mac_id_added_at</td>
 <td>String</td>
+<td>None</td>
 <td>2022-03-09T05:39:14.047Z</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\ring_neighbors\neighbors_alert_areas.csv</td>
 <td>mac_ids</td>
 <td>String</td>
-<td>[8c76a38576f]</td>
+<td>None</td>
+<td>[9c123456eea]</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\ring_neighbors\neighbors_alert_areas.csv</td>
 <td>name</td>
 <td>String</td>
+<td>None</td>
 <td>Los Angeles</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\ring_neighbors\neighbors_alert_areas.csv</td>
 <td>notification_sound</td>
 <td>String</td>
+<td>None</td>
 <td>community.wav</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\ring_neighbors\neighbors_alert_areas.csv</td>
 <td>pn_poly</td>
 <td>Unknown</td>
+<td>None</td>
 <td>No Example Given</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\ring_neighbors\neighbors_alert_areas.csv</td>
 <td>pn_radius</td>
 <td>Unknown</td>
+<td>None</td>
 <td>No Example Given</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\ring_neighbors\neighbors_alert_areas.csv</td>
 <td>publisher_alert_roles_allowed</td>
 <td>Unknown</td>
+<td>None</td>
 <td>No Example Given</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\ring_neighbors\neighbors_alert_areas.csv</td>
 <td>publisher_roles_allowed</td>
 <td>Unknown</td>
+<td>None</td>
 <td>No Example Given</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\ring_neighbors\neighbors_alert_areas.csv</td>
 <td>push_notifications</td>
 <td>Boolean</td>
+<td>None</td>
 <td>True</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\ring_neighbors\neighbors_alert_areas.csv</td>
 <td>time_zone</td>
 <td>String</td>
+<td>None</td>
 <td>America/Los_Angeles</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 <tr>
 <td>datarequest\ring_neighbors\neighbors_alert_areas.csv</td>
 <td>user_generated</td>
 <td>Boolean</td>
+<td>None</td>
 <td>False</td>
+<td>2022-05-19 22:01:38</td>
+<td>2022-05-19 22:01:38</td>
 </tr>
 
           </tbody>
@@ -1028,12 +1492,14 @@
       toolbar: '.toolbar',
 
       search: true,
-      showPrint: true,
+      showExport: true,
       showToggle: true,
       showColumns: true,
       pagination: true,
       striped: true,
       sortable: true,
+      exportDataType: 'all',
+      exportTypes: ['json', 'xml', 'csv', 'excel', 'pdf'],
       height: $(window).height(),
       pageSize: 25,
       pageList: [25, 50, 100],

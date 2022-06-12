@@ -15,6 +15,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script src="https://unpkg.com/bootstrap-table/dist/bootstrap-table.min.js"></script>
 <script src="https://unpkg.com/bootstrap-table@1.20.2/dist/extensions/print/bootstrap-table-print.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/tableexport.jquery.plugin@1.10.21/tableExport.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tableexport.jquery.plugin@1.10.21/libs/jsPDF/jspdf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tableexport.jquery.plugin@1.10.21/libs/jsPDF-AutoTable/jspdf.plugin.autotable.js"></script>
+<script src="https://unpkg.com/bootstrap-table@1.20.2/dist/extensions/export/bootstrap-table-export.min.js"></script>
 </head>
 <body>
 <div id="wrapper">
@@ -52,7 +57,7 @@
                 <span class="hamb-bottom"></span>
             </button>
     <div class="container">
-        <div class="row"><div class="logo-container"><h3>LinkedIn</h3></div>
+        <div class="row"><div class="logo-container"><h3>Linked In</h3></div>
     <div class="fresh-table full-screen-table toolbar-color-red ">
           <table id="fresh-table" class="table" data-sort-name="source" data-sort-order="asc" data-total-field="count" data-data-field="items">
             <thead>
@@ -63,1120 +68,2023 @@
 
               <th data-field="type" data-sortable="true">Type</th>
 
+              <th data-field="description" data-sortable="false">Description</th>
+
               <th data-field="example" data-sortable="false">Example</th>
+
+              <th data-field="firstseen" data-sortable="true">Date of Request First Seen</th>
+
+              <th data-field="lastseen" data-sortable="true">Date of Request Last Seen</th>
 
               
             </thead>
             <tbody>
               <tr>
-<td>Basic_LinkedInDataExport\Ad_Targeting.csv</td>
-<td>Company Category</td>
-<td>Unknown</td>
-<td>No Example Given</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Ad_Targeting.csv</td>
-<td>Company Connections</td>
-<td>String</td>
-<td>REDACTED Company A; REDACTED Company B; REDACTED Company C</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Ad_Targeting.csv</td>
-<td>Company Follower of</td>
-<td>String</td>
-<td>REDACTED Company A; REDACTED Company B; REDACTED Company C</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Ad_Targeting.csv</td>
-<td>Company Growth Rate</td>
-<td>String</td>
-<td>3% - 10% company growth; 0% - 3% company growth</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Ad_Targeting.csv</td>
-<td>Company Industries</td>
-<td>String</td>
-<td>Information Technology & Services; Farming; Computer & Network Security</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Ad_Targeting.csv</td>
-<td>Company Names</td>
-<td>String</td>
-<td>REDACTED Company A; REDACTED Company B; REDACTED Company C</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Ad_Targeting.csv</td>
-<td>Company Names.1</td>
-<td>String</td>
-<td>REDACTED Company A; REDACTED Company B; REDACTED Company C</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Ad_Targeting.csv</td>
-<td>Company Names.2</td>
-<td>String</td>
-<td>REDACTED Company A; REDACTED Company B; REDACTED Company C</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Ad_Targeting.csv</td>
-<td>Company Revenue</td>
-<td>String</td>
-<td>$1M-$10M</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Ad_Targeting.csv</td>
-<td>Company Size</td>
-<td>String</td>
-<td>11-50 employees; 2-10 employees</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Ad_Targeting.csv</td>
-<td>Degrees</td>
-<td>String</td>
-<td>Master's Degree; Bachelor of Science</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Ad_Targeting.csv</td>
-<td>Fields of Study</td>
-<td>Unknown</td>
-<td>No Example Given</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Ad_Targeting.csv</td>
-<td>Function By Size</td>
-<td>Unknown</td>
-<td>No Example Given</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Ad_Targeting.csv</td>
-<td>Graduation Year</td>
-<td>Integer</td>
-<td>2018</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Ad_Targeting.csv</td>
-<td>Interface Locales</td>
-<td>String</td>
-<td>English</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Ad_Targeting.csv</td>
-<td>Job Functions</td>
-<td>String</td>
-<td>Business Development; Operations</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Ad_Targeting.csv</td>
-<td>Job Seniorities</td>
-<td>String</td>
-<td>Owner; Partner</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Ad_Targeting.csv</td>
-<td>Job Titles</td>
-<td>String</td>
-<td>Data Management Consultant; Project Management Specialist; Project Manager</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Ad_Targeting.csv</td>
-<td>Job Titles.1</td>
-<td>String</td>
-<td>Data Management Consultant; Project Management Specialist; Project Manager</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Ad_Targeting.csv</td>
-<td>Job Titles.2</td>
-<td>String</td>
-<td>Data Management Consultant; Project Management Specialist; Project Manager</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Ad_Targeting.csv</td>
-<td>Member Age</td>
-<td>String</td>
-<td>35 to 54</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Ad_Targeting.csv</td>
-<td>Member Gender</td>
-<td>String</td>
-<td>Male</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Ad_Targeting.csv</td>
-<td>Member Groups</td>
-<td>String</td>
-<td>REDACTED Group A; REDACTED Group B; REDACTED Group C</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Ad_Targeting.csv</td>
-<td>Member Interests</td>
-<td>String</td>
-<td>Cloud Computing; Collaboration Software; Financial Investing; Network and Enterprise Security</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Ad_Targeting.csv</td>
-<td>Member Schools</td>
-<td>String</td>
-<td>University of California, Berkeley; University of Alabama</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Ad_Targeting.csv</td>
-<td>Member Skills</td>
-<td>String</td>
-<td>Oil Pipeline Management; Business Strategy; Campaigns; Planning</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Ad_Targeting.csv</td>
-<td>Member Traits</td>
-<td>String</td>
-<td>Frequent Contributors; Frequent Travelers; Windows; Desktop/Laptop Users; International Frequent Travelers</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Ad_Targeting.csv</td>
-<td>Profile Locations</td>
-<td>String</td>
-<td>San Francisco Bay Area; California, United States; North America</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Ad_Targeting.csv</td>
-<td>Years of Experience</td>
-<td>String</td>
-<td>12+ years</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Ad_Targeting.csv</td>
-<td>degreeClass</td>
-<td>String</td>
-<td>200; 500</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Ad_Targeting.csv</td>
-<td>interfaceLocale</td>
-<td>String</td>
-<td>en_US</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Company Follows.csv</td>
-<td>Followed On</td>
-<td>String</td>
-<td>Thu May 08 03:44:48 UTC 2014</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Company Follows.csv</td>
-<td>Organization</td>
-<td>String</td>
-<td>JPMorgan Chase & Co.</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Connections.csv</td>
-<td>Company</td>
-<td>String</td>
-<td>University of California, Berkeley</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Connections.csv</td>
-<td>Connected On</td>
-<td>String</td>
-<td>31 Mar 2020</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Connections.csv</td>
-<td>Email Address</td>
-<td>String</td>
-<td>_REDACTED_email@gmail.com</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Connections.csv</td>
-<td>First Name</td>
-<td>String</td>
-<td>Rachael</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Connections.csv</td>
-<td>Last Name</td>
-<td>String</td>
-<td>Dixon</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Connections.csv</td>
-<td>Position</td>
-<td>String</td>
-<td>User Experience Researcher</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Education.csv</td>
-<td>Activities</td>
-<td>String</td>
-<td>REDACTED Lab</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Education.csv</td>
-<td>Degree Name</td>
-<td>String</td>
-<td>BS in Computer Science</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Education.csv</td>
-<td>End Date</td>
-<td>Integer</td>
-<td>2018</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Education.csv</td>
-<td>Notes</td>
-<td>String</td>
-<td>Awarded for Academic Excellence.</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Education.csv</td>
-<td>School Name</td>
-<td>String</td>
-<td>University of Alabama</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Education.csv</td>
-<td>Start Date</td>
-<td>Integer</td>
-<td>2016</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Email Addresses.csv</td>
-<td>Confirmed</td>
-<td>String</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Email Addresses.csv</td>
-<td>Email Address</td>
-<td>String</td>
-<td>_REDACTED_email@gmail.com</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Email Addresses.csv</td>
-<td>Primary</td>
-<td>String</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Email Addresses.csv</td>
-<td>Updated On</td>
-<td>String</td>
-<td>7/8/13, 1:52 PM</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Endorsement_Given_Info.csv</td>
-<td>Endorsee First Name</td>
-<td>String</td>
-<td>Kareem</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Endorsement_Given_Info.csv</td>
-<td>Endorsee Last Name</td>
-<td>String</td>
-<td>Munch</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Endorsement_Given_Info.csv</td>
-<td>Endorsement Date</td>
-<td>String</td>
-<td>2013/11/17 22:31:34 UTC</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Endorsement_Given_Info.csv</td>
-<td>Endorsement Status</td>
-<td>String</td>
-<td>ACCEPTED</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Endorsement_Given_Info.csv</td>
-<td>Skill Name</td>
-<td>String</td>
-<td>Accounting</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Endorsement_Received_Info.csv</td>
-<td>Endorsement Date</td>
-<td>String</td>
-<td>2017/10/29 19:54:40 UTC</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Endorsement_Received_Info.csv</td>
-<td>Endorsement Status</td>
-<td>String</td>
-<td>ACCEPTED</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Endorsement_Received_Info.csv</td>
-<td>Endorser First Name</td>
-<td>String</td>
-<td>Aaron</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Endorsement_Received_Info.csv</td>
-<td>Endorser Last Name</td>
-<td>String</td>
-<td>Keller</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Endorsement_Received_Info.csv</td>
-<td>Skill Name</td>
-<td>String</td>
-<td>Strategic Planning</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Events.csv</td>
-<td>Event Name</td>
-<td>String</td>
-<td>Your Feet and Your Children</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Events.csv</td>
-<td>Event Time</td>
-<td>String</td>
-<td>Nov 03, 2021 02:30 PM - Nov 03, 2021 03:30 PM</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Events.csv</td>
-<td>External Url</td>
-<td>String</td>
-<td>https://www.eventbrite.com/e/REDACTED</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Events.csv</td>
-<td>Status</td>
-<td>String</td>
-<td>ATTENDING</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Invitations.csv</td>
-<td>Direction</td>
-<td>String</td>
-<td>INCOMING</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Invitations.csv</td>
-<td>From</td>
-<td>String</td>
-<td>John Smith</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Invitations.csv</td>
-<td>Message</td>
-<td>String</td>
-<td>I'm REDACTED and would love to connect, John.</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Invitations.csv</td>
-<td>Sent At</td>
-<td>String</td>
-<td>6/7/22, 12:29 PM</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Invitations.csv</td>
-<td>To</td>
-<td>String</td>
-<td>John Smith</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Job Applicant Saved Answers.csv</td>
-<td>Answer</td>
-<td>String</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Job Applicant Saved Answers.csv</td>
-<td>Question</td>
-<td>String</td>
-<td>Please submit a resume or LinkedIn profile</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Languages.csv</td>
-<td>Name</td>
-<td>String</td>
-<td>Spanish</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Languages.csv</td>
-<td>Proficiency</td>
-<td>String</td>
-<td>Native or bilingual proficiency</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Learning.csv</td>
-<td>Content Completed At (if completed)</td>
-<td>Unknown</td>
-<td>No Example Given</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Learning.csv</td>
-<td>Content Description</td>
-<td>String</td>
-<td>CONTENT METADATA NO LONGER EXISTS - urn:li:lyndaCourse:2806714</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Learning.csv</td>
-<td>Content Last Watched Date (if viewed)</td>
-<td>String</td>
-<td>2018-08-29 15:46 UTC</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Learning.csv</td>
-<td>Content Saved</td>
-<td>Boolean</td>
-<td>False</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Learning.csv</td>
-<td>Content Title</td>
-<td>String</td>
-<td>Learning MATLAB</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Learning.csv</td>
-<td>Content Type</td>
-<td>String</td>
-<td>Course</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Learning.csv</td>
-<td>Notes taken on videos (if taken)</td>
-<td>Unknown</td>
-<td>No Example Given</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Learning.csv</td>
-<td>Unnamed: 7</td>
-<td>Unknown</td>
-<td>No Example Given</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\messages.csv</td>
+<td>Complete_LinkedInDataExport\messages.csv</td>
 <td>CONTENT</td>
 <td>String</td>
-<td>Come on over to REDACTED!</td>
+<td>None</td>
+<td>Hi John, thanks for connecting!</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
 </tr>
 <tr>
-<td>Basic_LinkedInDataExport\messages.csv</td>
+<td>Complete_LinkedInDataExport\messages.csv</td>
 <td>CONVERSATION ID</td>
 <td>String</td>
-<td>2-YjY2YmQ5YTgtZjU5YS00YWU4LTljNzMtNWM3M2RmYjZiMjVjXzAxMA==</td>
+<td>None</td>
+<td>2-MzQ5MWUxM2YtZWYxNy00ZTczLTk2YjYtYmNlYjdkZmE2NWE2XzAxMA==</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
 </tr>
 <tr>
-<td>Basic_LinkedInDataExport\messages.csv</td>
+<td>Complete_LinkedInDataExport\messages.csv</td>
 <td>CONVERSATION TITLE</td>
-<td>String</td>
-<td>R&D opportunity.</td>
+<td>Unknown</td>
+<td>None</td>
+<td>No Example Given</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
 </tr>
 <tr>
-<td>Basic_LinkedInDataExport\messages.csv</td>
+<td>Complete_LinkedInDataExport\messages.csv</td>
 <td>DATE</td>
 <td>String</td>
-<td>2019-08-11 22:22:21 UTC</td>
+<td>None</td>
+<td>2022-06-01 15:04:26 UTC</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
 </tr>
 <tr>
-<td>Basic_LinkedInDataExport\messages.csv</td>
+<td>Complete_LinkedInDataExport\messages.csv</td>
 <td>FOLDER</td>
 <td>String</td>
+<td>None</td>
 <td>INBOX</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
 </tr>
 <tr>
-<td>Basic_LinkedInDataExport\messages.csv</td>
+<td>Complete_LinkedInDataExport\messages.csv</td>
 <td>FROM</td>
 <td>String</td>
-<td>Joan Smith</td>
+<td>None</td>
+<td>John Smith</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
 </tr>
 <tr>
-<td>Basic_LinkedInDataExport\messages.csv</td>
+<td>Complete_LinkedInDataExport\messages.csv</td>
 <td>SENDER PROFILE URL</td>
 <td>String</td>
+<td>None</td>
 <td>https://www.linkedin.com/in/REDACTED</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
 </tr>
 <tr>
-<td>Basic_LinkedInDataExport\messages.csv</td>
+<td>Complete_LinkedInDataExport\messages.csv</td>
 <td>SUBJECT</td>
-<td>String</td>
-<td>REDACTED is growing!!!!</td>
+<td>Unknown</td>
+<td>None</td>
+<td>No Example Given</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
 </tr>
 <tr>
-<td>Basic_LinkedInDataExport\messages.csv</td>
+<td>Complete_LinkedInDataExport\messages.csv</td>
 <td>TO</td>
 <td>String</td>
-<td>Anne Smith</td>
+<td>None</td>
+<td>Bob Smith</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
 </tr>
 <tr>
-<td>Basic_LinkedInDataExport\PhoneNumbers.csv</td>
-<td>Extension</td>
-<td>Unknown</td>
-<td>No Example Given</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\PhoneNumbers.csv</td>
-<td>Number</td>
+<td>Complete_LinkedInDataExport\Account Status History.csv</td>
+<td>Event</td>
 <td>String</td>
-<td> +1 234-567-8901</td>
+<td>None</td>
+<td>Account Created</td>
+<td>2022-06-10 05:22:10</td>
+<td>2022-06-10 05:22:10</td>
 </tr>
 <tr>
-<td>Basic_LinkedInDataExport\PhoneNumbers.csv</td>
-<td>Type</td>
-<td>Unknown</td>
-<td>No Example Given</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Positions.csv</td>
-<td>Company Name</td>
+<td>Complete_LinkedInDataExport\Account Status History.csv</td>
+<td>Time</td>
 <td>String</td>
-<td>Independent LLC</td>
+<td>None</td>
+<td>2013/07/08 20:47:19 UTC</td>
+<td>2022-06-10 05:22:10</td>
+<td>2022-06-10 05:22:10</td>
 </tr>
 <tr>
-<td>Basic_LinkedInDataExport\Positions.csv</td>
-<td>Description</td>
-<td>String</td>
-<td>Worked to improve efficiency of processes and tools.</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Positions.csv</td>
-<td>Finished On</td>
-<td>String</td>
-<td>Dec 2018</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Positions.csv</td>
-<td>Location</td>
-<td>String</td>
-<td>San Francisco Bay Area</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Positions.csv</td>
-<td>Started On</td>
-<td>String</td>
-<td>Dec 2009</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Positions.csv</td>
-<td>Title</td>
-<td>String</td>
-<td>Consultant</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Profile.csv</td>
-<td>Address</td>
-<td>Unknown</td>
-<td>No Example Given</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Profile.csv</td>
-<td>Birth Date</td>
-<td>Unknown</td>
-<td>No Example Given</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Profile.csv</td>
-<td>First Name</td>
-<td>String</td>
-<td>John</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Profile.csv</td>
-<td>Geo Location</td>
-<td>String</td>
-<td>San Francisco Bay Area</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Profile.csv</td>
-<td>Headline</td>
-<td>String</td>
-<td>Business Consultant</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Profile.csv</td>
-<td>Industry</td>
-<td>String</td>
-<td>Business</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Profile.csv</td>
-<td>Instant Messengers</td>
-<td>Unknown</td>
-<td>No Example Given</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Profile.csv</td>
-<td>Last Name</td>
-<td>String</td>
-<td>Smith</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Profile.csv</td>
-<td>Maiden Name</td>
-<td>Unknown</td>
-<td>No Example Given</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Profile.csv</td>
-<td>Summary</td>
-<td>String</td>
-<td>I am a professional with 20 years of experience in helping people.</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Profile.csv</td>
-<td>Twitter Handles</td>
-<td>Unknown</td>
-<td>No Example Given</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Profile.csv</td>
-<td>Websites</td>
-<td>String</td>
-<td>[PERSONAL:www.REDACTED.com]</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Profile.csv</td>
-<td>Zip Code</td>
+<td>Complete_LinkedInDataExport\Ads Clicked.csv</td>
+<td>Ad Title/Id</td>
 <td>Integer</td>
-<td>90210</td>
+<td>None</td>
+<td>123456789</td>
+<td>2022-06-10 05:22:10</td>
+<td>2022-06-10 05:22:10</td>
 </tr>
 <tr>
-<td>Basic_LinkedInDataExport\Projects.csv</td>
-<td>Description</td>
+<td>Complete_LinkedInDataExport\Ads Clicked.csv</td>
+<td>Ad clicked Date</td>
 <td>String</td>
-<td>REDACTED Company A has developed the most user-friendly app on the market.</td>
+<td>None</td>
+<td>2021/09/27 14:26:17 UTC</td>
+<td>2022-06-10 05:22:10</td>
+<td>2022-06-10 05:22:10</td>
 </tr>
 <tr>
-<td>Basic_LinkedInDataExport\Projects.csv</td>
-<td>Finished On</td>
-<td>Unknown</td>
-<td>No Example Given</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Projects.csv</td>
-<td>Started On</td>
+<td>Complete_LinkedInDataExport\Comments.csv</td>
+<td>Date</td>
 <td>String</td>
-<td>Feb 2017</td>
+<td>None</td>
+<td>2021-09-17 19:24:51</td>
+<td>2022-06-10 05:22:10</td>
+<td>2022-06-10 05:22:10</td>
 </tr>
 <tr>
-<td>Basic_LinkedInDataExport\Projects.csv</td>
-<td>Title</td>
-<td>String</td>
-<td>REDACTED Construction Project</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Projects.csv</td>
-<td>Url</td>
-<td>String</td>
-<td>https://REDACTED.com</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Publications.csv</td>
-<td>Description</td>
-<td>String</td>
-<td>Through interviews, we uncovered REDACTED and offer recommendations to mitigate REDACTED.</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Publications.csv</td>
-<td>Name</td>
-<td>String</td>
-<td>REDACTED Paper Title</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Publications.csv</td>
-<td>Published On</td>
-<td>String</td>
-<td>Feb 22, 2018</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Publications.csv</td>
-<td>Publisher</td>
-<td>String</td>
-<td>A report to the City of Milwaukee</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Publications.csv</td>
-<td>Url</td>
-<td>String</td>
-<td>http://www2.REDACTED.com/file.pdf</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Receipts.csv</td>
-<td>Billing Country</td>
-<td>String</td>
-<td>us</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Receipts.csv</td>
-<td>Currency Code</td>
-<td>String</td>
-<td>USD</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Receipts.csv</td>
-<td>Description</td>
-<td>String</td>
-<td>Premium Job Seeker Subscription renewal (Monthly)</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Receipts.csv</td>
-<td>First Name</td>
-<td>String</td>
-<td>John</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Receipts.csv</td>
-<td>Invoice Number</td>
-<td>Integer</td>
-<td>2794255053</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Receipts.csv</td>
-<td>Last Name</td>
-<td>String</td>
-<td>Smith</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Receipts.csv</td>
-<td>Payment Method Type</td>
-<td>String</td>
-<td>CreditCard</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Receipts.csv</td>
-<td>Postal Code</td>
-<td>Integer</td>
-<td>90210</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Receipts.csv</td>
-<td>Sub Total</td>
-<td>Real</td>
-<td>0.0</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Receipts.csv</td>
-<td>Tax Amount</td>
-<td>Integer</td>
-<td>0</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Receipts.csv</td>
-<td>Total Amount</td>
-<td>Real</td>
-<td>0.0</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Receipts.csv</td>
-<td>Transaction Made At</td>
-<td>String</td>
-<td>5/8/16, 9:13 PM</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Recommendations_Given.csv</td>
-<td>Company</td>
-<td>String</td>
-<td>REDACTED Company A</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Recommendations_Given.csv</td>
-<td>Creation Date</td>
-<td>String</td>
-<td>04/09/15, 09:09 PM</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Recommendations_Given.csv</td>
-<td>First Name</td>
-<td>String</td>
-<td>Kevin</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Recommendations_Given.csv</td>
-<td>Job Title</td>
-<td>String</td>
-<td>Consultant</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Recommendations_Given.csv</td>
-<td>Last Name</td>
-<td>String</td>
-<td>Smith</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Recommendations_Given.csv</td>
-<td>Status</td>
-<td>Unknown</td>
-<td>No Example Given</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Recommendations_Given.csv</td>
-<td>Text</td>
-<td>String</td>
-<td>I've worked with Kevin during REDACTED.</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Registration.csv</td>
-<td>Registered At</td>
-<td>String</td>
-<td>7/8/13, 1:47 PM</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Registration.csv</td>
-<td>Registration Ip</td>
-<td>String</td>
-<td>66.66.66.666</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Registration.csv</td>
-<td>Subscription Types</td>
-<td>Unknown</td>
-<td>No Example Given</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Rich Media.csv</td>
+<td>Complete_LinkedInDataExport\Comments.csv</td>
 <td>Link</td>
 <td>String</td>
-<td>https://www.linkedin.com/psettings/rich-media</td>
+<td>None</td>
+<td>https://www.linkedin.com/feed/update/urn%3Ali%3Aactivity%3A6790369381234567890</td>
+<td>2022-06-10 05:22:10</td>
+<td>2022-06-10 05:22:10</td>
 </tr>
 <tr>
-<td>Basic_LinkedInDataExport\Rich Media.csv</td>
-<td>Type</td>
+<td>Complete_LinkedInDataExport\Comments.csv</td>
+<td>Message</td>
 <td>String</td>
-<td>Video content can be downloaded at</td>
+<td>None</td>
+<td>That's awesome! Congratulations!</td>
+<td>2022-06-10 05:22:10</td>
+<td>2022-06-10 05:22:10</td>
 </tr>
 <tr>
-<td>Basic_LinkedInDataExport\Skills.csv</td>
-<td>Name</td>
+<td>Complete_LinkedInDataExport\Endorsement Received Info.csv</td>
+<td>Display Status</td>
 <td>String</td>
-<td>Mobile Applications</td>
+<td>None</td>
+<td>Hide</td>
+<td>2022-06-10 05:22:10</td>
+<td>2022-06-10 05:22:10</td>
 </tr>
 <tr>
-<td>Basic_LinkedInDataExport\Jobs\Job Applications.csv</td>
-<td>Application Date</td>
+<td>Complete_LinkedInDataExport\Endorsement Received Info.csv</td>
+<td>Endorsement Date</td>
 <td>String</td>
-<td>3/10/18, 12:42 AM</td>
+<td>None</td>
+<td>2014/09/10 14:12:49 UTC</td>
+<td>2022-06-10 05:22:10</td>
+<td>2022-06-10 05:22:10</td>
 </tr>
 <tr>
-<td>Basic_LinkedInDataExport\Jobs\Job Applications.csv</td>
-<td>Company Name</td>
+<td>Complete_LinkedInDataExport\Endorsement Received Info.csv</td>
+<td>Endorsement Status</td>
 <td>String</td>
-<td>mapper</td>
+<td>None</td>
+<td>Rejected</td>
+<td>2022-06-10 05:22:10</td>
+<td>2022-06-10 05:22:10</td>
 </tr>
 <tr>
-<td>Basic_LinkedInDataExport\Jobs\Job Applications.csv</td>
-<td>Contact Email</td>
+<td>Complete_LinkedInDataExport\Endorsement Received Info.csv</td>
+<td>Endorser First Name</td>
 <td>String</td>
-<td>_REDACTED_email@gmail.com</td>
+<td>None</td>
+<td>Jeremy</td>
+<td>2022-06-10 05:22:10</td>
+<td>2022-06-10 05:22:10</td>
 </tr>
 <tr>
-<td>Basic_LinkedInDataExport\Jobs\Job Applications.csv</td>
-<td>Contact Phone Number</td>
+<td>Complete_LinkedInDataExport\Endorsement Received Info.csv</td>
+<td>Endorser Last Name</td>
 <td>String</td>
-<td>1234567890</td>
+<td>None</td>
+<td>Smith</td>
+<td>2022-06-10 05:22:10</td>
+<td>2022-06-10 05:22:10</td>
 </tr>
 <tr>
-<td>Basic_LinkedInDataExport\Jobs\Job Applications.csv</td>
-<td>Job Title</td>
+<td>Complete_LinkedInDataExport\Endorsement Received Info.csv</td>
+<td>Skill Name</td>
 <td>String</td>
-<td>Data Analyst</td>
+<td>None</td>
+<td>Intelligence</td>
+<td>2022-06-10 05:22:10</td>
+<td>2022-06-10 05:22:10</td>
 </tr>
 <tr>
-<td>Basic_LinkedInDataExport\Jobs\Job Applications.csv</td>
-<td>Job Url</td>
+<td>Complete_LinkedInDataExport\Hashtag_Follows.csv</td>
+<td>CreatedTime</td>
 <td>String</td>
-<td>http://www.linkedin.com/jobs/view/123456789</td>
+<td>None</td>
+<td>2014-01-31 00:56:00</td>
+<td>2022-06-10 05:22:10</td>
+<td>2022-06-10 05:22:10</td>
 </tr>
 <tr>
-<td>Basic_LinkedInDataExport\Jobs\Job Applications.csv</td>
-<td>Question And Answers</td>
+<td>Complete_LinkedInDataExport\Hashtag_Follows.csv</td>
+<td>HashTag</td>
 <td>String</td>
-<td>Mobile phone number:+1 2345678901 | Please submit a resume or LinkedIn profile:12345678.pdf | Will you now, or in the future, require sponsorship for employment visa status (e.g. H-1B visa status)?:No | Email address:_REDACTED_email@gmail.com | Are you legally authorized to work in the United States?:Yes</td>
+<td>None</td>
+<td>datamining</td>
+<td>2022-06-10 05:22:10</td>
+<td>2022-06-10 05:22:10</td>
 </tr>
 <tr>
-<td>Basic_LinkedInDataExport\Jobs\Job Applications.csv</td>
-<td>Resume Name</td>
+<td>Complete_LinkedInDataExport\Hashtag_Follows.csv</td>
+<td>LastModifiedTime</td>
 <td>String</td>
-<td>John Smith Resume.pdf</td>
+<td>None</td>
+<td>2014-01-31 00:56:00</td>
+<td>2022-06-10 05:22:10</td>
+<td>2022-06-10 05:22:10</td>
 </tr>
 <tr>
-<td>Basic_LinkedInDataExport\Jobs\Job Seeker Preferences.csv</td>
-<td>Commute Preference Starting Address</td>
-<td>Unknown</td>
-<td>No Example Given</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Jobs\Job Seeker Preferences.csv</td>
-<td>Commute Preference Starting Time</td>
-<td>Unknown</td>
-<td>No Example Given</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Jobs\Job Seeker Preferences.csv</td>
-<td>Company Employee Count</td>
-<td>Unknown</td>
-<td>No Example Given</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Jobs\Job Seeker Preferences.csv</td>
-<td>Dream Companies</td>
-<td>Unknown</td>
-<td>No Example Given</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Jobs\Job Seeker Preferences.csv</td>
-<td>Industries</td>
-<td>Unknown</td>
-<td>No Example Given</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Jobs\Job Seeker Preferences.csv</td>
-<td>Introduction Statement</td>
-<td>Unknown</td>
-<td>No Example Given</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Jobs\Job Seeker Preferences.csv</td>
-<td>Job Seeker Activity Level</td>
-<td>Unknown</td>
-<td>No Example Given</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Jobs\Job Seeker Preferences.csv</td>
-<td>Job Seeking Urgency Level</td>
-<td>Unknown</td>
-<td>No Example Given</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Jobs\Job Seeker Preferences.csv</td>
-<td>Job Title For Searching Fast Growing Companies</td>
-<td>Unknown</td>
-<td>No Example Given</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Jobs\Job Seeker Preferences.csv</td>
-<td>Job Titles</td>
-<td>Unknown</td>
-<td>No Example Given</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Jobs\Job Seeker Preferences.csv</td>
-<td>Locations</td>
-<td>Unknown</td>
-<td>No Example Given</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Jobs\Job Seeker Preferences.csv</td>
-<td>Maximum Commute Duration</td>
-<td>Unknown</td>
-<td>No Example Given</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Jobs\Job Seeker Preferences.csv</td>
-<td>Mode Of Transportation</td>
-<td>Unknown</td>
-<td>No Example Given</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Jobs\Job Seeker Preferences.csv</td>
-<td>Open Candidate Visibility</td>
-<td>Unknown</td>
-<td>No Example Given</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Jobs\Job Seeker Preferences.csv</td>
-<td>Open To Recruiters</td>
-<td>Unknown</td>
-<td>No Example Given</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Jobs\Job Seeker Preferences.csv</td>
-<td>Phone Number</td>
-<td>Unknown</td>
-<td>No Example Given</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Jobs\Job Seeker Preferences.csv</td>
-<td>Preferred Job Types</td>
-<td>Unknown</td>
-<td>No Example Given</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Jobs\Job Seeker Preferences.csv</td>
-<td>Preferred Start Time Range</td>
-<td>Unknown</td>
-<td>No Example Given</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Jobs\Job Seeker Preferences.csv</td>
-<td>Profile Shared With Job Poster</td>
-<td>Unknown</td>
-<td>No Example Given</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Jobs\Saved Jobs.csv</td>
-<td>Company Name</td>
+<td>Complete_LinkedInDataExport\Hashtag_Follows.csv</td>
+<td>State</td>
 <td>String</td>
-<td>Microsoft</td>
+<td>None</td>
+<td>Follow</td>
+<td>2022-06-10 05:22:10</td>
+<td>2022-06-10 05:22:10</td>
 </tr>
 <tr>
-<td>Basic_LinkedInDataExport\Jobs\Saved Jobs.csv</td>
-<td>Job Title</td>
+<td>Complete_LinkedInDataExport\Inferences_about_you.csv</td>
+<td>Category</td>
 <td>String</td>
-<td>Program Manager</td>
+<td>None</td>
+<td>Career inferences</td>
+<td>2022-06-10 05:22:10</td>
+<td>2022-06-10 05:22:10</td>
 </tr>
 <tr>
-<td>Basic_LinkedInDataExport\Jobs\Saved Jobs.csv</td>
-<td>Job Url</td>
+<td>Complete_LinkedInDataExport\Inferences_about_you.csv</td>
+<td>Description</td>
 <td>String</td>
-<td>http://www.linkedin.com/jobs/view/12345678</td>
+<td>None</td>
+<td>Employee with consistency in industry, company, job title, and other factors.</td>
+<td>2022-06-10 05:22:10</td>
+<td>2022-06-10 05:22:10</td>
 </tr>
 <tr>
-<td>Basic_LinkedInDataExport\Jobs\Saved Jobs.csv</td>
-<td>Saved Date</td>
+<td>Complete_LinkedInDataExport\Inferences_about_you.csv</td>
+<td>Inference</td>
 <td>String</td>
-<td>3/10/18, 10:29 AM</td>
+<td>None</td>
+<td>0.00580697176966621</td>
+<td>2022-06-10 05:22:10</td>
+<td>2022-06-10 05:22:10</td>
 </tr>
 <tr>
-<td>Basic_LinkedInDataExport\Services Marketplace\Providers.csv</td>
-<td>Available to Work Remotely</td>
-<td>Boolean</td>
-<td>False</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Services Marketplace\Providers.csv</td>
-<td>Creation Time</td>
+<td>Complete_LinkedInDataExport\Inferences_about_you.csv</td>
+<td>Type of inference</td>
 <td>String</td>
-<td>Mon Apr 19 16:06:57 UTC 2021</td>
+<td>None</td>
+<td>Interested in higher education</td>
+<td>2022-06-10 05:22:10</td>
+<td>2022-06-10 05:22:10</td>
 </tr>
 <tr>
-<td>Basic_LinkedInDataExport\Services Marketplace\Providers.csv</td>
-<td>Marketplace Type</td>
+<td>Complete_LinkedInDataExport\Member_Follows.csv</td>
+<td>Date</td>
 <td>String</td>
-<td>SERVICE_MARKETPLACE</td>
+<td>None</td>
+<td>2021-05-18 16:43:46</td>
+<td>2022-06-10 05:22:10</td>
+<td>2022-06-10 05:22:10</td>
 </tr>
 <tr>
-<td>Basic_LinkedInDataExport\Services Marketplace\Providers.csv</td>
-<td>ProFinder Service Category</td>
-<td>Unknown</td>
-<td>No Example Given</td>
-</tr>
-<tr>
-<td>Basic_LinkedInDataExport\Services Marketplace\Providers.csv</td>
-<td>Secondary Service Category</td>
+<td>Complete_LinkedInDataExport\Member_Follows.csv</td>
+<td>FullName</td>
 <td>String</td>
-<td>Educational Consulting</td>
+<td>None</td>
+<td>John Smith</td>
+<td>2022-06-10 05:22:10</td>
+<td>2022-06-10 05:22:10</td>
 </tr>
 <tr>
-<td>Basic_LinkedInDataExport\Services Marketplace\Providers.csv</td>
+<td>Complete_LinkedInDataExport\Member_Follows.csv</td>
 <td>Status</td>
 <td>String</td>
-<td>ACTIVE</td>
+<td>None</td>
+<td>Unfollow</td>
+<td>2022-06-10 05:22:10</td>
+<td>2022-06-10 05:22:10</td>
 </tr>
 <tr>
-<td>Basic_LinkedInDataExport\Services Marketplace\Providers.csv</td>
+<td>Complete_LinkedInDataExport\Reactions.csv</td>
+<td>Date</td>
+<td>String</td>
+<td>None</td>
+<td>2021-11-18 17:34:02</td>
+<td>2022-06-10 05:22:10</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Reactions.csv</td>
+<td>Link</td>
+<td>String</td>
+<td>None</td>
+<td>https://www.linkedin.com/feed/update/urn%3Ali%3Aactivity%1234567890</td>
+<td>2022-06-10 05:22:10</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Reactions.csv</td>
+<td>Type</td>
+<td>String</td>
+<td>None</td>
+<td>LIKE</td>
+<td>2022-06-10 05:22:10</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Saved_Items.csv</td>
+<td>createdTime</td>
+<td>String</td>
+<td>None</td>
+<td>2019-05-24 03:14:37</td>
+<td>2022-06-10 05:22:10</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Saved_Items.csv</td>
+<td>savedItem</td>
+<td>String</td>
+<td>None</td>
+<td>https://www.linkedin.com/feed/update/urn:li:activity:1234567890</td>
+<td>2022-06-10 05:22:10</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Shares.csv</td>
+<td>Date</td>
+<td>String</td>
+<td>None</td>
+<td>2021-09-02 20:59:36</td>
+<td>2022-06-10 05:22:10</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Shares.csv</td>
+<td>MediaURL</td>
+<td>String</td>
+<td>None</td>
+<td>https://www.REDACTED_url.com/max/960/123456789</td>
+<td>2022-06-10 05:22:10</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Shares.csv</td>
+<td>ShareCommentary</td>
+<td>String</td>
+<td>None</td>
+<td>I'm currently seeking... REDACTED</td>
+<td>2022-06-10 05:22:10</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Shares.csv</td>
+<td>ShareLink</td>
+<td>String</td>
+<td>None</td>
+<td>https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%1234567890</td>
+<td>2022-06-10 05:22:10</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Shares.csv</td>
+<td>SharedURL</td>
+<td>String</td>
+<td>None</td>
+<td>https://www.REDACTED_url.com/123456789</td>
+<td>2022-06-10 05:22:10</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Shares.csv</td>
+<td>Visibility</td>
+<td>String</td>
+<td>None</td>
+<td>MEMBER_NETWORK</td>
+<td>2022-06-10 05:22:10</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Votes.csv</td>
+<td>Date</td>
+<td>String</td>
+<td>None</td>
+<td>2022-03-06 20:32:59</td>
+<td>2022-06-10 05:22:10</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Votes.csv</td>
+<td>Link</td>
+<td>String</td>
+<td>None</td>
+<td>https://www.linkedin.com/feed/update/urn:li:ugcPost:123456789</td>
+<td>2022-06-10 05:22:10</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Votes.csv</td>
+<td>OptionText</td>
+<td>String</td>
+<td>None</td>
+<td>Yes</td>
+<td>2022-06-10 05:22:10</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Ad_Targeting.csv</td>
+<td>Company Category</td>
+<td>Unknown</td>
+<td>None</td>
+<td>No Example Given</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Ad_Targeting.csv</td>
+<td>Company Connections</td>
+<td>String</td>
+<td>None</td>
+<td>Apple; University of California, Berkeley</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Ad_Targeting.csv</td>
+<td>Company Follower of</td>
+<td>String</td>
+<td>None</td>
+<td>Apple; University of California, Berkeley</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Ad_Targeting.csv</td>
+<td>Company Growth Rate</td>
+<td>String</td>
+<td>None</td>
+<td>3% - 10% company growth; 0% - 3% company growth</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Ad_Targeting.csv</td>
+<td>Company Industries</td>
+<td>String</td>
+<td>None</td>
+<td>Information Technology & Services</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Ad_Targeting.csv</td>
+<td>Company Names</td>
+<td>String</td>
+<td>None</td>
+<td>Apple; University of California, Berkeley</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Ad_Targeting.csv</td>
+<td>Company Names.1</td>
+<td>String</td>
+<td>None</td>
+<td>Apple; University of California, Berkeley</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Ad_Targeting.csv</td>
+<td>Company Names.2</td>
+<td>String</td>
+<td>None</td>
+<td>Apple; University of California, Berkeley</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Ad_Targeting.csv</td>
+<td>Company Revenue</td>
+<td>String</td>
+<td>None</td>
+<td>$1M-$10M</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Ad_Targeting.csv</td>
+<td>Company Size</td>
+<td>String</td>
+<td>None</td>
+<td>11-50 employees; 2-10 employees</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Ad_Targeting.csv</td>
+<td>Degrees</td>
+<td>String</td>
+<td>None</td>
+<td> Master's Degree; Bachelor of Science</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Ad_Targeting.csv</td>
+<td>Fields of Study</td>
+<td>Unknown</td>
+<td>None</td>
+<td>No Example Given</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Ad_Targeting.csv</td>
+<td>Function By Size</td>
+<td>Unknown</td>
+<td>None</td>
+<td>No Example Given</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Ad_Targeting.csv</td>
+<td>Graduation Year</td>
+<td>Integer</td>
+<td>None</td>
+<td>2018</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Ad_Targeting.csv</td>
+<td>Interface Locales</td>
+<td>String</td>
+<td>None</td>
+<td>English</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Ad_Targeting.csv</td>
+<td>Job Functions</td>
+<td>String</td>
+<td>None</td>
+<td>Business Development; Operations</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Ad_Targeting.csv</td>
+<td>Job Seniorities</td>
+<td>String</td>
+<td>None</td>
+<td>Owner; Partner</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Ad_Targeting.csv</td>
+<td>Job Titles</td>
+<td>String</td>
+<td>None</td>
+<td>Data Management Consultant; Customer Service Support Manager; Project Manager</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Ad_Targeting.csv</td>
+<td>Job Titles.1</td>
+<td>String</td>
+<td>None</td>
+<td>Data Management Consultant; Customer Service Support Manager; Project Manager</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Ad_Targeting.csv</td>
+<td>Job Titles.2</td>
+<td>String</td>
+<td>None</td>
+<td>Data Management Consultant; Customer Service Support Manager; Project Manager</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Ad_Targeting.csv</td>
+<td>Member Age</td>
+<td>String</td>
+<td>None</td>
+<td>35 to 54</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Ad_Targeting.csv</td>
+<td>Member Gender</td>
+<td>String</td>
+<td>None</td>
+<td>Male</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Ad_Targeting.csv</td>
+<td>Member Groups</td>
+<td>String</td>
+<td>None</td>
+<td>REDACTED Group A; REDACTED Group B; REDACTED Group C</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Ad_Targeting.csv</td>
+<td>Member Interests</td>
+<td>String</td>
+<td>None</td>
+<td>Cloud Computing; Civic Engagement; Brand Management</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Ad_Targeting.csv</td>
+<td>Member Schools</td>
+<td>String</td>
+<td>None</td>
+<td>University of California, Berkeley; University of Alabama</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Ad_Targeting.csv</td>
+<td>Member Skills</td>
+<td>String</td>
+<td>None</td>
+<td>Accounting; Risk Management; Leadership</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Ad_Targeting.csv</td>
+<td>Member Traits</td>
+<td>String</td>
+<td>None</td>
+<td>Frequent Contributors; Frequent Travelers; Windows; Desktop/Laptop Users; International Frequent Travelers</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Ad_Targeting.csv</td>
+<td>Profile Locations</td>
+<td>String</td>
+<td>None</td>
+<td>San Francisco Bay Area; California, United States; North America</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Ad_Targeting.csv</td>
+<td>Years of Experience</td>
+<td>String</td>
+<td>None</td>
+<td>12+ years</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Ad_Targeting.csv</td>
+<td>degreeClass</td>
+<td>String</td>
+<td>None</td>
+<td>200; 500</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Ad_Targeting.csv</td>
+<td>interfaceLocale</td>
+<td>String</td>
+<td>None</td>
+<td>en_US</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Company Follows.csv</td>
+<td>Followed On</td>
+<td>String</td>
+<td>None</td>
+<td>Mon Jan 06 22:05:17 UTC 2014</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Company Follows.csv</td>
+<td>Organization</td>
+<td>String</td>
+<td>None</td>
+<td>REDACTED Company A</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Connections.csv</td>
+<td>Company</td>
+<td>String</td>
+<td>None</td>
+<td>Yale Law School</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Connections.csv</td>
+<td>Connected On</td>
+<td>String</td>
+<td>None</td>
+<td>26 Jan 2018</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Connections.csv</td>
+<td>Email Address</td>
+<td>String</td>
+<td>None</td>
+<td>REDACTED_email@gmail.com</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Connections.csv</td>
+<td>First Name</td>
+<td>String</td>
+<td>None</td>
+<td>Kyle</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Connections.csv</td>
+<td>Last Name</td>
+<td>String</td>
+<td>None</td>
+<td>Smith</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Connections.csv</td>
+<td>Position</td>
+<td>String</td>
+<td>None</td>
+<td>Executive Strategy Consultant & Advisor</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Education.csv</td>
+<td>Activities</td>
+<td>String</td>
+<td>None</td>
+<td>Artificial Intelligence Research</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Education.csv</td>
+<td>Degree Name</td>
+<td>String</td>
+<td>None</td>
+<td>Master of Social Work</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Education.csv</td>
+<td>End Date</td>
+<td>Integer</td>
+<td>None</td>
+<td>2018</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Education.csv</td>
+<td>Notes</td>
+<td>String</td>
+<td>None</td>
+<td>Awarded for Academic Excellence.</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Education.csv</td>
+<td>School Name</td>
+<td>String</td>
+<td>None</td>
+<td>University of California, Berkeley</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Education.csv</td>
+<td>Start Date</td>
+<td>Integer</td>
+<td>None</td>
+<td>2001</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Email Addresses.csv</td>
+<td>Confirmed</td>
+<td>String</td>
+<td>None</td>
+<td>Yes</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Email Addresses.csv</td>
+<td>Email Address</td>
+<td>String</td>
+<td>None</td>
+<td>REDACTED_email@gmail.com</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Email Addresses.csv</td>
+<td>Primary</td>
+<td>String</td>
+<td>None</td>
+<td>Yes</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Email Addresses.csv</td>
+<td>Updated On</td>
+<td>String</td>
+<td>None</td>
+<td>7/8/13, 1:52 PM</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Endorsement_Given_Info.csv</td>
+<td>Endorsee First Name</td>
+<td>String</td>
+<td>None</td>
+<td>Leslie</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Endorsement_Given_Info.csv</td>
+<td>Endorsee Last Name</td>
+<td>String</td>
+<td>None</td>
+<td>Smith</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Endorsement_Given_Info.csv</td>
+<td>Endorsement Date</td>
+<td>String</td>
+<td>None</td>
+<td>2014/01/12 22:45:25 UTC</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Endorsement_Given_Info.csv</td>
+<td>Endorsement Status</td>
+<td>String</td>
+<td>None</td>
+<td>ACCEPTED</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Endorsement_Given_Info.csv</td>
+<td>Skill Name</td>
+<td>String</td>
+<td>None</td>
+<td>Comedy</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Endorsement_Received_Info.csv</td>
+<td>Endorsement Date</td>
+<td>String</td>
+<td>None</td>
+<td>2013/12/28 02:32:09 UTC</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Endorsement_Received_Info.csv</td>
+<td>Endorsement Status</td>
+<td>String</td>
+<td>None</td>
+<td>ACCEPTED</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Endorsement_Received_Info.csv</td>
+<td>Endorser First Name</td>
+<td>String</td>
+<td>None</td>
+<td>Aaron</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Endorsement_Received_Info.csv</td>
+<td>Endorser Last Name</td>
+<td>String</td>
+<td>None</td>
+<td>Smith</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Endorsement_Received_Info.csv</td>
+<td>Skill Name</td>
+<td>String</td>
+<td>None</td>
+<td>Non-profit Leadership</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Events.csv</td>
+<td>Event Name</td>
+<td>String</td>
+<td>None</td>
+<td>Your Kids Development </td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Events.csv</td>
+<td>Event Time</td>
+<td>String</td>
+<td>None</td>
+<td>Jun 17, 2018 03:00 PM - Jun 18, 2018 07:00 PM</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Events.csv</td>
+<td>External Url</td>
+<td>String</td>
+<td>None</td>
+<td>https://www.eventbrite.com/e/123456789</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Events.csv</td>
+<td>Status</td>
+<td>String</td>
+<td>None</td>
+<td>ATTENDING</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Invitations.csv</td>
+<td>Direction</td>
+<td>String</td>
+<td>None</td>
+<td>INCOMING</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Invitations.csv</td>
+<td>From</td>
+<td>String</td>
+<td>None</td>
+<td>Bret Smith, JSD</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Invitations.csv</td>
+<td>Message</td>
+<td>String</td>
+<td>None</td>
+<td>I would love to connect, John.</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Invitations.csv</td>
+<td>Sent At</td>
+<td>String</td>
+<td>None</td>
+<td>6/4/22, 12:09 PM</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Invitations.csv</td>
+<td>To</td>
+<td>String</td>
+<td>None</td>
+<td>John Smith</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Job Applicant Saved Answers.csv</td>
+<td>Answer</td>
+<td>String</td>
+<td>None</td>
+<td>Yes</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Job Applicant Saved Answers.csv</td>
+<td>Question</td>
+<td>String</td>
+<td>None</td>
+<td>Mobile phone number</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Languages.csv</td>
+<td>Name</td>
+<td>String</td>
+<td>None</td>
+<td>English</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Languages.csv</td>
+<td>Proficiency</td>
+<td>String</td>
+<td>None</td>
+<td>Native or bilingual proficiency</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Learning.csv</td>
+<td>Content Completed At (if completed)</td>
+<td>Unknown</td>
+<td>None</td>
+<td>No Example Given</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Learning.csv</td>
+<td>Content Description</td>
+<td>String</td>
+<td>None</td>
+<td>In this course, learn how to REDACTED.</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Learning.csv</td>
+<td>Content Last Watched Date (if viewed)</td>
+<td>String</td>
+<td>None</td>
+<td>2019-07-24 22:18 UTC</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Learning.csv</td>
+<td>Content Saved</td>
+<td>Boolean</td>
+<td>None</td>
+<td>False</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Learning.csv</td>
+<td>Content Title</td>
+<td>String</td>
+<td>None</td>
+<td>Interpersonal Communication</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Learning.csv</td>
+<td>Content Type</td>
+<td>String</td>
+<td>None</td>
+<td>Course</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Learning.csv</td>
+<td>Notes taken on videos (if taken)</td>
+<td>Unknown</td>
+<td>None</td>
+<td>No Example Given</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Learning.csv</td>
+<td>Unnamed: 7</td>
+<td>Unknown</td>
+<td>None</td>
+<td>No Example Given</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\PhoneNumbers.csv</td>
+<td>Extension</td>
+<td>Unknown</td>
+<td>None</td>
+<td>No Example Given</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\PhoneNumbers.csv</td>
+<td>Number</td>
+<td>String</td>
+<td>None</td>
+<td> +1 234-567-8901</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\PhoneNumbers.csv</td>
+<td>Type</td>
+<td>Unknown</td>
+<td>None</td>
+<td>No Example Given</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Positions.csv</td>
+<td>Company Name</td>
+<td>String</td>
+<td>None</td>
+<td>REDACTED Company, LLC</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Positions.csv</td>
+<td>Description</td>
+<td>String</td>
+<td>None</td>
+<td>Led the operations of the company</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Positions.csv</td>
+<td>Finished On</td>
+<td>String</td>
+<td>None</td>
+<td>Dec 2020</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Positions.csv</td>
+<td>Location</td>
+<td>String</td>
+<td>None</td>
+<td>North Carolina</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Positions.csv</td>
+<td>Started On</td>
+<td>String</td>
+<td>None</td>
+<td>May 2016</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Positions.csv</td>
+<td>Title</td>
+<td>String</td>
+<td>None</td>
+<td>Managing Owner</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Profile.csv</td>
+<td>Address</td>
+<td>Unknown</td>
+<td>None</td>
+<td>No Example Given</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Profile.csv</td>
+<td>Birth Date</td>
+<td>Unknown</td>
+<td>None</td>
+<td>No Example Given</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Profile.csv</td>
+<td>First Name</td>
+<td>String</td>
+<td>None</td>
+<td>John</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Profile.csv</td>
+<td>Geo Location</td>
+<td>String</td>
+<td>None</td>
+<td>San Francisco Bay Area</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Profile.csv</td>
+<td>Headline</td>
+<td>String</td>
+<td>None</td>
+<td>Business Professional</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Profile.csv</td>
+<td>Industry</td>
+<td>String</td>
+<td>None</td>
+<td>Business</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Profile.csv</td>
+<td>Instant Messengers</td>
+<td>Unknown</td>
+<td>None</td>
+<td>No Example Given</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Profile.csv</td>
+<td>Last Name</td>
+<td>String</td>
+<td>None</td>
+<td>Smith</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Profile.csv</td>
+<td>Maiden Name</td>
+<td>Unknown</td>
+<td>None</td>
+<td>No Example Given</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Profile.csv</td>
+<td>Summary</td>
+<td>String</td>
+<td>None</td>
+<td>I work to improve the bottom line, the environment, and its organizational values. I help people!</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Profile.csv</td>
+<td>Twitter Handles</td>
+<td>Unknown</td>
+<td>None</td>
+<td>No Example Given</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Profile.csv</td>
+<td>Websites</td>
+<td>String</td>
+<td>None</td>
+<td>[PERSONAL:www.REDACTED_url.com]</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Profile.csv</td>
+<td>Zip Code</td>
+<td>Integer</td>
+<td>None</td>
+<td>90210</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Projects.csv</td>
+<td>Description</td>
+<td>String</td>
+<td>None</td>
+<td>Over the past century, REDACTED</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Projects.csv</td>
+<td>Finished On</td>
+<td>Unknown</td>
+<td>None</td>
+<td>No Example Given</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Projects.csv</td>
+<td>Started On</td>
+<td>String</td>
+<td>None</td>
+<td>Jan 2015</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Projects.csv</td>
+<td>Title</td>
+<td>String</td>
+<td>None</td>
+<td>REDACTED Project Name</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Projects.csv</td>
+<td>Url</td>
+<td>String</td>
+<td>None</td>
+<td>http://REDACTED_url.com</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Publications.csv</td>
+<td>Description</td>
+<td>String</td>
+<td>None</td>
+<td>For our work, we conducted REDACTED.</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Publications.csv</td>
+<td>Name</td>
+<td>String</td>
+<td>None</td>
+<td>REDACTED Paper Title</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Publications.csv</td>
+<td>Published On</td>
+<td>String</td>
+<td>None</td>
+<td>Feb 22, 2018</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Publications.csv</td>
+<td>Publisher</td>
+<td>String</td>
+<td>None</td>
+<td>ACM</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Publications.csv</td>
+<td>Url</td>
+<td>String</td>
+<td>None</td>
+<td>http://REDACTED_url.pdf</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Receipts.csv</td>
+<td>Billing Country</td>
+<td>String</td>
+<td>None</td>
+<td>us</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Receipts.csv</td>
+<td>Currency Code</td>
+<td>String</td>
+<td>None</td>
+<td>USD</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Receipts.csv</td>
+<td>Description</td>
+<td>String</td>
+<td>None</td>
+<td>Premium Job Seeker Subscription renewal (Monthly)</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Receipts.csv</td>
+<td>First Name</td>
+<td>String</td>
+<td>None</td>
+<td>John</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Receipts.csv</td>
+<td>Invoice Number</td>
+<td>Integer</td>
+<td>None</td>
+<td>123456789</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Receipts.csv</td>
+<td>Last Name</td>
+<td>String</td>
+<td>None</td>
+<td>Smith</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Receipts.csv</td>
+<td>Payment Method Type</td>
+<td>String</td>
+<td>None</td>
+<td>CreditCard</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Receipts.csv</td>
+<td>Postal Code</td>
+<td>Integer</td>
+<td>None</td>
+<td>90210</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Receipts.csv</td>
+<td>Sub Total</td>
+<td>Real</td>
+<td>None</td>
+<td>0.0</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Receipts.csv</td>
+<td>Tax Amount</td>
+<td>Integer</td>
+<td>None</td>
+<td>0</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Receipts.csv</td>
+<td>Total Amount</td>
+<td>Real</td>
+<td>None</td>
+<td>0.0</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Receipts.csv</td>
+<td>Transaction Made At</td>
+<td>String</td>
+<td>None</td>
+<td>4/8/17, 9:13 PM</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Recommendations_Given.csv</td>
+<td>Company</td>
+<td>String</td>
+<td>None</td>
+<td>REDACTED Company Name</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Recommendations_Given.csv</td>
+<td>Creation Date</td>
+<td>String</td>
+<td>None</td>
+<td>04/09/15, 09:09 PM</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Recommendations_Given.csv</td>
+<td>First Name</td>
+<td>String</td>
+<td>None</td>
+<td>Kevin</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Recommendations_Given.csv</td>
+<td>Job Title</td>
+<td>String</td>
+<td>None</td>
+<td>Partner</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Recommendations_Given.csv</td>
+<td>Last Name</td>
+<td>String</td>
+<td>None</td>
+<td>Smith</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Recommendations_Given.csv</td>
+<td>Status</td>
+<td>Unknown</td>
+<td>None</td>
+<td>No Example Given</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Recommendations_Given.csv</td>
+<td>Text</td>
+<td>String</td>
+<td>None</td>
+<td>During my time, I've worked with Kevin.</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Registration.csv</td>
+<td>Registered At</td>
+<td>String</td>
+<td>None</td>
+<td>7/8/13, 1:47 PM</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Registration.csv</td>
+<td>Registration Ip</td>
+<td>String</td>
+<td>None</td>
+<td>66.66.66.666</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Registration.csv</td>
+<td>Subscription Types</td>
+<td>Unknown</td>
+<td>None</td>
+<td>No Example Given</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Rich Media.csv</td>
+<td>Link</td>
+<td>String</td>
+<td>None</td>
+<td>https://www.linkedin.com/psettings/rich-media</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Rich Media.csv</td>
+<td>Type</td>
+<td>String</td>
+<td>None</td>
+<td>Video content can be downloaded at</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Skills.csv</td>
+<td>Name</td>
+<td>String</td>
+<td>None</td>
+<td>Program Management</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Jobs\Job Applications.csv</td>
+<td>Application Date</td>
+<td>String</td>
+<td>None</td>
+<td>3/10/18, 10:09 AM</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Jobs\Job Applications.csv</td>
+<td>Company Name</td>
+<td>String</td>
+<td>None</td>
+<td>REDACTED Company Name</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Jobs\Job Applications.csv</td>
+<td>Contact Email</td>
+<td>String</td>
+<td>None</td>
+<td>REDACTED+email@gmail.com</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Jobs\Job Applications.csv</td>
+<td>Contact Phone Number</td>
+<td>String</td>
+<td>None</td>
+<td>234-567-8902</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Jobs\Job Applications.csv</td>
+<td>Job Title</td>
+<td>String</td>
+<td>None</td>
+<td>Director</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Jobs\Job Applications.csv</td>
+<td>Job Url</td>
+<td>String</td>
+<td>None</td>
+<td>http://www.linkedin.com/jobs/view/123456789</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Jobs\Job Applications.csv</td>
+<td>Question And Answers</td>
+<td>String</td>
+<td>None</td>
+<td>Mobile phone number:+1 2345678901 | Please submit a resume or LinkedIn profile:123456789.pdf | Will you now, or in the future, require sponsorship for employment visa status (e.g. H-1B visa status)?:No | Email address:REDACTED_email@gmail.com | Are you legally authorized to work in the United States?:Yes</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Jobs\Job Applications.csv</td>
+<td>Resume Name</td>
+<td>String</td>
+<td>None</td>
+<td>JohnSmithResume.pdf</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Jobs\Job Seeker Preferences.csv</td>
+<td>Commute Preference Starting Address</td>
+<td>Unknown</td>
+<td>None</td>
+<td>No Example Given</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Jobs\Job Seeker Preferences.csv</td>
+<td>Commute Preference Starting Time</td>
+<td>Unknown</td>
+<td>None</td>
+<td>No Example Given</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Jobs\Job Seeker Preferences.csv</td>
+<td>Company Employee Count</td>
+<td>Unknown</td>
+<td>None</td>
+<td>No Example Given</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Jobs\Job Seeker Preferences.csv</td>
+<td>Dream Companies</td>
+<td>Unknown</td>
+<td>None</td>
+<td>No Example Given</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Jobs\Job Seeker Preferences.csv</td>
+<td>Industries</td>
+<td>Unknown</td>
+<td>None</td>
+<td>No Example Given</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Jobs\Job Seeker Preferences.csv</td>
+<td>Introduction Statement</td>
+<td>Unknown</td>
+<td>None</td>
+<td>No Example Given</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Jobs\Job Seeker Preferences.csv</td>
+<td>Job Seeker Activity Level</td>
+<td>Unknown</td>
+<td>None</td>
+<td>No Example Given</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Jobs\Job Seeker Preferences.csv</td>
+<td>Job Seeking Urgency Level</td>
+<td>Unknown</td>
+<td>None</td>
+<td>No Example Given</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Jobs\Job Seeker Preferences.csv</td>
+<td>Job Title For Searching Fast Growing Companies</td>
+<td>Unknown</td>
+<td>None</td>
+<td>No Example Given</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Jobs\Job Seeker Preferences.csv</td>
+<td>Job Titles</td>
+<td>Unknown</td>
+<td>None</td>
+<td>No Example Given</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Jobs\Job Seeker Preferences.csv</td>
+<td>Locations</td>
+<td>Unknown</td>
+<td>None</td>
+<td>No Example Given</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Jobs\Job Seeker Preferences.csv</td>
+<td>Maximum Commute Duration</td>
+<td>Unknown</td>
+<td>None</td>
+<td>No Example Given</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Jobs\Job Seeker Preferences.csv</td>
+<td>Mode Of Transportation</td>
+<td>Unknown</td>
+<td>None</td>
+<td>No Example Given</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Jobs\Job Seeker Preferences.csv</td>
+<td>Open Candidate Visibility</td>
+<td>Unknown</td>
+<td>None</td>
+<td>No Example Given</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Jobs\Job Seeker Preferences.csv</td>
+<td>Open To Recruiters</td>
+<td>Unknown</td>
+<td>None</td>
+<td>No Example Given</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Jobs\Job Seeker Preferences.csv</td>
+<td>Phone Number</td>
+<td>Unknown</td>
+<td>None</td>
+<td>No Example Given</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Jobs\Job Seeker Preferences.csv</td>
+<td>Preferred Job Types</td>
+<td>Unknown</td>
+<td>None</td>
+<td>No Example Given</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Jobs\Job Seeker Preferences.csv</td>
+<td>Preferred Start Time Range</td>
+<td>Unknown</td>
+<td>None</td>
+<td>No Example Given</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Jobs\Job Seeker Preferences.csv</td>
+<td>Profile Shared With Job Poster</td>
+<td>Unknown</td>
+<td>None</td>
+<td>No Example Given</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Jobs\Saved Jobs.csv</td>
+<td>Company Name</td>
+<td>String</td>
+<td>None</td>
+<td>REDACTED Company Name</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Jobs\Saved Jobs.csv</td>
+<td>Job Title</td>
+<td>String</td>
+<td>None</td>
+<td>Senior Analyst</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Jobs\Saved Jobs.csv</td>
+<td>Job Url</td>
+<td>String</td>
+<td>None</td>
+<td>http://www.linkedin.com/jobs/view/123456789</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Jobs\Saved Jobs.csv</td>
+<td>Saved Date</td>
+<td>String</td>
+<td>None</td>
+<td>3/10/18, 10:29 AM</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Services Marketplace\Providers.csv</td>
+<td>Available to Work Remotely</td>
+<td>Boolean</td>
+<td>None</td>
+<td>False</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Services Marketplace\Providers.csv</td>
+<td>Creation Time</td>
+<td>String</td>
+<td>None</td>
+<td>Mon Apr 19 16:06:57 UTC 2021</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Services Marketplace\Providers.csv</td>
+<td>Marketplace Type</td>
+<td>String</td>
+<td>None</td>
+<td>SERVICE_MARKETPLACE</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Services Marketplace\Providers.csv</td>
+<td>ProFinder Service Category</td>
+<td>Unknown</td>
+<td>None</td>
+<td>No Example Given</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Services Marketplace\Providers.csv</td>
+<td>Secondary Service Category</td>
+<td>String</td>
+<td>None</td>
+<td>Business Consulting, Educational Consulting</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Services Marketplace\Providers.csv</td>
+<td>Status</td>
+<td>String</td>
+<td>None</td>
+<td>ACTIVE</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
+</tr>
+<tr>
+<td>Complete_LinkedInDataExport\Services Marketplace\Providers.csv</td>
 <td>Top Level Service Category</td>
 <td>String</td>
+<td>None</td>
 <td>Consulting</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
 </tr>
 <tr>
-<td>Basic_LinkedInDataExport\Services Marketplace\Providers.csv</td>
+<td>Complete_LinkedInDataExport\Services Marketplace\Providers.csv</td>
 <td>Use Profile Location</td>
 <td>Boolean</td>
+<td>None</td>
 <td>True</td>
+<td>2022-06-10 00:25:02</td>
+<td>2022-06-10 05:22:10</td>
 </tr>
 
           </tbody>
@@ -1232,12 +2140,14 @@
       toolbar: '.toolbar',
 
       search: true,
-      showPrint: true,
+      showExport: true,
       showToggle: true,
       showColumns: true,
       pagination: true,
       striped: true,
       sortable: true,
+      exportDataType: 'all',
+      exportTypes: ['json', 'xml', 'csv', 'excel', 'pdf'],
       height: $(window).height(),
       pageSize: 25,
       pageList: [25, 50, 100],
