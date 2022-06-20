@@ -88,64 +88,10 @@
             </thead>
             <tbody>
               <tr>
-<td>data\direct-message-group-headers.js</td>
-<td>dmConversation.conversationId</td>
-<td>String</td>
-<td>None</td>
-<td>123456789012345678</td>
-<td>2022-06-11 00:25:02</td>
-<td>2022-06-11 00:25:02</td>
-</tr>
-<tr>
-<td>data\direct-message-group-headers.js</td>
-<td>dmConversation.messages</td>
-<td>String</td>
-<td>None</td>
-<td>[{'messageCreate': {'id': '1234567890123456789', 'senderId': '12345678', 'createdAt': '2019-07-13T07:20:07.143Z'}}, {'messageCreate': {'id': '1234567890123456790', 'senderId': '1234567890', 'createdAt': '2019-07-13T01:11:26.368Z'}}, {'messageCreate': {'id': '1234567890123456791', 'senderId': '12345678', 'createdAt': '2019-07-12T21:21:08.324Z'}}, {'joinConversation': {'initiatingUserId': '12345678', 'participantsSnapshot': ['123456789', '12345678', '1234567890'], 'createdAt': '2019-07-12T21:21:08.321Z'}}]</td>
-<td>2022-06-11 00:25:02</td>
-<td>2022-06-11 00:25:02</td>
-</tr>
-<tr>
-<td>data\direct-message-headers.js</td>
-<td>dmConversation.conversationId</td>
-<td>String</td>
-<td>None</td>
-<td>123456789-123456789012345678</td>
-<td>2022-06-11 00:25:02</td>
-<td>2022-06-11 00:25:02</td>
-</tr>
-<tr>
-<td>data\direct-message-headers.js</td>
-<td>dmConversation.messages</td>
-<td>String</td>
-<td>None</td>
-<td>[{'messageCreate': {'id': '1234567890123456789', 'senderId': '12345678', 'recipientId': '123456789', 'createdAt': '2019-05-27T06:41:51.367Z'}}, {'messageCreate': {'id': '1234567890123456790', 'senderId': '123456789', 'recipientId': '12345678', 'createdAt': '2019-05-27T02:08:20.828Z'}}, {'messageCreate': {'id': '1234567890123456791', 'senderId': '12345678', 'recipientId': '123456789', 'createdAt': '2019-05-26T19:33:19.579Z'}}]</td>
-<td>2022-06-11 00:25:02</td>
-<td>2022-06-11 00:25:02</td>
-</tr>
-<tr>
-<td>data\direct-messages-group.js</td>
-<td>dmConversation.conversationId</td>
-<td>String</td>
-<td>None</td>
-<td>1234567890123456789</td>
-<td>2022-06-11 00:25:02</td>
-<td>2022-06-11 00:25:02</td>
-</tr>
-<tr>
-<td>data\direct-messages-group.js</td>
-<td>dmConversation.messages</td>
-<td>String</td>
-<td>None</td>
-<td>[{'messageCreate': {'reactions': [], 'urls': [], 'text': 'Hi yall, feel free to spread to people who you think might be interested', 'mediaUrls': [], 'senderId': '12345678', 'id': '1234567890123456789', 'createdAt': '2019-07-13T07:20:07.143Z'}}, {'messageCreate': {'reactions': [], 'urls': [], 'text': 'Sweet!', 'mediaUrls': [], 'senderId': '123456789', 'id': '1234567890123456790', 'createdAt': '2019-07-13T01:11:26.368Z'}}, {'messageCreate': {'reactions': [], 'urls': [{'url': 'https://t.co/abcdEfgHij', 'expanded': 'https://www.REDACTED_url.com/', 'display': 'www.REDACTED_url.com'}], 'text': 'Please send to your friends - \nhttps://t.co/abcdEfgHij', 'mediaUrls': [], 'senderId': '12345678', 'id': '1234567890123456791', 'createdAt': '2019-07-12T21:21:08.324Z'}}, {'joinConversation': {'initiatingUserId': '12345678', 'participantsSnapshot': ['12345678', '123456789','1234567890'], 'createdAt': '2019-07-12T21:21:08.321Z'}}]</td>
-<td>2022-06-11 00:25:02</td>
-<td>2022-06-11 00:25:02</td>
-</tr>
-<tr>
 <td>data\account-creation-ip.js</td>
 <td>accountCreationIp.accountId</td>
 <td>String</td>
-<td>None</td>
+<td>Unique identifier for the account.</td>
 <td>123456789</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -154,7 +100,7 @@
 <td>data\account-creation-ip.js</td>
 <td>accountCreationIp.userCreationIp</td>
 <td>String</td>
-<td>None</td>
+<td>IP address at account creation.</td>
 <td>66.666.666.6</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -163,7 +109,7 @@
 <td>data\account-timezone.js</td>
 <td>accountTimezone.accountId</td>
 <td>String</td>
-<td>None</td>
+<td>Unique identifier for the account.</td>
 <td>123456789</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -172,7 +118,7 @@
 <td>data\account-timezone.js</td>
 <td>accountTimezone.timeZone</td>
 <td>String</td>
-<td>None</td>
+<td>Timezone currently associated with the account.</td>
 <td>Pacific Time (US & Canada)</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -181,7 +127,7 @@
 <td>data\account.js</td>
 <td>account.accountDisplayName</td>
 <td>String</td>
-<td>None</td>
+<td>The account’s name as displayed on the profile.</td>
 <td>John Smith</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -190,7 +136,7 @@
 <td>data\account.js</td>
 <td>account.accountId</td>
 <td>String</td>
-<td>None</td>
+<td>Unique identifier for the account.</td>
 <td>123456789</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -199,7 +145,7 @@
 <td>data\account.js</td>
 <td>account.createdAt</td>
 <td>String</td>
-<td>None</td>
+<td>Date and time when the account was created.</td>
 <td>2014-12-07T01:31:39.546Z</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -208,7 +154,7 @@
 <td>data\account.js</td>
 <td>account.createdVia</td>
 <td>String</td>
-<td>None</td>
+<td>Client application used when the account was created. For example: “web” if the  account was created from a browser.</td>
 <td>web</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -217,7 +163,7 @@
 <td>data\account.js</td>
 <td>account.email</td>
 <td>String</td>
-<td>None</td>
+<td>Email address currently associated with the account if an email address has been provided.</td>
 <td>REDACTED_email@gmail.com</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -226,7 +172,7 @@
 <td>data\account.js</td>
 <td>account.username</td>
 <td>String</td>
-<td>None</td>
+<td>The account’s current @username. Note that the @username may change but the account ID will remain the same for the lifetime of the account.</td>
 <td>JohnSmith</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -235,7 +181,7 @@
 <td>data\ad-engagements.js</td>
 <td>ad.adsUserData.adEngagements.engagements</td>
 <td>String</td>
-<td>None</td>
+<td>Promoted Tweets the account has engaged with and any associated metadata.</td>
 <td>[{'impressionAttributes': {'deviceInfo': {'osType': 'Desktop'}, 'displayLocation': 'Trends', 'promotedTrendInfo': {'trendId': '87455', 'name': '#SecretsOfDumbledore', 'description': 'Now Playing Only in Theaters'}, 'advertiserInfo': {'advertiserName': 'Fantastic Beasts', 'screenName': '@FantasticBeasts'}, 'impressionTime': '2022-04-15 20:04:14'}, 'engagementAttributes': [{'engagementTime': '2022-04-15 20:04:15', 'engagementType': 'TrendView'}]}, {'impressionAttributes': {'deviceInfo': {'osType': 'Desktop'}, 'displayLocation': 'Trends', 'promotedTrendInfo': {'trendId': '87455', 'name': '#SecretsOfDumbledore', 'description': 'Now Playing Only in Theaters'}, 'advertiserInfo': {'advertiserName': 'Fantastic Beasts', 'screenName': '@FantasticBeasts'}, 'impressionTime': '2022-04-15 20:06:20'}, 'engagementAttributes': [{'engagementTime': '2022-04-15 20:06:22', 'engagementType': 'TrendView'}]}]</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -244,7 +190,7 @@
 <td>data\ad-impressions.js</td>
 <td>ad.adsUserData.adImpressions.impressions</td>
 <td>String</td>
-<td>None</td>
+<td>Promoted Tweets the account has viewed and any associated metadata.</td>
 <td>[{'deviceInfo': {'osType': 'Desktop'}, 'displayLocation': 'WtfSidebar', 'advertiserInfo': {'advertiserName': 'The NPD Group', 'screenName': '@npdgroup'}, 'matchedTargetingCriteria': [{'targetingType': 'Locations', 'targetingValue': 'United States'}], 'impressionTime': '2022-05-07 16:02:36'}]</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -254,7 +200,7 @@
 <td>blocking.accountId</td>
 <td>String</td>
 <td>None</td>
-<td>1234567890123456789</td>
+<td>1.23456789012346E+018</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
 </tr>
@@ -271,7 +217,7 @@
 <td>data\connected-application.js</td>
 <td>connectedApplication.approvedAt</td>
 <td>String</td>
-<td>None</td>
+<td>Date and time when the account authorized the application.</td>
 <td>2021-09-05T16:01:19.000Z</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -280,7 +226,7 @@
 <td>data\connected-application.js</td>
 <td>connectedApplication.description</td>
 <td>String</td>
-<td>None</td>
+<td>Brief description of the application as provided by the organization.</td>
 <td>This app was created to use the Twitter API.</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -289,7 +235,7 @@
 <td>data\connected-application.js</td>
 <td>connectedApplication.id</td>
 <td>String</td>
-<td>None</td>
+<td>Unique identifier for the application.</td>
 <td>12345678</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -298,7 +244,7 @@
 <td>data\connected-application.js</td>
 <td>connectedApplication.name</td>
 <td>String</td>
-<td>None</td>
+<td>Name of the application.</td>
 <td>test_app</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -316,7 +262,7 @@
 <td>data\connected-application.js</td>
 <td>connectedApplication.permissions</td>
 <td>String</td>
-<td>None</td>
+<td>List of permissions granted to the connected application by the Twitter account. For example: read or write.</td>
 <td>['read', 'write']</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -325,7 +271,7 @@
 <td>data\device-token.js</td>
 <td>deviceToken.clientApplicationId</td>
 <td>String</td>
-<td>None</td>
+<td>Unique identifier of the application associated with the token. Please note that there may be instances where older tokens do not have a unique identifier associated with them.</td>
 <td>1234567</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -334,7 +280,7 @@
 <td>data\device-token.js</td>
 <td>deviceToken.clientApplicationName</td>
 <td>String</td>
-<td>None</td>
+<td>Name of the application associated with the token. Please note that there may be instances where older tokens do not have an application name associated with them.</td>
 <td>Twitter Web App (Twitter. Inc)</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -343,7 +289,7 @@
 <td>data\device-token.js</td>
 <td>deviceToken.createdAt</td>
 <td>String</td>
-<td>None</td>
+<td>Data and time of the creation of the token.</td>
 <td>2021-08-10T01:19:04.326Z</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -352,7 +298,7 @@
 <td>data\device-token.js</td>
 <td>deviceToken.lastSeenAt</td>
 <td>String</td>
-<td>None</td>
+<td>Date and time of most recent use. Please note that there may be instances where older tokens do show this information.</td>
 <td>2022-04-15T20:04:13.370Z</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -361,8 +307,62 @@
 <td>data\device-token.js</td>
 <td>deviceToken.token</td>
 <td>String</td>
-<td>None</td>
+<td>Token associated with a mobile device or web browser that was used to sign up or log in to this account through twitter.com or one of the other Twitter owned or operated apps within the last 18 months.</td>
 <td>agHlhUj5B2H5Id0Cclk9LcJRsCf1o09sz9npWdc</td>
+<td>2022-06-11 00:25:02</td>
+<td>2022-06-11 00:25:02</td>
+</tr>
+<tr>
+<td>data\direct-message-group-headers.js</td>
+<td>dmConversation.conversationId</td>
+<td>String</td>
+<td>Unique identifier for the Direct Message group conversation. Each conversation has a unique randomly generated conversation ID. Within a conversation, the Direct Messages are ordered in reverse chronological order, meaning that the latest Direct Message will be at the top of the list.</td>
+<td>1.23456789012346E+017</td>
+<td>2022-06-11 00:25:02</td>
+<td>2022-06-11 00:25:02</td>
+</tr>
+<tr>
+<td>data\direct-message-group-headers.js</td>
+<td>dmConversation.messages</td>
+<td>String</td>
+<td>None</td>
+<td>[{'messageCreate': {'id': '1234567890123456789', 'senderId': '12345678', 'createdAt': '2019-07-13T07:20:07.143Z'}}, {'messageCreate': {'id': '1234567890123456790', 'senderId': '1234567890', 'createdAt': '2019-07-13T01:11:26.368Z'}}, {'messageCreate': {'id': '1234567890123456791', 'senderId': '12345678', 'createdAt': '2019-07-12T21:21:08.324Z'}}, {'joinConversation': {'initiatingUserId': '12345678', 'participantsSnapshot': ['123456789', '12345678', '1234567890'], 'createdAt': '2019-07-12T21:21:08.321Z'}}]</td>
+<td>2022-06-11 00:25:02</td>
+<td>2022-06-11 00:25:02</td>
+</tr>
+<tr>
+<td>data\direct-message-headers.js</td>
+<td>dmConversation.conversationId</td>
+<td>String</td>
+<td>Unique identifier for a specific Direct Message within the conversation.</td>
+<td>123456789-123456789012345678</td>
+<td>2022-06-11 00:25:02</td>
+<td>2022-06-11 00:25:02</td>
+</tr>
+<tr>
+<td>data\direct-message-headers.js</td>
+<td>dmConversation.messages</td>
+<td>String</td>
+<td>None</td>
+<td>[{'messageCreate': {'id': '1234567890123456789', 'senderId': '12345678', 'recipientId': '123456789', 'createdAt': '2019-05-27T06:41:51.367Z'}}, {'messageCreate': {'id': '1234567890123456790', 'senderId': '123456789', 'recipientId': '12345678', 'createdAt': '2019-05-27T02:08:20.828Z'}}, {'messageCreate': {'id': '1234567890123456791', 'senderId': '12345678', 'recipientId': '123456789', 'createdAt': '2019-05-26T19:33:19.579Z'}}]</td>
+<td>2022-06-11 00:25:02</td>
+<td>2022-06-11 00:25:02</td>
+</tr>
+<tr>
+<td>data\direct-messages-group.js</td>
+<td>dmConversation.conversationId</td>
+<td>String</td>
+<td>Unique identifier for the Direct Message group conversation. Each conversation has a unique randomly generated conversation ID. Within a conversation, the Direct Messages are ordered in reverse chronological order, meaning that the latest Direct Message will be at the top of the list.</td>
+<td>1.23456789012346E+018</td>
+<td>2022-06-11 00:25:02</td>
+<td>2022-06-11 00:25:02</td>
+</tr>
+<tr>
+<td>data\direct-messages-group.js</td>
+<td>dmConversation.messages</td>
+<td>String</td>
+<td>None</td>
+<td>[{'messageCreate': {'reactions': [], 'urls': [], 'text': 'Hi yall, feel free to spread to people who you think might be interested', 'mediaUrls': [], 'senderId': '12345678', 'id': '1234567890123456789', 'createdAt': '2019-07-13T07:20:07.143Z'}}, {'messageCreate': {'reactions': [], 'urls': [], 'text': 'Sweet!', 'mediaUrls': [], 'senderId': '123456789', 'id': '1234567890123456790', 'createdAt': '2019-07-13T01:11:26.368Z'}}, {'messageCreate': {'reactions': [], 'urls': [{'url': 'https://t.co/abcdEfgHij', 'expanded': 'https://www.REDACTED_url.com/', 'display': 'www.REDACTED_url.com'}], 'text': 'Please send to your friends - \nhttps://t.co/abcdEfgHij', 'mediaUrls': [], 'senderId': '12345678', 'id': '1234567890123456791', 'createdAt': '2019-07-12T21:21:08.324Z'}}, {'joinConversation': {'initiatingUserId': '12345678', 'participantsSnapshot': ['12345678', '123456789','1234567890'], 'createdAt': '2019-07-12T21:21:08.321Z'}}]</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
 </tr>
@@ -370,7 +370,7 @@
 <td>data\direct-messages.js</td>
 <td>dmConversation.conversationId</td>
 <td>String</td>
-<td>None</td>
+<td>Unique identifier for a specific Direct Message within the conversation.</td>
 <td>123456789-1234567890</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -388,7 +388,7 @@
 <td>data\email-address-change.js</td>
 <td>emailAddressChange.accountId</td>
 <td>String</td>
-<td>None</td>
+<td>Unique identifier for the account.</td>
 <td>1234567890</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -397,7 +397,7 @@
 <td>data\email-address-change.js</td>
 <td>emailAddressChange.emailChange.changedAt</td>
 <td>String</td>
-<td>None</td>
+<td>Date and time the email address was changed.</td>
 <td>2016-02-22T02:24:23.000Z</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -406,7 +406,7 @@
 <td>data\email-address-change.js</td>
 <td>emailAddressChange.emailChange.changedFrom</td>
 <td>String</td>
-<td>None</td>
+<td>Email address associated with the account prior to the change.</td>
 <td>REDACTED_email@yahoo.com</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -415,7 +415,7 @@
 <td>data\email-address-change.js</td>
 <td>emailAddressChange.emailChange.changedTo</td>
 <td>String</td>
-<td>None</td>
+<td>New email address associated with the account.</td>
 <td>REDACTED_email@gmail.com</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -424,8 +424,8 @@
 <td>data\follower.js</td>
 <td>follower.accountId</td>
 <td>String</td>
-<td>None</td>
-<td>123456789012345678</td>
+<td>Unique identifiers for the other accounts that follow this account.</td>
+<td>1.23456789012346E+017</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
 </tr>
@@ -433,7 +433,7 @@
 <td>data\follower.js</td>
 <td>follower.userLink</td>
 <td>String</td>
-<td>None</td>
+<td>Link to information about the blocked users’ profiles if accessible to the account. For example, this information might not be accessible if blocked profiles are protected or deactivated.</td>
 <td>https://twitter.com/intent/user?user_id=123456789</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -442,7 +442,7 @@
 <td>data\ip-audit.js</td>
 <td>ipAudit.accountId</td>
 <td>String</td>
-<td>None</td>
+<td>Unique identifier for the account.</td>
 <td>1234567890</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -451,7 +451,7 @@
 <td>data\ip-audit.js</td>
 <td>ipAudit.createdAt</td>
 <td>String</td>
-<td>None</td>
+<td>Date and time of a login to the account.</td>
 <td>2022-05-30T23:02:34.000Z</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -460,7 +460,7 @@
 <td>data\ip-audit.js</td>
 <td>ipAudit.loginIp</td>
 <td>String</td>
-<td>None</td>
+<td>IP address associated with the login.</td>
 <td>66.6.66.666</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -469,7 +469,7 @@
 <td>data\like.js</td>
 <td>like.expandedUrl</td>
 <td>String</td>
-<td>None</td>
+<td>Link to the actual tweet on twitter.com if the account has access to it.</td>
 <td>https://twitter.com/i/web/status/1234567890123456789</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -478,7 +478,7 @@
 <td>data\like.js</td>
 <td>like.fullText</td>
 <td>String</td>
-<td>None</td>
+<td>Text as visible in the tweet if the account has access to it.</td>
 <td>TGIF!</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -487,8 +487,8 @@
 <td>data\like.js</td>
 <td>like.tweetId</td>
 <td>String</td>
-<td>None</td>
-<td>1234567890123456789</td>
+<td>Unique identifiers for the Tweets liked.</td>
+<td>1.23456789012346E+018</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
 </tr>
@@ -496,7 +496,7 @@
 <td>data\lists-member.js</td>
 <td>userListInfo.url</td>
 <td>String</td>
-<td>None</td>
+<td>URLs of Lists the account has been added to and is eligible to access.</td>
 <td>https://twitter.com/REDACTED_user/lists/REDACTED_list-name</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -505,7 +505,7 @@
 <td>data\lists-subscribed.js</td>
 <td>userListInfo.url</td>
 <td>String</td>
-<td>None</td>
+<td>URLs of Lists the account has subscribed to.</td>
 <td>https://twitter.com/REDACTED_user/lists/REDACTED_list-name</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1279,7 +1279,7 @@
 <td>data\mute.js</td>
 <td>muting.accountId</td>
 <td>String</td>
-<td>None</td>
+<td>Unique identifiers for currently muted accounts.</td>
 <td>1234567890</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1288,7 +1288,7 @@
 <td>data\mute.js</td>
 <td>muting.userLink</td>
 <td>String</td>
-<td>None</td>
+<td>Link to information about the blocked users’ profiles if accessible to the account. For example, this information might not be accessible if blocked profiles are protected or deactivated.</td>
 <td>https://twitter.com/intent/user?user_id=123456789</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1297,7 +1297,7 @@
 <td>data\ni-devices.js</td>
 <td>niDeviceResponse.messagingDevice.carrier</td>
 <td>String</td>
-<td>None</td>
+<td>Optional field indicating the carrier associated with the device.</td>
 <td>t-mobile</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1306,7 +1306,7 @@
 <td>data\ni-devices.js</td>
 <td>niDeviceResponse.messagingDevice.createdDate</td>
 <td>String</td>
-<td>None</td>
+<td>Field indicating when the association between the device and the Twitter account was made.</td>
 <td>2021.06.10</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1315,7 +1315,7 @@
 <td>data\ni-devices.js</td>
 <td>niDeviceResponse.messagingDevice.deviceType</td>
 <td>String</td>
-<td>None</td>
+<td>Manufacturer for devices that are marked as “pushDevice”. For devices marked as “messagingDevice”, the field will indicate “Auth” if the device is only used for two-factor authentication purposes, and “Full” if the device is set to receive notifications from Twitter.</td>
 <td>Full</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1324,8 +1324,8 @@
 <td>data\ni-devices.js</td>
 <td>niDeviceResponse.messagingDevice.phoneNumber</td>
 <td>String</td>
-<td>None</td>
-<td>+12345678902</td>
+<td>Phone number associated with the device.</td>
+<td>12345678902</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
 </tr>
@@ -1333,7 +1333,7 @@
 <td>data\periscope-account-information.js</td>
 <td>periscopeAccountInformation.createdAt</td>
 <td>String</td>
-<td>None</td>
+<td>Date and time the "shell account" was created.</td>
 <td>2019-03-19T14:47:37.532097508Z</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1351,7 +1351,7 @@
 <td>data\periscope-account-information.js</td>
 <td>periscopeAccountInformation.displayName</td>
 <td>String</td>
-<td>None</td>
+<td>Periscope account name ported over from the Twitter account when the shell account was created.</td>
 <td>John Smith</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1360,7 +1360,7 @@
 <td>data\periscope-account-information.js</td>
 <td>periscopeAccountInformation.id</td>
 <td>String</td>
-<td>None</td>
+<td>Periscope shell account unique identifier automatically created as soon as the user goes to the "Live" section of the News Camera. A Periscope shell account will be created for the Twitter user before the user goes live.</td>
 <td>1aBCdEfghIJkl</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1369,7 +1369,7 @@
 <td>data\periscope-account-information.js</td>
 <td>periscopeAccountInformation.isTwitterUser</td>
 <td>Boolean</td>
-<td>None</td>
+<td>Indicates whether the Periscope account is also a Twitter user. This is always true.</td>
 <td>True</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1378,7 +1378,7 @@
 <td>data\periscope-account-information.js</td>
 <td>periscopeAccountInformation.twitterId</td>
 <td>String</td>
-<td>None</td>
+<td>Unique identifier for the Twitter account.</td>
 <td>1234567890</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1387,7 +1387,7 @@
 <td>data\periscope-account-information.js</td>
 <td>periscopeAccountInformation.twitterScreenName</td>
 <td>String</td>
-<td>None</td>
+<td>The Twitter account’s current @username. Note that the @username may change but the account ID will remain the same for the lifetime of the account.</td>
 <td>JohnSmith</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1396,7 +1396,7 @@
 <td>data\periscope-account-information.js</td>
 <td>periscopeAccountInformation.username</td>
 <td>String</td>
-<td>None</td>
+<td>Periscope account @username ported over from the Twitter account when the shell account was created.</td>
 <td>JohnSmith</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1405,7 +1405,7 @@
 <td>data\periscope-profile-description.js</td>
 <td>periscopeProfileDescription.bio</td>
 <td>String</td>
-<td>None</td>
+<td>Periscope account description ported over from the Twitter account when the shell account was created.</td>
 <td>This is my bio.</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1414,7 +1414,7 @@
 <td>data\personalization.js</td>
 <td>p13nData.demographics.genderInfo.gender</td>
 <td>String</td>
-<td>None</td>
+<td>Gender associated with the account. Please note that this information may be inferred.</td>
 <td>male</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1423,7 +1423,7 @@
 <td>data\personalization.js</td>
 <td>p13nData.demographics.languages</td>
 <td>String</td>
-<td>None</td>
+<td>Languages associated with the account. Please note that this information may be inferred.</td>
 <td>[{'language': 'English', 'isDisabled': False}]</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1432,7 +1432,7 @@
 <td>data\personalization.js</td>
 <td>p13nData.inferredAgeInfo.age</td>
 <td>String</td>
-<td>None</td>
+<td>Date of birth Twitter has inferred about the account and corresponding current age.</td>
 <td>['13-54']</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1441,7 +1441,7 @@
 <td>data\personalization.js</td>
 <td>p13nData.inferredAgeInfo.birthDate</td>
 <td>String</td>
-<td>None</td>
+<td>Date of birth Twitter has inferred about the account and corresponding current age.</td>
 <td>nan</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1450,7 +1450,7 @@
 <td>data\personalization.js</td>
 <td>p13nData.interests.audienceAndAdvertisers.advertisers</td>
 <td>String</td>
-<td>None</td>
+<td>List of screennames for the advertisers that own the tailored audiences the account is a part of.</td>
 <td>[]</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1459,7 +1459,7 @@
 <td>data\personalization.js</td>
 <td>p13nData.interests.audienceAndAdvertisers.doNotReachAdvertisers</td>
 <td>String</td>
-<td>None</td>
+<td>List of screen names for the advertisers that own Do Not Reach Lists the account is a part of</td>
 <td>[]</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1468,7 +1468,7 @@
 <td>data\personalization.js</td>
 <td>p13nData.interests.audienceAndAdvertisers.lookalikeAdvertisers</td>
 <td>String</td>
-<td>None</td>
+<td>List of screen names for the advertisers that own the look-alike audiences the account is a part of.</td>
 <td>['@Audible_ES', '@NFL', '@Wendys']</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1477,7 +1477,7 @@
 <td>data\personalization.js</td>
 <td>p13nData.interests.audienceAndAdvertisers.numAudiences</td>
 <td>String</td>
-<td>None</td>
+<td>Number of tailored audiences (audiences generated by advertisers) the account is a part of.</td>
 <td>0</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1486,7 +1486,7 @@
 <td>data\personalization.js</td>
 <td>p13nData.interests.interests</td>
 <td>String</td>
-<td>None</td>
+<td>Interests associated with the account. Please note that this information may be inferred.</td>
 <td>[{'name': 'Action sports', 'isDisabled': False}, {'name': 'Barack Obama', 'isDisabled': True}, {'name': 'Baseball', 'isDisabled': True}, {'name': 'Comedy', 'isDisabled': False}, {'name': 'Comedy', 'isDisabled': False}]</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1495,7 +1495,7 @@
 <td>data\personalization.js</td>
 <td>p13nData.interests.partnerInterests</td>
 <td>String</td>
-<td>None</td>
+<td>Interests from partners that are associated with the account.</td>
 <td>[]</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1504,7 +1504,7 @@
 <td>data\personalization.js</td>
 <td>p13nData.interests.shows</td>
 <td>String</td>
-<td>None</td>
+<td>TV shows associated with the account. Please note that this information may be inferred.</td>
 <td>['Black Mirror (Netflix)', 'Black Panther', 'X Games', "Zack Snyder's Justice League"]</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1513,7 +1513,7 @@
 <td>data\personalization.js</td>
 <td>p13nData.locationHistory</td>
 <td>String</td>
-<td>None</td>
+<td>Location history associated with the account based on activity from the last 60 days.</td>
 <td>[]</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1522,8 +1522,8 @@
 <td>data\phone-number.js</td>
 <td>device.phoneNumber</td>
 <td>String</td>
-<td>None</td>
-<td>+12345678901</td>
+<td>Phone number currently associated with the account if a phone number has been provided.</td>
+<td>12345678901</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
 </tr>
@@ -1531,7 +1531,7 @@
 <td>data\profile.js</td>
 <td>profile.avatarMediaUrl</td>
 <td>String</td>
-<td>None</td>
+<td>Link to the current profile avatar image, if the user has provided one.</td>
 <td>https://pbs.twimg.com/profile_images/1234567890123456789/umn-_CKP.jpg</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1540,7 +1540,7 @@
 <td>data\profile.js</td>
 <td>profile.description.bio</td>
 <td>String</td>
-<td>None</td>
+<td>Current account bio as displayed on the profile, if the user has provided one.</td>
 <td>This is my bio.</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1549,7 +1549,7 @@
 <td>data\profile.js</td>
 <td>profile.description.location</td>
 <td>String</td>
-<td>None</td>
+<td>Current account location as displayed on the profile, if the user has provided one.</td>
 <td>nan</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1558,7 +1558,7 @@
 <td>data\profile.js</td>
 <td>profile.description.website</td>
 <td>String</td>
-<td>None</td>
+<td>Current account website as displayed on the profile, if the user has provided one.</td>
 <td>nan</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1567,7 +1567,7 @@
 <td>data\screen-name-change.js</td>
 <td>screenNameChange.accountId</td>
 <td>String</td>
-<td>None</td>
+<td>Unique identifier for the account.</td>
 <td>1234567890</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1576,7 +1576,7 @@
 <td>data\screen-name-change.js</td>
 <td>screenNameChange.screenNameChange.changedAt</td>
 <td>String</td>
-<td>None</td>
+<td>Date and time the name was changed.</td>
 <td>2016-02-22T02:23:26.000Z</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1585,7 +1585,7 @@
 <td>data\screen-name-change.js</td>
 <td>screenNameChange.screenNameChange.changedFrom</td>
 <td>String</td>
-<td>None</td>
+<td>Previous screen name associated with the account.</td>
 <td>JSmith</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1594,7 +1594,7 @@
 <td>data\screen-name-change.js</td>
 <td>screenNameChange.screenNameChange.changedTo</td>
 <td>String</td>
-<td>None</td>
+<td>New screen name associated with the account.</td>
 <td>JohnSmith</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1603,7 +1603,7 @@
 <td>data\tweet.js</td>
 <td>tweet.created_at</td>
 <td>String</td>
-<td>None</td>
+<td>See API documentation: https://developer.twitter.com/en/docs/tweets/post-and-engage/api-reference/post-statuses-update.</td>
 <td>Tue Oct 26 06:06:13 +0000 2021</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1612,7 +1612,7 @@
 <td>data\tweet.js</td>
 <td>tweet.display_text_range</td>
 <td>String</td>
-<td>None</td>
+<td>See API documentation: https://developer.twitter.com/en/docs/tweets/post-and-engage/api-reference/post-statuses-update.</td>
 <td>['0', '121']</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1621,7 +1621,7 @@
 <td>data\tweet.js</td>
 <td>tweet.entities.hashtags</td>
 <td>String</td>
-<td>None</td>
+<td>See API documentation: https://developer.twitter.com/en/docs/tweets/post-and-engage/api-reference/post-statuses-update.</td>
 <td>[]</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1630,7 +1630,7 @@
 <td>data\tweet.js</td>
 <td>tweet.entities.symbols</td>
 <td>String</td>
-<td>None</td>
+<td>See API documentation: https://developer.twitter.com/en/docs/tweets/post-and-engage/api-reference/post-statuses-update.</td>
 <td>[]</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1639,7 +1639,7 @@
 <td>data\tweet.js</td>
 <td>tweet.entities.urls</td>
 <td>String</td>
-<td>None</td>
+<td>See API documentation: https://developer.twitter.com/en/docs/tweets/post-and-engage/api-reference/post-statuses-update.</td>
 <td>[]</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1648,7 +1648,7 @@
 <td>data\tweet.js</td>
 <td>tweet.entities.user_mentions</td>
 <td>String</td>
-<td>None</td>
+<td>See API documentation: https://developer.twitter.com/en/docs/tweets/post-and-engage/api-reference/post-statuses-update.</td>
 <td>[]</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1657,7 +1657,7 @@
 <td>data\tweet.js</td>
 <td>tweet.favorite_count</td>
 <td>String</td>
-<td>None</td>
+<td>See API documentation: https://developer.twitter.com/en/docs/tweets/post-and-engage/api-reference/post-statuses-update.</td>
 <td>3</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1666,7 +1666,7 @@
 <td>data\tweet.js</td>
 <td>tweet.favorited</td>
 <td>Boolean</td>
-<td>None</td>
+<td>See API documentation: https://developer.twitter.com/en/docs/tweets/post-and-engage/api-reference/post-statuses-update.</td>
 <td>False</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1675,7 +1675,7 @@
 <td>data\tweet.js</td>
 <td>tweet.full_text</td>
 <td>String</td>
-<td>None</td>
+<td>See API documentation: https://developer.twitter.com/en/docs/tweets/post-and-engage/api-reference/post-statuses-update.</td>
 <td>Hello World!</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1684,8 +1684,8 @@
 <td>data\tweet.js</td>
 <td>tweet.id</td>
 <td>String</td>
-<td>None</td>
-<td>1234567890123456789</td>
+<td>See API documentation: https://developer.twitter.com/en/docs/tweets/post-and-engage/api-reference/post-statuses-update.</td>
+<td>1.23456789012346E+018</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
 </tr>
@@ -1693,8 +1693,8 @@
 <td>data\tweet.js</td>
 <td>tweet.id_str</td>
 <td>String</td>
-<td>None</td>
-<td>1234567890123456789</td>
+<td>See API documentation: https://developer.twitter.com/en/docs/tweets/post-and-engage/api-reference/post-statuses-update.</td>
+<td>1.23456789012346E+018</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
 </tr>
@@ -1702,7 +1702,7 @@
 <td>data\tweet.js</td>
 <td>tweet.lang</td>
 <td>String</td>
-<td>None</td>
+<td>See API documentation: https://developer.twitter.com/en/docs/tweets/post-and-engage/api-reference/post-statuses-update.</td>
 <td>en</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1711,7 +1711,7 @@
 <td>data\tweet.js</td>
 <td>tweet.retweet_count</td>
 <td>String</td>
-<td>None</td>
+<td>See API documentation: https://developer.twitter.com/en/docs/tweets/post-and-engage/api-reference/post-statuses-update.</td>
 <td>0</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1720,7 +1720,7 @@
 <td>data\tweet.js</td>
 <td>tweet.retweeted</td>
 <td>Boolean</td>
-<td>None</td>
+<td>See API documentation: https://developer.twitter.com/en/docs/tweets/post-and-engage/api-reference/post-statuses-update.</td>
 <td>False</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1729,7 +1729,7 @@
 <td>data\tweet.js</td>
 <td>tweet.source</td>
 <td>String</td>
-<td>None</td>
+<td>See API documentation: https://developer.twitter.com/en/docs/tweets/post-and-engage/api-reference/post-statuses-update.</td>
 <td><a href="https://mobile.twitter.com" rel="nofollow">Twitter Web App</a></td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1738,7 +1738,7 @@
 <td>data\tweet.js</td>
 <td>tweet.truncated</td>
 <td>Boolean</td>
-<td>None</td>
+<td>See API documentation: https://developer.twitter.com/en/docs/tweets/post-and-engage/api-reference/post-statuses-update.</td>
 <td>False</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1747,7 +1747,7 @@
 <td>data\verified.js</td>
 <td>verified.accountId</td>
 <td>String</td>
-<td>None</td>
+<td>Unique identifier for the account.</td>
 <td>1234567890</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
@@ -1756,7 +1756,7 @@
 <td>data\verified.js</td>
 <td>verified.verified</td>
 <td>Boolean</td>
-<td>None</td>
+<td>Indicates whether the account is verified.</td>
 <td>True</td>
 <td>2022-06-11 00:25:02</td>
 <td>2022-06-11 00:25:02</td>
