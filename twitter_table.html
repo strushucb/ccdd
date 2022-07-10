@@ -39,6 +39,8 @@
                   <ul class="dropdown-menu" role="menu">
                     <li class="dropdown-header">Device Maker</li>
                     <li><a href="ring_table.html">Ring</a></li>
+                    <li><a href="eufy_table.html">Eufy</a></li>
+                    <li><a href="wyze_table.html">Wyze</a></li>
                   </ul>
                 </li>
                 <li class="dropdown">
@@ -262,7 +264,7 @@
 <td>data\account.js</td>
 <td>account.accountDisplayName</td>
 <td>String</td>
-<td>The account’s name as displayed on the profile.</td>
+<td>The account's name as displayed on the profile.</td>
 <td>John Smith</td>
 <td>2021-06-12 06:43:54</td>
 <td>2022-06-11 00:25:02</td>
@@ -289,7 +291,7 @@
 <td>data\account.js</td>
 <td>account.createdVia</td>
 <td>String</td>
-<td>Client application used when the account was created. For example: “web” if the  account was created from a browser.</td>
+<td>Client application used when the account was created. For example: 'web' if the  account was created from a browser.</td>
 <td>web</td>
 <td>2021-06-12 06:43:54</td>
 <td>2022-06-11 00:25:02</td>
@@ -307,7 +309,7 @@
 <td>data\account.js</td>
 <td>account.username</td>
 <td>String</td>
-<td>The account’s current @username. Note that the @username may change but the account ID will remain the same for the lifetime of the account.</td>
+<td>The account's current @username. Note that the @username may change but the account ID will remain the same for the lifetime of the account.</td>
 <td>JohnSmith</td>
 <td>2021-06-12 06:43:54</td>
 <td>2022-06-11 00:25:02</td>
@@ -515,7 +517,7 @@
 <td>dmConversation.messages</td>
 <td>String</td>
 <td>None</td>
-<td>[{'messageCreate': {'recipientId': '123456789012345678', 'reactions': [], 'urls': [{'url': 'https://t.co/abcDEFg1hi', 'expanded': 'https://www.REDACTED_url.com/info', 'display': 'REDACTED_url.com/…'}], 'text': "Hi! I'm John. How are you? See my website (https://t.co/abcDEFg1hi).", 'mediaUrls': [], 'senderId': '1234567890', 'id': '1234567890123456789', 'createdAt': '2019-11-12T20:46:39.040Z'}}]</td>
+<td>[{'messageCreate': {'recipientId': '123456789012345678', 'reactions': [], 'urls': [{'url': 'https://t.co/abcDEFg1hi', 'expanded': 'https://www.REDACTED_url.com/info', 'display': 'REDACTED_url.com/...'}], 'text': "Hi! I'm John. How are you? See my website (https://t.co/abcDEFg1hi).", 'mediaUrls': [], 'senderId': '1234567890', 'id': '1234567890123456789', 'createdAt': '2019-11-12T20:46:39.040Z'}}]</td>
 <td>2021-06-12 06:43:54</td>
 <td>2022-06-11 00:25:02</td>
 </tr>
@@ -568,7 +570,7 @@
 <td>data\follower.js</td>
 <td>follower.userLink</td>
 <td>String</td>
-<td>Link to information about the blocked users’ profiles if accessible to the account. For example, this information might not be accessible if blocked profiles are protected or deactivated.</td>
+<td>Link to information about the blocked users' profiles if accessible to the account. For example, this information might not be accessible if blocked profiles are protected or deactivated.</td>
 <td>https://twitter.com/intent/user?user_id=123456789</td>
 <td>2021-06-12 06:43:54</td>
 <td>2022-06-11 00:25:02</td>
@@ -1423,7 +1425,7 @@
 <td>data\mute.js</td>
 <td>muting.userLink</td>
 <td>String</td>
-<td>Link to information about the blocked users’ profiles if accessible to the account. For example, this information might not be accessible if blocked profiles are protected or deactivated.</td>
+<td>Link to information about the blocked users' profiles if accessible to the account. For example, this information might not be accessible if blocked profiles are protected or deactivated.</td>
 <td>https://twitter.com/intent/user?user_id=123456789</td>
 <td>2021-06-12 06:43:54</td>
 <td>2022-06-11 00:25:02</td>
@@ -1450,7 +1452,7 @@
 <td>data\ni-devices.js</td>
 <td>niDeviceResponse.messagingDevice.deviceType</td>
 <td>String</td>
-<td>Manufacturer for devices that are marked as “pushDevice”. For devices marked as “messagingDevice”, the field will indicate “Auth” if the device is only used for two-factor authentication purposes, and “Full” if the device is set to receive notifications from Twitter.</td>
+<td>Manufacturer for devices that are marked as 'pushDevice'. For devices marked as 'messagingDevice', the field will indicate 'Auth' if the device is only used for two-factor authentication purposes, and 'Full' if the device is set to receive notifications from Twitter.</td>
 <td>Full</td>
 <td>2021-06-12 06:43:54</td>
 <td>2022-06-11 00:25:02</td>
@@ -1468,7 +1470,7 @@
 <td>data\periscope-account-information.js</td>
 <td>periscopeAccountInformation.createdAt</td>
 <td>String</td>
-<td>Date and time the "shell account" was created.</td>
+<td>Date and time the 'shell account' was created.</td>
 <td>2019-03-19T14:47:37.532097508Z</td>
 <td>2021-06-12 06:43:54</td>
 <td>2022-06-11 00:25:02</td>
@@ -1495,7 +1497,7 @@
 <td>data\periscope-account-information.js</td>
 <td>periscopeAccountInformation.id</td>
 <td>String</td>
-<td>Periscope shell account unique identifier automatically created as soon as the user goes to the "Live" section of the News Camera. A Periscope shell account will be created for the Twitter user before the user goes live.</td>
+<td>Periscope shell account unique identifier automatically created as soon as the user goes to the 'Live' section of the News Camera. A Periscope shell account will be created for the Twitter user before the user goes live.</td>
 <td>1aBCdEfghIJkl</td>
 <td>2021-06-12 06:43:54</td>
 <td>2022-06-11 00:25:02</td>
@@ -1522,7 +1524,7 @@
 <td>data\periscope-account-information.js</td>
 <td>periscopeAccountInformation.twitterScreenName</td>
 <td>String</td>
-<td>The Twitter account’s current @username. Note that the @username may change but the account ID will remain the same for the lifetime of the account.</td>
+<td>The Twitter account's current @username. Note that the @username may change but the account ID will remain the same for the lifetime of the account.</td>
 <td>JohnSmith</td>
 <td>2021-06-12 06:43:54</td>
 <td>2022-06-11 00:25:02</td>
