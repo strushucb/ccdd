@@ -1,0 +1,4128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>California Consumer Data Dictionary</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
+<link href="fresh-bootstrap-table.css" rel="stylesheet" />
+<link href="demo.css" rel="stylesheet" />
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<link href="http://fonts.googleapis.com/css?family=Roboto:400,700,300" rel="stylesheet" type="text/css">
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/bootstrap-table/dist/bootstrap-table.min.js"></script>
+<script src="https://unpkg.com/bootstrap-table@1.20.2/dist/extensions/print/bootstrap-table-print.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/tableexport.jquery.plugin@1.10.21/tableExport.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tableexport.jquery.plugin@1.10.21/libs/jsPDF/jspdf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tableexport.jquery.plugin@1.10.21/libs/jsPDF-AutoTable/jspdf.plugin.autotable.js"></script>
+<script src="https://unpkg.com/bootstrap-table@1.20.2/dist/extensions/export/bootstrap-table-export.min.js"></script>
+</head>
+<body>
+<div id="wrapper">
+<!-- Sidebar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                       <small>California Consumer Data Dictionary</small>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home Surveillance<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-header">Device Maker</li>
+                    <li><a href="eufy_table.html">Eufy</a></li>
+                    <li><a href="nest_table.html">Nest</a></li>
+                    <li><a href="ring_table.html">Ring</a></li>
+                    <li><a href="wyze_table.html">Wyze</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Social Media<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-header">Platform</li>
+                    <li><a href="linkedin_table.html">LinkedIn</a></li>
+                    <li><a href="twitter_table.html">Twitter</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Privacy Tools<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-header">Tool</li>
+                    <li><a href="expressvpn_table.html">ExpressVPN</a></li>
+                  </ul>
+                </li>
+            </ul>
+        </nav>    
+ <div id="page-content-wrapper">
+            <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+                <span class="hamb-top"></span>
+                <span class="hamb-middle"></span>
+                <span class="hamb-bottom"></span>
+            </button>
+    <div class="container">
+        <div class="row"><div class="logo-container"><h3>Nest</h3></div>
+    <div class="fresh-table full-screen-table toolbar-color-red ">
+          <table id="fresh-table" class="table" data-sort-name="source" data-sort-order="asc" data-total-field="count" data-data-field="items">
+            <thead>
+              
+              <th data-field="source" data-sortable="true">Source File</th>
+
+              <th data-field="name" data-sortable="true">Name</th>
+
+              <th data-field="type" data-sortable="true">Type</th>
+
+              <th data-field="description" data-sortable="false">Description</th>
+
+              <th data-field="example" data-sortable="false">Example</th>
+
+              <th data-field="firstseen" data-sortable="true">Date of Request First Seen</th>
+
+              <th data-field="lastseen" data-sortable="true">Date of Request Last Seen</th>
+
+              
+            </thead>
+            <tbody>
+              <tr>
+<td>Takeout\Nest\user\account.csv</td>
+<td>_isPersisted</td>
+<td>Unknown</td>
+<td>None</td>
+<td>No Example Given</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\account.csv</td>
+<td>date_joined</td>
+<td>String</td>
+<td>None</td>
+<td>2022-06-29 22:02:45.0</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\account.csv</td>
+<td>email</td>
+<td>String</td>
+<td>None</td>
+<td>9fe8dc7b-1234-abcd-1abc-98f76e5d432c@address.com</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\account.csv</td>
+<td>first_name</td>
+<td>String</td>
+<td>None</td>
+<td>nan</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\account.csv</td>
+<td>id</td>
+<td>Integer</td>
+<td>None</td>
+<td>12345678</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\account.csv</td>
+<td>is_active</td>
+<td>Boolean</td>
+<td>None</td>
+<td>true</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\account.csv</td>
+<td>is_staff</td>
+<td>Boolean</td>
+<td>None</td>
+<td>false</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\account.csv</td>
+<td>is_superuser</td>
+<td>Boolean</td>
+<td>None</td>
+<td>false</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\account.csv</td>
+<td>last_login</td>
+<td>String</td>
+<td>None</td>
+<td>2022-06-29 22:02:45.0</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\account.csv</td>
+<td>last_name</td>
+<td>String</td>
+<td>None</td>
+<td>nan</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\account.csv</td>
+<td>merged_with_gaia</td>
+<td>Boolean</td>
+<td>None</td>
+<td>true</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\account.csv</td>
+<td>merged_with_gaia_at</td>
+<td>String</td>
+<td>None</td>
+<td>Some(2022-06-29 22:02:47.0)</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\account.csv</td>
+<td>password</td>
+<td>String</td>
+<td>None</td>
+<td>nan</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\mobile_devices.csv</td>
+<td>_isPersisted</td>
+<td>String</td>
+<td>None</td>
+<td>Some(1658188520)</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\mobile_devices.csv</td>
+<td>clientAppVersion</td>
+<td>String</td>
+<td>None</td>
+<td>5.68.1.3</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\mobile_devices.csv</td>
+<td>clientOs</td>
+<td>String</td>
+<td>None</td>
+<td>iOS</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\mobile_devices.csv</td>
+<td>clientOsVersion</td>
+<td>Real</td>
+<td>None</td>
+<td>15.5</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\mobile_devices.csv</td>
+<td>clientPlatform</td>
+<td>String</td>
+<td>None</td>
+<td>iPhone11</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\mobile_devices.csv</td>
+<td>clientPlayServicesVersion</td>
+<td>Integer</td>
+<td>None</td>
+<td>8</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\mobile_devices.csv</td>
+<td>creationTime</td>
+<td>String</td>
+<td>None</td>
+<td>None</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\mobile_devices.csv</td>
+<td>deviceId</td>
+<td>String</td>
+<td>None</td>
+<td>98F76543-E2D1-0C98-BA76-F5E43210D987</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\mobile_devices.csv</td>
+<td>deviceName</td>
+<td>String</td>
+<td>None</td>
+<td>Some(John Phone)</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\mobile_devices.csv</td>
+<td>id</td>
+<td>Integer</td>
+<td>None</td>
+<td>987654321</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\mobile_devices.csv</td>
+<td>reassertionTime</td>
+<td>String</td>
+<td>None</td>
+<td>Some(1656540358)</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\mobile_devices.csv</td>
+<td>userId</td>
+<td>Integer</td>
+<td>None</td>
+<td>12345678</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\notification_tokens.csv</td>
+<td>_isPersisted</td>
+<td>Unknown</td>
+<td>None</td>
+<td>No Example Given</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\notification_tokens.csv</td>
+<td>bundle_id</td>
+<td>String</td>
+<td>None</td>
+<td>Some(com.nestlabs.jasper.release)</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\notification_tokens.csv</td>
+<td>cert</td>
+<td>String</td>
+<td>None</td>
+<td>None</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\notification_tokens.csv</td>
+<td>client_app_version</td>
+<td>String</td>
+<td>None</td>
+<td>Some(5.68.1.3)</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\notification_tokens.csv</td>
+<td>client_platform</td>
+<td>String</td>
+<td>None</td>
+<td>iOS</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\notification_tokens.csv</td>
+<td>client_user_agent</td>
+<td>String</td>
+<td>None</td>
+<td>Some(Nest/5.68.1.3 (iOScom.nestlabs.jasper.release) os=15.5)</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\notification_tokens.csv</td>
+<td>device_id</td>
+<td>String</td>
+<td>None</td>
+<td>Some(98F76543-E2D1-0C98-BA76-F5E43210D987)</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\notification_tokens.csv</td>
+<td>formats</td>
+<td>Unknown</td>
+<td>None</td>
+<td>No Example Given</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\notification_tokens.csv</td>
+<td>id</td>
+<td>Integer</td>
+<td>None</td>
+<td>9876543210</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\notification_tokens.csv</td>
+<td>language</td>
+<td>String</td>
+<td>None</td>
+<td>es_US</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\notification_tokens.csv</td>
+<td>modified_at</td>
+<td>String</td>
+<td>None</td>
+<td>Some(2022-07-18 23:55:20.0)</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\notification_tokens.csv</td>
+<td>sender</td>
+<td>String</td>
+<td>None</td>
+<td>None</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\notification_tokens.csv</td>
+<td>service</td>
+<td>String</td>
+<td>None</td>
+<td>None</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\notification_tokens.csv</td>
+<td>token</td>
+<td>String</td>
+<td>None</td>
+<td>12a3456b7c890123def45a6b7c8d9e0f12a34bcde5f67ab8cd90efa1b23c4d5e</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\notification_tokens.csv</td>
+<td>use_sandbox</td>
+<td>String</td>
+<td>None</td>
+<td>Some(false)</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\notification_tokens.csv</td>
+<td>user_id</td>
+<td>Integer</td>
+<td>None</td>
+<td>12345678</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\device_history.csv</td>
+<td>pairedAt</td>
+<td>String</td>
+<td>None</td>
+<td>2022-06-29 22:11:10.0</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\device_history.csv</td>
+<td>sn</td>
+<td>String</td>
+<td>None</td>
+<td>3def45a6b7c8d9e0f12a3456b7c89012</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\device_history.csv</td>
+<td>structureUUID</td>
+<td>String</td>
+<td>None</td>
+<td>Some(12a3456b-7c89-0123-def4-5a6b7c8d9e0f)</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\members.csv</td>
+<td>roles</td>
+<td>String</td>
+<td>None</td>
+<td>List(owner)</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\members.csv</td>
+<td>userId</td>
+<td>Integer</td>
+<td>None</td>
+<td>12345678</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\clips\clip_metadata.json</td>
+<td>items.clips</td>
+<td>String</td>
+<td>None</td>
+<td>[{'length_in_seconds': 49.208, 'nest_user_id': '12345678', 'camera_id': 01234567, 'clip_type': '', 'public_link': 'https://www.dropcam.com/c/3456b7c890123def45a6b7c8d9e0f12a.mp4', 'is_played': 'False', 'title': '', 'camera_uuid': '3def45a6b7c8d9e0f12a3456b7c89012', 'download_url': 'https://clips.dropcam.com/3456b7c890123def45a6b7c8d9e0f12a.mp4', 'filename': '3456b7c890123def45a6b7c8d9e0f12a.mp4', 'is_user_generated': 'True', 'generated_time': 1656541070.476831, 'nest_structure_id': 'structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f', 'is_error': 'False', 'embed_url': 'https://video.nest.com/embedded/clip/3456b7c890123def45a6b7c8d9e0f12a.mp4', 'description': '', 'start_time': 1656540942.887, 'public_url': 'https://video.nest.com/clip/3456b7c890123def45a6b7c8d9e0f12a.mp4', 'play_count': 0, 'is_public': 'False', 'notes': '', 'server': 'clips.dropcam.com', 'thumbnail_url': 'https://clips.dropcam.com/3456b7c890123def45a6b7c8d9e0f12a.jpg', 'id': 123456789, 'aspect_ratio': '4x3', 'is_generated': 'True'}]</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\clips\clip_metadata.json</td>
+<td>items.nest_structure_id</td>
+<td>String</td>
+<td>None</td>
+<td>structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\clips\clip_metadata.json</td>
+<td>items.total_quota</td>
+<td>String</td>
+<td>None</td>
+<td>10800</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\clips\clip_metadata.json</td>
+<td>items.used_quota</td>
+<td>String</td>
+<td>None</td>
+<td>49</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\clips\clip_metadata.json</td>
+<td>status</td>
+<td>Integer</td>
+<td>None</td>
+<td>0</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\clips\clip_metadata.json</td>
+<td>status_description</td>
+<td>String</td>
+<td>None</td>
+<td>ok</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\clips\clip_metadata.json</td>
+<td>status_detail</td>
+<td>String</td>
+<td>None</td>
+<td>nan</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\cuepoints\cuepoints.json</td>
+<td>_timestamp</td>
+<td>String</td>
+<td>None</td>
+<td>1656566516.984</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\cuepoints\cuepoints.json</td>
+<td>cuepoint_category_id</td>
+<td>Real</td>
+<td>None</td>
+<td>0.0</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\cuepoints\cuepoints.json</td>
+<td>duration</td>
+<td>Real</td>
+<td>None</td>
+<td>10.123000145</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\cuepoints\cuepoints.json</td>
+<td>has_cvr</td>
+<td>Boolean</td>
+<td>None</td>
+<td>True</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\cuepoints\cuepoints.json</td>
+<td>id</td>
+<td>Integer</td>
+<td>None</td>
+<td>1234567890</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\cuepoints\cuepoints.json</td>
+<td>importance</td>
+<td>Real</td>
+<td>None</td>
+<td>0.0</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\cuepoints\cuepoints.json</td>
+<td>importance_triggers</td>
+<td>String</td>
+<td>None</td>
+<td>[]</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\cuepoints\cuepoints.json</td>
+<td>info</td>
+<td>String</td>
+<td>None</td>
+<td>[]</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\cuepoints\cuepoints.json</td>
+<td>is_important</td>
+<td>Boolean</td>
+<td>None</td>
+<td>False</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\cuepoints\cuepoints.json</td>
+<td>note</td>
+<td>String</td>
+<td>None</td>
+<td>d=5.154&p=0.000</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\cuepoints\cuepoints.json</td>
+<td>storage_tag</td>
+<td>Integer</td>
+<td>None</td>
+<td>1</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\cuepoints\cuepoints.json</td>
+<td>type</td>
+<td>String</td>
+<td>None</td>
+<td>ave1</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\cuepoints\cuepoints.json</td>
+<td>uuid</td>
+<td>String</td>
+<td>None</td>
+<td>3def45a6b7c8d9e0f12a3456b7c89012</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\cuepoint_categories\activity_zones.json</td>
+<td>color</td>
+<td>Integer</td>
+<td>None</td>
+<td>12303291</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\cuepoint_categories\activity_zones.json</td>
+<td>count</td>
+<td>Integer</td>
+<td>None</td>
+<td>0</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\cuepoint_categories\activity_zones.json</td>
+<td>created_at</td>
+<td>String</td>
+<td>None</td>
+<td>nan</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\cuepoint_categories\activity_zones.json</td>
+<td>default_label</td>
+<td>String</td>
+<td>None</td>
+<td>nan</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\cuepoint_categories\activity_zones.json</td>
+<td>drawColor</td>
+<td>Integer</td>
+<td>None</td>
+<td>7961733</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\cuepoint_categories\activity_zones.json</td>
+<td>hidden</td>
+<td>Boolean</td>
+<td>None</td>
+<td>False</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\cuepoint_categories\activity_zones.json</td>
+<td>id</td>
+<td>Integer</td>
+<td>None</td>
+<td>0</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\cuepoint_categories\activity_zones.json</td>
+<td>label</td>
+<td>String</td>
+<td>None</td>
+<td>nan</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\cuepoint_categories\activity_zones.json</td>
+<td>label_magma_key</td>
+<td>String</td>
+<td>None</td>
+<td>nan</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\cuepoint_categories\activity_zones.json</td>
+<td>last_alerted</td>
+<td>String</td>
+<td>None</td>
+<td>nan</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\cuepoint_categories\activity_zones.json</td>
+<td>last_updated</td>
+<td>String</td>
+<td>None</td>
+<td>nan</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\cuepoint_categories\activity_zones.json</td>
+<td>learned_type</td>
+<td>String</td>
+<td>None</td>
+<td>nan</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\cuepoint_categories\activity_zones.json</td>
+<td>mask_meta</td>
+<td>String</td>
+<td>None</td>
+<td>{"coords":[["0.0","0.0",false],["0.0","1.0",false],["1.0","1.0",false],["1.0","0.0",false]]}</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\cuepoint_categories\activity_zones.json</td>
+<td>motion_mask</td>
+<td>String</td>
+<td>None</td>
+<td>////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\cuepoint_categories\activity_zones.json</td>
+<td>motion_path</td>
+<td>String</td>
+<td>None</td>
+<td>[]</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\cuepoint_categories\activity_zones.json</td>
+<td>nexusapi_image_uri</td>
+<td>String</td>
+<td>None</td>
+<td>/cuepoint_category_image/3def45a6b7c8d9e0f12a3456b7c89012/0</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\cuepoint_categories\activity_zones.json</td>
+<td>order</td>
+<td>Integer</td>
+<td>None</td>
+<td>0</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\cuepoint_categories\activity_zones.json</td>
+<td>type</td>
+<td>String</td>
+<td>None</td>
+<td>activity</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\cuepoint_categories\activity_zones.json</td>
+<td>weight</td>
+<td>String</td>
+<td>None</td>
+<td>nan</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\camera_properties.json</td>
+<td>is_public</td>
+<td>Boolean</td>
+<td>None</td>
+<td>False</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\camera_properties.json</td>
+<td>is_streaming</td>
+<td>Boolean</td>
+<td>None</td>
+<td>True</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\camera_properties.json</td>
+<td>last_connected_time</td>
+<td>String</td>
+<td>None</td>
+<td>1657048471</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\camera_properties.json</td>
+<td>public_token</td>
+<td>String</td>
+<td>None</td>
+<td>ab1CDEFghI</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\camera_properties.json</td>
+<td>public_url</td>
+<td>String</td>
+<td>None</td>
+<td>https://video.nest.com/live/ab1CDEFghI</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\camera_properties.json</td>
+<td>region</td>
+<td>String</td>
+<td>None</td>
+<td>us1</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\camera_properties.json</td>
+<td>share_mode</td>
+<td>String</td>
+<td>None</td>
+<td>PRIVATE</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\google.trait.description.ResourceSpecTrait.json</td>
+<td>current_schema_version</td>
+<td>Integer</td>
+<td>None</td>
+<td>7</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\google.trait.description.ResourceSpecTrait.json</td>
+<td>iface_specs.iface_type</td>
+<td>String</td>
+<td>None</td>
+<td>weave.iface.common.DeviceIface</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\google.trait.description.ResourceSpecTrait.json</td>
+<td>iface_specs.schema_version</td>
+<td>String</td>
+<td>None</td>
+<td>{'current_version': 1}</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\google.trait.description.ResourceSpecTrait.json</td>
+<td>resource_type</td>
+<td>String</td>
+<td>None</td>
+<td>nest.resource.NestHelloResource</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\google.trait.description.ResourceSpecTrait.json</td>
+<td>trait_specs.published_by</td>
+<td>String</td>
+<td>None</td>
+<td>PUBLISHED_BY_EXTERNAL</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\google.trait.description.ResourceSpecTrait.json</td>
+<td>trait_specs.schema_version</td>
+<td>String</td>
+<td>None</td>
+<td>{'current_version': 7}</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\google.trait.description.ResourceSpecTrait.json</td>
+<td>trait_specs.trait_label</td>
+<td>String</td>
+<td>None</td>
+<td>label</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\google.trait.description.ResourceSpecTrait.json</td>
+<td>trait_specs.trait_type</td>
+<td>String</td>
+<td>None</td>
+<td>weave.trait.description.LabelSettingsTrait</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.audio.MicrophoneSettingsTrait.json</td>
+<td>enable_microphone</td>
+<td>Boolean</td>
+<td>None</td>
+<td>True</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.firmware.SoftwareUpdateTrait.json</td>
+<td>last_update_time</td>
+<td>String</td>
+<td>None</td>
+<td>2022-07-14T00:37:49.001Z</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.firmware.SoftwareUpdateTrait.json</td>
+<td>state</td>
+<td>String</td>
+<td>None</td>
+<td>STATE_IDLE</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.firmware.SoftwareUpdateTrait.json</td>
+<td>update_type</td>
+<td>String</td>
+<td>None</td>
+<td>UPDATE_TYPE_NON_BLOCKING</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.located.DeviceLocatedSettingsTrait.json</td>
+<td>last_modified_timestamp</td>
+<td>String</td>
+<td>None</td>
+<td>2022-06-29T22:11:49Z</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.located.DeviceLocatedSettingsTrait.json</td>
+<td>where_annotation_rid.resource_id</td>
+<td>String</td>
+<td>None</td>
+<td>ANNOTATION_0000000000000004</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.located.DeviceLocatedSettingsTrait.json</td>
+<td>where_label.literal</td>
+<td>String</td>
+<td>None</td>
+<td>Attic</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.located.IpGeoTrait.json</td>
+<td>administrative_area_level_1</td>
+<td>String</td>
+<td>None</td>
+<td>California</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.located.IpGeoTrait.json</td>
+<td>administrative_area_level_2</td>
+<td>String</td>
+<td>None</td>
+<td>Los Angeles County</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.located.IpGeoTrait.json</td>
+<td>country_code</td>
+<td>String</td>
+<td>None</td>
+<td>US</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.located.IpGeoTrait.json</td>
+<td>geo_coordinate.latitude</td>
+<td>Real</td>
+<td>None</td>
+<td>12.34567</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.located.IpGeoTrait.json</td>
+<td>geo_coordinate.longitude</td>
+<td>Real</td>
+<td>None</td>
+<td>-123.45678</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.located.IpGeoTrait.json</td>
+<td>locality</td>
+<td>String</td>
+<td>None</td>
+<td>Los Angeles</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.located.IpGeoTrait.json</td>
+<td>postal_code</td>
+<td>String</td>
+<td>None</td>
+<td>90210</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.located.IpGeoTrait.json</td>
+<td>std_region</td>
+<td>String</td>
+<td>None</td>
+<td>REGION_NA</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.occupancy.StructureModeTrait.json</td>
+<td>activity_agnostic_structure_mode</td>
+<td>String</td>
+<td>None</td>
+<td>STRUCTURE_MODE_HOME</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.occupancy.StructureModeTrait.json</td>
+<td>activity_agnostic_structure_mode_effective_time</td>
+<td>String</td>
+<td>None</td>
+<td>2022-07-12T23:50:36.718Z</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.occupancy.StructureModeTrait.json</td>
+<td>allowance.mode_stickiness</td>
+<td>String</td>
+<td>None</td>
+<td>MODE_STICKINESS_NONE</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.occupancy.StructureModeTrait.json</td>
+<td>occupancy.activity</td>
+<td>String</td>
+<td>None</td>
+<td>ACTIVITY_ACTIVE</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.occupancy.StructureModeTrait.json</td>
+<td>occupancy.activity_hold_off</td>
+<td>String</td>
+<td>None</td>
+<td>1970-01-01T00:30:00Z</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.occupancy.StructureModeTrait.json</td>
+<td>occupancy.last_activity_time</td>
+<td>String</td>
+<td>None</td>
+<td>1970-01-01T00:00:00Z</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.occupancy.StructureModeTrait.json</td>
+<td>occupancy.presence</td>
+<td>String</td>
+<td>None</td>
+<td>PRESENCE_PRESENT</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.occupancy.StructureModeTrait.json</td>
+<td>private_state.is_cz_update_state_ok</td>
+<td>Boolean</td>
+<td>None</td>
+<td>True</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.occupancy.StructureModeTrait.json</td>
+<td>structure_mode</td>
+<td>String</td>
+<td>None</td>
+<td>STRUCTURE_MODE_HOME</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.occupancy.StructureModeTrait.json</td>
+<td>structure_mode_effective_time</td>
+<td>String</td>
+<td>None</td>
+<td>2022-06-29T22:11:50.995Z</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.occupancy.StructureModeTrait.json</td>
+<td>structure_mode_reason</td>
+<td>String</td>
+<td>None</td>
+<td>STRUCTURE_MODE_REASON_IDENTIFIED_PRESENCE</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.AspectRatioTrait.json</td>
+<td>height</td>
+<td>Integer</td>
+<td>None</td>
+<td>3</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.AspectRatioTrait.json</td>
+<td>width</td>
+<td>Integer</td>
+<td>None</td>
+<td>4</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.CameraEntitlementTra.json</td>
+<td>are_zones_allowed</td>
+<td>Boolean</td>
+<td>None</td>
+<td>True</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.CameraEntitlementTra.json</td>
+<td>ebr_hours</td>
+<td>Integer</td>
+<td>None</td>
+<td>720</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.CameraEntitlementTra.json</td>
+<td>hours_of_free_tier_history</td>
+<td>Integer</td>
+<td>None</td>
+<td>3</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.CameraEntitlementTra.json</td>
+<td>sound_trigger_entitlements.co_alarming.reason</td>
+<td>String</td>
+<td>None</td>
+<td>DISABLED_REASON_ENTITLED_BUT_DEVICE_NOT_CAPABLE</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.CameraEntitlementTra.json</td>
+<td>sound_trigger_entitlements.dog_barking.reason</td>
+<td>String</td>
+<td>None</td>
+<td>DISABLED_REASON_ENTITLED_BUT_DEVICE_NOT_CAPABLE</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.CameraEntitlementTra.json</td>
+<td>sound_trigger_entitlements.glass_breaking.reason</td>
+<td>String</td>
+<td>None</td>
+<td>DISABLED_REASON_ENTITLED_BUT_DEVICE_NOT_CAPABLE</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.CameraEntitlementTra.json</td>
+<td>sound_trigger_entitlements.person_talking.reason</td>
+<td>String</td>
+<td>None</td>
+<td>DISABLED_REASON_ENTITLED_BUT_DEVICE_NOT_CAPABLE</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.CameraEntitlementTra.json</td>
+<td>sound_trigger_entitlements.smoke_alarming.reason</td>
+<td>String</td>
+<td>None</td>
+<td>DISABLED_REASON_ENTITLED_BUT_DEVICE_NOT_CAPABLE</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.CameraEntitlementTra.json</td>
+<td>sound_trigger_entitlements.sound.enabled</td>
+<td>Boolean</td>
+<td>None</td>
+<td>True</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.CameraEntitlementTra.json</td>
+<td>vision_trigger_entitlements.face.enabled</td>
+<td>Boolean</td>
+<td>None</td>
+<td>True</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.CameraEntitlementTra.json</td>
+<td>vision_trigger_entitlements.garage_door.reason</td>
+<td>String</td>
+<td>None</td>
+<td>DISABLED_REASON_ENTITLED_BUT_DEVICE_NOT_CAPABLE</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.CameraEntitlementTra.json</td>
+<td>vision_trigger_entitlements.motion.enabled</td>
+<td>Boolean</td>
+<td>None</td>
+<td>True</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.CameraEntitlementTra.json</td>
+<td>vision_trigger_entitlements.package.enabled</td>
+<td>Boolean</td>
+<td>None</td>
+<td>True</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.CameraEntitlementTra.json</td>
+<td>vision_trigger_entitlements.person.enabled</td>
+<td>Boolean</td>
+<td>None</td>
+<td>True</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.CameraEntitlementTra.json</td>
+<td>vision_trigger_entitlements.pet.reason</td>
+<td>String</td>
+<td>None</td>
+<td>DISABLED_REASON_ENTITLED_BUT_DEVICE_NOT_CAPABLE</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.CameraEntitlementTra.json</td>
+<td>vision_trigger_entitlements.vehicle.reason</td>
+<td>String</td>
+<td>None</td>
+<td>DISABLED_REASON_ENTITLED_BUT_DEVICE_NOT_CAPABLE</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.DptzSettingsTrait.json</td>
+<td>center_x</td>
+<td>Real</td>
+<td>None</td>
+<td>0.5</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.DptzSettingsTrait.json</td>
+<td>center_y</td>
+<td>Real</td>
+<td>None</td>
+<td>0.5</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.DptzSettingsTrait.json</td>
+<td>height</td>
+<td>Real</td>
+<td>None</td>
+<td>1.0</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.DptzSettingsTrait.json</td>
+<td>width</td>
+<td>Real</td>
+<td>None</td>
+<td>1.0</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.EffectiveHistoryLeng.json</td>
+<td>max_length</td>
+<td>String</td>
+<td>None</td>
+<td>2592000s</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.FaceTrackingSettings.json</td>
+<td>biometrics_location</td>
+<td>String</td>
+<td>None</td>
+<td>BIOMETRICS_LOCATION_IN_CLOUD</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.FaceTrackingSettings.json</td>
+<td>face_tracking_enabled</td>
+<td>Boolean</td>
+<td>None</td>
+<td>True</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.MaxZoomingCapability.json</td>
+<td>max_zoom</td>
+<td>Integer</td>
+<td>None</td>
+<td>8</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.MediaQualitySettings.json</td>
+<td>media_quality</td>
+<td>String</td>
+<td>None</td>
+<td>MEDIA_QUALITY_BANDWIDTH_OPTIMIZED</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.NightVisionSettingsT.json</td>
+<td>night_vision_mode</td>
+<td>String</td>
+<td>None</td>
+<td>NIGHT_VISION_MODE_AUTO</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.ObservationSessionSe.json</td>
+<td>cool_off_duration</td>
+<td>String</td>
+<td>None</td>
+<td>0s</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.ObservationSessionSe.json</td>
+<td>inactivity_threshold_duration</td>
+<td>String</td>
+<td>None</td>
+<td>30s</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.ObservationSessionSe.json</td>
+<td>max_session_duration</td>
+<td>String</td>
+<td>None</td>
+<td>60s</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.ObservationSessionSe.json</td>
+<td>post_roll_duration</td>
+<td>String</td>
+<td>None</td>
+<td>2s</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.ObservationSessionSe.json</td>
+<td>pre_roll_duration</td>
+<td>String</td>
+<td>None</td>
+<td>2s</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.ObservationTriggerCa.json</td>
+<td>sound_trigger.co_alarming_enabled</td>
+<td>Boolean</td>
+<td>None</td>
+<td>False</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.ObservationTriggerCa.json</td>
+<td>sound_trigger.dog_barking_enabled</td>
+<td>Boolean</td>
+<td>None</td>
+<td>False</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.ObservationTriggerCa.json</td>
+<td>sound_trigger.glass_breaking_enabled</td>
+<td>Boolean</td>
+<td>None</td>
+<td>False</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.ObservationTriggerCa.json</td>
+<td>sound_trigger.person_talking_enabled</td>
+<td>Boolean</td>
+<td>None</td>
+<td>False</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.ObservationTriggerCa.json</td>
+<td>sound_trigger.smoke_alarming_enabled</td>
+<td>Boolean</td>
+<td>None</td>
+<td>False</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.ObservationTriggerCa.json</td>
+<td>sound_trigger.sound_enabled</td>
+<td>Boolean</td>
+<td>None</td>
+<td>True</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.ObservationTriggerCa.json</td>
+<td>vision_trigger.face_enabled</td>
+<td>Boolean</td>
+<td>None</td>
+<td>True</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.ObservationTriggerCa.json</td>
+<td>vision_trigger.garage_door_enabled</td>
+<td>Boolean</td>
+<td>None</td>
+<td>False</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.ObservationTriggerCa.json</td>
+<td>vision_trigger.motion_enabled</td>
+<td>Boolean</td>
+<td>None</td>
+<td>True</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.ObservationTriggerCa.json</td>
+<td>vision_trigger.package_enabled</td>
+<td>Boolean</td>
+<td>None</td>
+<td>True</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.ObservationTriggerCa.json</td>
+<td>vision_trigger.person_enabled</td>
+<td>Boolean</td>
+<td>None</td>
+<td>True</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.ObservationTriggerCa.json</td>
+<td>vision_trigger.pet_enabled</td>
+<td>Boolean</td>
+<td>None</td>
+<td>False</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.ObservationTriggerCa.json</td>
+<td>vision_trigger.vehicle_enabled</td>
+<td>Boolean</td>
+<td>None</td>
+<td>False</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.ObservationTriggerSe.json</td>
+<td>ecosystem_trigger_settings.safety.editable</td>
+<td>Boolean</td>
+<td>None</td>
+<td>True</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.ObservationTriggerSe.json</td>
+<td>ecosystem_trigger_settings.safety.value</td>
+<td>Boolean</td>
+<td>None</td>
+<td>False</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.ObservationTriggerSe.json</td>
+<td>sound_trigger_settings.co_alarming.reason</td>
+<td>String</td>
+<td>None</td>
+<td>DISABLED_REASON_DEVICE_NOT_CAPABLE</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.ObservationTriggerSe.json</td>
+<td>sound_trigger_settings.dog_barking.reason</td>
+<td>String</td>
+<td>None</td>
+<td>DISABLED_REASON_DEVICE_NOT_CAPABLE</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.ObservationTriggerSe.json</td>
+<td>sound_trigger_settings.glass_breaking.reason</td>
+<td>String</td>
+<td>None</td>
+<td>DISABLED_REASON_DEVICE_NOT_CAPABLE</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.ObservationTriggerSe.json</td>
+<td>sound_trigger_settings.person_talking.reason</td>
+<td>String</td>
+<td>None</td>
+<td>DISABLED_REASON_DEVICE_NOT_CAPABLE</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.ObservationTriggerSe.json</td>
+<td>sound_trigger_settings.smoke_alarming.reason</td>
+<td>String</td>
+<td>None</td>
+<td>DISABLED_REASON_DEVICE_NOT_CAPABLE</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.ObservationTriggerSe.json</td>
+<td>sound_trigger_settings.sound.value</td>
+<td>Boolean</td>
+<td>None</td>
+<td>True</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.ObservationTriggerSe.json</td>
+<td>zone_observation_triggers.0.vision_trigger_settings.motion.value</td>
+<td>Boolean</td>
+<td>None</td>
+<td>False</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.ObservationTriggerSe.json</td>
+<td>zone_observation_triggers.0.vision_trigger_settings.package.value</td>
+<td>Boolean</td>
+<td>None</td>
+<td>True</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.ObservationTriggerSe.json</td>
+<td>zone_observation_triggers.0.vision_trigger_settings.person.value</td>
+<td>Boolean</td>
+<td>None</td>
+<td>True</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.ObservationTriggerSe.json</td>
+<td>zone_observation_triggers.0.vision_trigger_settings.pet.reason</td>
+<td>String</td>
+<td>None</td>
+<td>DISABLED_REASON_DEVICE_NOT_CAPABLE</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.ObservationTriggerSe.json</td>
+<td>zone_observation_triggers.0.vision_trigger_settings.vehicle.reason</td>
+<td>String</td>
+<td>None</td>
+<td>DISABLED_REASON_DEVICE_NOT_CAPABLE</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.QuickActionsTrait.json</td>
+<td>available_quick_actions.id</td>
+<td>String</td>
+<td>None</td>
+<td>1</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.QuickActionsTrait.json</td>
+<td>available_quick_actions.label</td>
+<td>String</td>
+<td>None</td>
+<td>leave_the_package</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.RecordingEncoderCapa.json</td>
+<td>supported_qualities</td>
+<td>String</td>
+<td>None</td>
+<td>['ENCODING_QUALITY_LOW', 'ENCODING_QUALITY_MEDIUM_LOW', 'ENCODING_QUALITY_HIGH']</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.RecordingEncoderSett.json</td>
+<td>encoding_quality</td>
+<td>String</td>
+<td>None</td>
+<td>ENCODING_QUALITY_MEDIUM_LOW</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.RecordingMediaCapabi.json</td>
+<td>supported_recording_modes</td>
+<td>String</td>
+<td>None</td>
+<td>['RECORDING_MODE_CVR', 'RECORDING_MODE_STILL_IMAGES', 'RECORDING_MODE_DISABLED', 'RECORDING_MODE_UNSPECIFIED']</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.RecordingMediaSettin.json</td>
+<td>audio_recording_enabled</td>
+<td>Boolean</td>
+<td>None</td>
+<td>True</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.RecordingMediaSettin.json</td>
+<td>recording_mode</td>
+<td>String</td>
+<td>None</td>
+<td>RECORDING_MODE_CVR</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.RecordingToggleSetti.json</td>
+<td>recording_toggle_at</td>
+<td>String</td>
+<td>None</td>
+<td>2022-06-29T22:11:13.712723Z</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.RecordingToggleSetti.json</td>
+<td>recording_toggle_mode</td>
+<td>String</td>
+<td>None</td>
+<td>RECORDING_TOGGLE_MODE_ACTIVE</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.RecordingToggleSetti.json</td>
+<td>recording_toggle_reason</td>
+<td>String</td>
+<td>None</td>
+<td>RECORDING_TOGGLE_REASON_USER</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.RecordingToggleTrait.json</td>
+<td>recording_toggle_at</td>
+<td>String</td>
+<td>None</td>
+<td>2022-07-19T00:44:29.953Z</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.RecordingToggleTrait.json</td>
+<td>recording_toggle_mode</td>
+<td>String</td>
+<td>None</td>
+<td>RECORDING_TOGGLE_MODE_ACTIVE</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.RecordingToggleTrait.json</td>
+<td>recording_toggle_reason</td>
+<td>String</td>
+<td>None</td>
+<td>RECORDING_TOGGLE_REASON_SCHEDULE</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.StatusLEDSettingsTra.json</td>
+<td>status_led_brightness_level</td>
+<td>String</td>
+<td>None</td>
+<td>STATUS_LED_BRIGHTNESS_LEVEL_AUTO</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.StreamingProtocolTra.json</td>
+<td>assistant_streaming_protocol</td>
+<td>String</td>
+<td>None</td>
+<td>['STREAMING_PROTOCOL_NEXUSTALK', 'STREAMING_PROTOCOL_RTSP', 'STREAMING_PROTOCOL_HLS']</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.StreamingProtocolTra.json</td>
+<td>dash_manifest_base_url.stream_host</td>
+<td>String</td>
+<td>None</td>
+<td>https://nest-camera-frontend.googleapis.com/frontend/cc1/dashmanifest/namespace/nest-phoenix-prod/device/DEVICE_F0ED987654CBA321</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.StreamingProtocolTra.json</td>
+<td>hls_master_playlist_base_url.stream_host</td>
+<td>String</td>
+<td>None</td>
+<td>https://nest-camera-frontend.googleapis.com/frontend/cc1/hlsplaylist/namespace/nest-phoenix-prod/device/DEVICE_F0ED987654CBA321/generateHlsMasterPlaylist.m3u8</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.StreamingProtocolTra.json</td>
+<td>nexustalk_connection_parameters.stream_host</td>
+<td>String</td>
+<td>None</td>
+<td>nttrap-us1.dropcam.com</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.StreamingProtocolTra.json</td>
+<td>streaming_protocol</td>
+<td>String</td>
+<td>None</td>
+<td>['STREAMING_PROTOCOL_NEXUSTALK', 'STREAMING_PROTOCOL_RTSP', 'STREAMING_PROTOCOL_HLS']</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.camera.StreamingProtocolTra.json</td>
+<td>talkback_communication_protocol</td>
+<td>String</td>
+<td>None</td>
+<td>TALKBACK_COMMUNICATION_PROTOCOL_FULL_DUPLEX</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.1.chime_file.asset_id</td>
+<td>String</td>
+<td>None</td>
+<td>dreidel</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.1.chime_file.download_url</td>
+<td>String</td>
+<td>None</td>
+<td>https://nest-camera-media.googleapis.com/device/download/assets/global/common_audio/doorbell_themes/timeboxed/hanukkah2020/hanukkah_dreidel_16k-c126932994c8b3685f30bfe56f21e38cf750729d3653fe31056b50bcfd405d82.wav</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.1.chime_file.sha_256_hash</td>
+<td>String</td>
+<td>None</td>
+<td>c126932994c8b3685f30bfe56f21e38cf750729d3653fe31056b50bcfd405d82</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.1.chime_file.size_bytes</td>
+<td>String</td>
+<td>None</td>
+<td>120756</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.1.enabled</td>
+<td>Boolean</td>
+<td>None</td>
+<td>True</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.1.end_time</td>
+<td>String</td>
+<td>None</td>
+<td>2022-01-05T17:47:34.681Z</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.1.name</td>
+<td>String</td>
+<td>None</td>
+<td>hanukkah</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.1.start_time</td>
+<td>String</td>
+<td>None</td>
+<td>2021-12-01T17:00:00Z</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.1.theme_version</td>
+<td>Integer</td>
+<td>None</td>
+<td>7</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.2.chime_file.asset_id</td>
+<td>String</td>
+<td>None</td>
+<td>balafonriff</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.2.chime_file.download_url</td>
+<td>String</td>
+<td>None</td>
+<td>https://nest-camera-media.googleapis.com/device/download/assets/global/common_audio/doorbell_themes/timeboxed/kwanzaa/kwanzaa_balafonriff_v1.wav</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.2.chime_file.sha_256_hash</td>
+<td>String</td>
+<td>None</td>
+<td>bfd4a278e0872106b7b2c6319fd7ec6aed1cdf2fae9d3fa25bed8ba8f272e766</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.2.chime_file.size_bytes</td>
+<td>String</td>
+<td>None</td>
+<td>151220</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.2.enabled</td>
+<td>Boolean</td>
+<td>None</td>
+<td>True</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.2.end_time</td>
+<td>String</td>
+<td>None</td>
+<td>2022-01-05T17:47:34.681Z</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.2.name</td>
+<td>String</td>
+<td>None</td>
+<td>kwanzaa</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.2.start_time</td>
+<td>String</td>
+<td>None</td>
+<td>2021-12-01T17:00:00Z</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.2.theme_version</td>
+<td>Integer</td>
+<td>None</td>
+<td>7</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.3.chime_file.asset_id</td>
+<td>String</td>
+<td>None</td>
+<td>party</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.3.chime_file.download_url</td>
+<td>String</td>
+<td>None</td>
+<td>https://nest-camera-media.googleapis.com/device/download/assets/global/common_audio/doorbell_themes/timeboxed/newyear/newyear_party_16k-f4c5ba7f8b1fe2c6adf769a2382320d28306370608e37b2f6065b37027a028f8.wav</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.3.chime_file.sha_256_hash</td>
+<td>String</td>
+<td>None</td>
+<td>f4c5ba7f8b1fe2c6adf769a2382320d28306370608e37b2f6065b37027a028f8</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.3.chime_file.size_bytes</td>
+<td>String</td>
+<td>None</td>
+<td>145326</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.3.enabled</td>
+<td>Boolean</td>
+<td>None</td>
+<td>True</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.3.end_time</td>
+<td>String</td>
+<td>None</td>
+<td>2022-01-05T17:47:34.681Z</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.3.name</td>
+<td>String</td>
+<td>None</td>
+<td>newyear</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.3.start_time</td>
+<td>String</td>
+<td>None</td>
+<td>2021-12-01T17:00:00Z</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.3.theme_version</td>
+<td>Integer</td>
+<td>None</td>
+<td>8</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.4.chime_file.asset_id</td>
+<td>String</td>
+<td>None</td>
+<td>coldwind</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.4.chime_file.download_url</td>
+<td>String</td>
+<td>None</td>
+<td>https://nest-camera-media.googleapis.com/device/download/assets/global/common_audio/doorbell_themes/timeboxed/winter/winter_coldwind_16k-ab88cd0fbc76f375653c42b6f596162921e2d78ed92da16fb9fdde1cf20d38a1.wav</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.4.chime_file.sha_256_hash</td>
+<td>String</td>
+<td>None</td>
+<td>ab88cd0fbc76f375653c42b6f596162921e2d78ed92da16fb9fdde1cf20d38a1</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.4.chime_file.size_bytes</td>
+<td>String</td>
+<td>None</td>
+<td>112916</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.4.enabled</td>
+<td>Boolean</td>
+<td>None</td>
+<td>True</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.4.end_time</td>
+<td>String</td>
+<td>None</td>
+<td>2022-01-05T17:47:34.681Z</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.4.name</td>
+<td>String</td>
+<td>None</td>
+<td>winter</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.4.start_time</td>
+<td>String</td>
+<td>None</td>
+<td>2021-12-01T17:00:00Z</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.4.theme_version</td>
+<td>Integer</td>
+<td>None</td>
+<td>8</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.5.chime_file.asset_id</td>
+<td>String</td>
+<td>None</td>
+<td>12days</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.5.chime_file.download_url</td>
+<td>String</td>
+<td>None</td>
+<td>https://nest-camera-media.googleapis.com/device/download/assets/global/common_audio/doorbell_themes/timeboxed/xmas2020/xmas_12days_16k-937cc64f41404b8fccdcb6667c9caf20c2beffc9dafccf22aa9b3c3012cb1540.wav</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.5.chime_file.sha_256_hash</td>
+<td>String</td>
+<td>None</td>
+<td>937cc64f41404b8fccdcb6667c9caf20c2beffc9dafccf22aa9b3c3012cb1540</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.5.chime_file.size_bytes</td>
+<td>String</td>
+<td>None</td>
+<td>126620</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.5.enabled</td>
+<td>Boolean</td>
+<td>None</td>
+<td>True</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.5.end_time</td>
+<td>String</td>
+<td>None</td>
+<td>2022-01-05T17:47:34.681Z</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.5.name</td>
+<td>String</td>
+<td>None</td>
+<td>xmas</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.5.start_time</td>
+<td>String</td>
+<td>None</td>
+<td>2021-12-01T17:00:00Z</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.5.theme_version</td>
+<td>Integer</td>
+<td>None</td>
+<td>7</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.6.chime_file.asset_id</td>
+<td>String</td>
+<td>None</td>
+<td>gobble</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.6.chime_file.download_url</td>
+<td>String</td>
+<td>None</td>
+<td>https://nest-camera-media.googleapis.com/device/download/assets/global/common_audio/doorbell_themes/timeboxed/thanksgiving/thanksgiving_gobble_v2.wav</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.6.chime_file.sha_256_hash</td>
+<td>String</td>
+<td>None</td>
+<td>5dc7f4d9ee283b807f611ed7ff0e7997d384a89e865912c6a0ce89a421484346</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.6.chime_file.size_bytes</td>
+<td>String</td>
+<td>None</td>
+<td>103238</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.6.enabled</td>
+<td>Boolean</td>
+<td>None</td>
+<td>True</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.6.end_time</td>
+<td>String</td>
+<td>None</td>
+<td>2021-11-30T17:47:34.681Z</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.6.name</td>
+<td>String</td>
+<td>None</td>
+<td>thanksgiving</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.6.start_time</td>
+<td>String</td>
+<td>None</td>
+<td>2021-11-01T16:00:00Z</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.product.doorbell.DoorbellThemesConf.json</td>
+<td>timeboxed_themes.6.theme_version</td>
+<td>Integer</td>
+<td>None</td>
+<td>5</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.service.DeviceInfoTrait.json</td>
+<td>class_name</td>
+<td>String</td>
+<td>None</td>
+<td>rquartz</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.service.DeviceInfoTrait.json</td>
+<td>device_capabilities</td>
+<td>String</td>
+<td>None</td>
+<td>['DEVICE_CAPABILITY_ALWAYS_CONNECTED']</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.service.DeviceInfoTrait.json</td>
+<td>device_radios</td>
+<td>String</td>
+<td>None</td>
+<td>['DEVICE_RADIO_BLUETOOTH_LE', 'DEVICE_RADIO_WIFI', 'DEVICE_RADIO_THREAD']</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.service.DeviceInfoTrait.json</td>
+<td>device_state</td>
+<td>String</td>
+<td>None</td>
+<td>DEVICE_STATE_PAIRED</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.service.DeviceInfoTrait.json</td>
+<td>fabric_id</td>
+<td>String</td>
+<td>None</td>
+<td>7031928168000407221</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.service.DeviceInfoTrait.json</td>
+<td>paired_at</td>
+<td>String</td>
+<td>None</td>
+<td>2022-06-29T22:11:09.081Z</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.service.DeviceInfoTrait.json</td>
+<td>pairer_id.resource_id</td>
+<td>String</td>
+<td>None</td>
+<td>STRUCTURE_0181B17F4B326F4C</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.service.DeviceInfoTrait.json</td>
+<td>resource_instance_id</td>
+<td>String</td>
+<td>None</td>
+<td>60243b20-f7f8-11ec-a7c3-32e5eee33006</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.service.DeviceInfoTrait.json</td>
+<td>type_name</td>
+<td>String</td>
+<td>None</td>
+<td>nest.resource.NestHelloResource</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\nest.trait.service.DeviceInfoTrait.json</td>
+<td>weave_node_id</td>
+<td>String</td>
+<td>None</td>
+<td>17361242423110054681</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\weave.trait.description.DeviceIdentityTrait.json</td>
+<td>serial_number</td>
+<td>String</td>
+<td>None</td>
+<td>12AB34CD567890E1</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\weave.trait.description.DeviceIdentityTrait.json</td>
+<td>software_version</td>
+<td>String</td>
+<td>None</td>
+<td>4110054</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\weave.trait.description.DeviceIdentityTrait.json</td>
+<td>vendor_id</td>
+<td>Integer</td>
+<td>None</td>
+<td>9050</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\weave.trait.description.DeviceIdentityTrait.json</td>
+<td>vendor_product_id</td>
+<td>Integer</td>
+<td>None</td>
+<td>23</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\weave.trait.heartbeat.LivenessTrait.json</td>
+<td>publisher_name</td>
+<td>String</td>
+<td>None</td>
+<td>oculus_1.0</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\weave.trait.heartbeat.LivenessTrait.json</td>
+<td>status</td>
+<td>String</td>
+<td>None</td>
+<td>LIVENESS_DEVICE_STATUS_ONLINE</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\weave.trait.heartbeat.LivenessTrait.json</td>
+<td>time_status_changed</td>
+<td>String</td>
+<td>None</td>
+<td>2022-07-14T00:37:49.303Z</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\weave.trait.locale.LocaleCapabilitiesTrait.json</td>
+<td>available_locales</td>
+<td>String</td>
+<td>None</td>
+<td>['da_DK', 'de_DE', 'en_GB', 'en_US', 'es_ES', 'es_US', 'fi_FI', 'fr_CA', 'fr_FR', 'it_IT', 'nb_NO', 'nl_NL', 'sv_SE']</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\device_info\weave.trait.locale.LocaleSettingsTrait.json</td>
+<td>active_locale</td>
+<td>String</td>
+<td>None</td>
+<td>en_US</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\event_sessions\event_sessions.json</td>
+<td>end_time.nanos</td>
+<td>Real</td>
+<td>None</td>
+<td>350000000.0</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\event_sessions\event_sessions.json</td>
+<td>end_time.seconds</td>
+<td>Integer</td>
+<td>None</td>
+<td>1656593981</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\event_sessions\event_sessions.json</td>
+<td>event_track_info.end_time</td>
+<td>String</td>
+<td>None</td>
+<td>{'seconds': 1657758272, 'nanos': 748000000}</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\event_sessions\event_sessions.json</td>
+<td>event_track_info.event_type</td>
+<td>String</td>
+<td>None</td>
+<td>['EVENT_TYPE_SOUND']</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\event_sessions\event_sessions.json</td>
+<td>event_track_info.start_time</td>
+<td>String</td>
+<td>None</td>
+<td>{'seconds': 1234567890, 'nanos': 580000000}</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\event_sessions\event_sessions.json</td>
+<td>event_track_info.track_id</td>
+<td>String</td>
+<td>None</td>
+<td>1234567890</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\event_sessions\event_sessions.json</td>
+<td>session_id</td>
+<td>String</td>
+<td>None</td>
+<td>123a4567-b89c-0de1-fabc-2d34e5678fa9</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\event_sessions\event_sessions.json</td>
+<td>start_time.nanos</td>
+<td>Integer</td>
+<td>None</td>
+<td>704000000</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\event_sessions\event_sessions.json</td>
+<td>start_time.seconds</td>
+<td>Integer</td>
+<td>None</td>
+<td>1658065323</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\event_sessions\event_sessions.json</td>
+<td>zone_info.activity_zone_colour</td>
+<td>String</td>
+<td>None</td>
+<td>ACTIVITY_ZONE_COLOUR_GREY</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\general_motion_markers\general_motion_markers.json</td>
+<td>end_timestamp_us</td>
+<td>String</td>
+<td>None</td>
+<td>1656540856380987</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\general_motion_markers\general_motion_markers.json</td>
+<td>has_cvr</td>
+<td>Boolean</td>
+<td>None</td>
+<td>True</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\general_motion_markers\general_motion_markers.json</td>
+<td>id</td>
+<td>String</td>
+<td>None</td>
+<td>1234567890123_12345678901234567890_12345678901234567890</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\general_motion_markers\general_motion_markers.json</td>
+<td>importance</td>
+<td>String</td>
+<td>None</td>
+<td>0</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\general_motion_markers\general_motion_markers.json</td>
+<td>is_important</td>
+<td>Boolean</td>
+<td>None</td>
+<td>False</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\general_motion_markers\general_motion_markers.json</td>
+<td>notification_thumbnail.crop_region.bottom</td>
+<td>Real</td>
+<td>None</td>
+<td>0.9999998807907104</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\general_motion_markers\general_motion_markers.json</td>
+<td>notification_thumbnail.crop_region.left</td>
+<td>Real</td>
+<td>None</td>
+<td>0.0</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\general_motion_markers\general_motion_markers.json</td>
+<td>notification_thumbnail.crop_region.right</td>
+<td>Real</td>
+<td>None</td>
+<td>0.9999998807907104</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\general_motion_markers\general_motion_markers.json</td>
+<td>notification_thumbnail.crop_region.top</td>
+<td>Real</td>
+<td>None</td>
+<td>0.0</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\general_motion_markers\general_motion_markers.json</td>
+<td>notification_thumbnail.crop_type</td>
+<td>String</td>
+<td>None</td>
+<td>FULL_FRAME</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\general_motion_markers\general_motion_markers.json</td>
+<td>notification_thumbnail.frame_timestamp_us</td>
+<td>String</td>
+<td>None</td>
+<td>1657217466028668</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\general_motion_markers\general_motion_markers.json</td>
+<td>notification_thumbnail.type</td>
+<td>String</td>
+<td>None</td>
+<td>ALERT_THUMBNAIL</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\general_motion_markers\general_motion_markers.json</td>
+<td>start_timestamp_us</td>
+<td>String</td>
+<td>None</td>
+<td>1656625143508086</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\general_motion_markers\general_motion_markers.json</td>
+<td>timeline_thumbnail.crop_region.bottom</td>
+<td>Real</td>
+<td>None</td>
+<td>0.9999998807907104</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\general_motion_markers\general_motion_markers.json</td>
+<td>timeline_thumbnail.crop_region.left</td>
+<td>Real</td>
+<td>None</td>
+<td>0.0</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\general_motion_markers\general_motion_markers.json</td>
+<td>timeline_thumbnail.crop_region.right</td>
+<td>Real</td>
+<td>None</td>
+<td>0.9999998807907104</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\general_motion_markers\general_motion_markers.json</td>
+<td>timeline_thumbnail.crop_region.top</td>
+<td>Real</td>
+<td>None</td>
+<td>0.0</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\general_motion_markers\general_motion_markers.json</td>
+<td>timeline_thumbnail.crop_type</td>
+<td>String</td>
+<td>None</td>
+<td>FULL_FRAME</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\general_motion_markers\general_motion_markers.json</td>
+<td>timeline_thumbnail.frame_timestamp_us</td>
+<td>String</td>
+<td>None</td>
+<td>1657841312998534</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\general_motion_markers\general_motion_markers.json</td>
+<td>timeline_thumbnail.type</td>
+<td>String</td>
+<td>None</td>
+<td>TIMELINE_THUMBNAIL</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\general_motion_markers\general_motion_markers.json</td>
+<td>track_proto.aggregate_region_mask.height</td>
+<td>Integer</td>
+<td>None</td>
+<td>90</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\general_motion_markers\general_motion_markers.json</td>
+<td>track_proto.aggregate_region_mask.mask_frame_binary</td>
+<td>String</td>
+<td>None</td>
+<td>/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/wAALCABaAKABAREA/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/9oACAEBAAA/APf6KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK5fTfGZ1fVruysvDeuPDa3bWsl68UMcBKyNGzKzSAuoKNnaCRjpkgV1FFFFFFFFFFFFFFFFFFFcnpngSHSvEr6zB4h8QMj3E9wdOe9BtN0pYsPLCjjc5Yc9cHmusoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooor//Z</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\general_motion_markers\general_motion_markers.json</td>
+<td>track_proto.aggregate_region_mask.number_of_channels</td>
+<td>Integer</td>
+<td>None</td>
+<td>1</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\general_motion_markers\general_motion_markers.json</td>
+<td>track_proto.aggregate_region_mask.width</td>
+<td>Integer</td>
+<td>None</td>
+<td>160</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\general_motion_markers\general_motion_markers.json</td>
+<td>track_proto.confirmation_timestamp_us</td>
+<td>String</td>
+<td>None</td>
+<td>0</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\general_motion_markers\general_motion_markers.json</td>
+<td>track_proto.detected_objects.compact_box</td>
+<td>String</td>
+<td>None</td>
+<td>{'bottom': 0.9999999, 'left': 0.0, 'right': 0.44058418, 'top': 0.5982306}</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\general_motion_markers\general_motion_markers.json</td>
+<td>track_proto.detected_objects.frame_timestamp_us</td>
+<td>String</td>
+<td>None</td>
+<td>1658187470483858</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\general_motion_markers\general_motion_markers.json</td>
+<td>track_proto.detected_objects.image_patch</td>
+<td>String</td>
+<td>None</td>
+<td>nan</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\general_motion_markers\general_motion_markers.json</td>
+<td>track_proto.detected_objects.image_patch_height</td>
+<td>String</td>
+<td>None</td>
+<td>0</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\general_motion_markers\general_motion_markers.json</td>
+<td>track_proto.detected_objects.image_patch_width</td>
+<td>String</td>
+<td>None</td>
+<td>0</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\general_motion_markers\general_motion_markers.json</td>
+<td>track_proto.detected_objects.object_type</td>
+<td>String</td>
+<td>None</td>
+<td>PERSON</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\general_motion_markers\general_motion_markers.json</td>
+<td>track_proto.is_person</td>
+<td>Boolean</td>
+<td>None</td>
+<td>False</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\general_motion_markers\general_motion_markers.json</td>
+<td>track_proto.object_type</td>
+<td>String</td>
+<td>None</td>
+<td>['PERSON']</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\general_motion_markers\general_motion_markers.json</td>
+<td>track_proto.timestamp_us_current</td>
+<td>String</td>
+<td>None</td>
+<td>166159950567</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\general_motion_markers\general_motion_markers.json</td>
+<td>track_proto.timestamp_us_start</td>
+<td>String</td>
+<td>None</td>
+<td>165608483900</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\general_motion_markers\general_motion_markers.json</td>
+<td>track_proto.track_id</td>
+<td>String</td>
+<td>None</td>
+<td>1234567890123456789</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\general_motion_markers\general_motion_markers.json</td>
+<td>track_proto.track_state</td>
+<td>String</td>
+<td>None</td>
+<td>CONFIRMED</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\general_motion_markers\general_motion_markers.json</td>
+<td>uuid</td>
+<td>String</td>
+<td>None</td>
+<td>3def45a6b7c8d9e0f12a3456b7c89012</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\camera\structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f\12AB34CD567890E1\tv_bounding_box\tv_bounding_box.json</td>
+<td>bounding_box_result.camera_uuid</td>
+<td>String</td>
+<td>None</td>
+<td>3def45a6b7c8d9e0f12a3456b7c89012</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\message_center.json</td>
+<td>messages</td>
+<td>String</td>
+<td>None</td>
+<td>[]</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\profile.json</td>
+<td>acknowledged_onboarding_screens</td>
+<td>String</td>
+<td>None</td>
+<td>['camera_chime_assist']</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\profile.json</td>
+<td>email</td>
+<td>String</td>
+<td>None</td>
+<td>REDACTED_EMAIL@gmail.com</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\profile.json</td>
+<td>is_merged_with_gaia</td>
+<td>Boolean</td>
+<td>None</td>
+<td>True</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\profile.json</td>
+<td>jasper_version</td>
+<td>String</td>
+<td>None</td>
+<td>5.68.1d3</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\profile.json</td>
+<td>merged_with_gaia_at</td>
+<td>String</td>
+<td>None</td>
+<td>2022-06-29T22:02:47.000Z</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\profile.json</td>
+<td>name</td>
+<td>String</td>
+<td>None</td>
+<td>John Smith</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\profile.json</td>
+<td>profile_image_url</td>
+<td>String</td>
+<td>None</td>
+<td>https://lh3.googleusercontent.com/a/default-user</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\profile.json</td>
+<td>short_name</td>
+<td>String</td>
+<td>None</td>
+<td>nan</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\profile.json</td>
+<td>structure_memberships.roles</td>
+<td>String</td>
+<td>None</td>
+<td>['owner']</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\profile.json</td>
+<td>structure_memberships.structure</td>
+<td>String</td>
+<td>None</td>
+<td>structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\profile.json</td>
+<td>structures</td>
+<td>String</td>
+<td>None</td>
+<td>['structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f']</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\user_settings.json</td>
+<td>email_verified</td>
+<td>Boolean</td>
+<td>None</td>
+<td>True</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\user_settings.json</td>
+<td>has_location_history</td>
+<td>Boolean</td>
+<td>None</td>
+<td>False</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\user_settings.json</td>
+<td>lang</td>
+<td>String</td>
+<td>None</td>
+<td>en_US</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\user_settings.json</td>
+<td>location_primary_device</td>
+<td>String</td>
+<td>None</td>
+<td>98F76543-E2D1-0C98-BA76-F5E43210D987</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\user_settings.json</td>
+<td>max_kryptonites</td>
+<td>Integer</td>
+<td>None</td>
+<td>54</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\user_settings.json</td>
+<td>max_kryptonites_per_structure</td>
+<td>Integer</td>
+<td>None</td>
+<td>18</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\user_settings.json</td>
+<td>max_kryptonites_per_thermostat</td>
+<td>Integer</td>
+<td>None</td>
+<td>6</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\user_settings.json</td>
+<td>max_smoke_detectors</td>
+<td>Integer</td>
+<td>None</td>
+<td>54</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\user_settings.json</td>
+<td>max_smoke_detectors_per_structure</td>
+<td>Integer</td>
+<td>None</td>
+<td>18</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\user_settings.json</td>
+<td>max_structures</td>
+<td>Integer</td>
+<td>None</td>
+<td>5</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\user_settings.json</td>
+<td>max_thermostats</td>
+<td>Integer</td>
+<td>None</td>
+<td>60</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\user_settings.json</td>
+<td>max_thermostats_per_structure</td>
+<td>Integer</td>
+<td>None</td>
+<td>20</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\user_settings.json</td>
+<td>max_wwn_devices</td>
+<td>Integer</td>
+<td>None</td>
+<td>20</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\user_settings.json</td>
+<td>max_wwn_devices_per_structure</td>
+<td>Integer</td>
+<td>None</td>
+<td>10</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\user_settings.json</td>
+<td>receive_marketing_emails</td>
+<td>Boolean</td>
+<td>None</td>
+<td>False</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\user_settings.json</td>
+<td>receive_nest_emails</td>
+<td>Boolean</td>
+<td>None</td>
+<td>True</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\user_settings.json</td>
+<td>receive_support_emails</td>
+<td>Boolean</td>
+<td>None</td>
+<td>True</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\user_settings.json</td>
+<td>state_2fa</td>
+<td>String</td>
+<td>None</td>
+<td>none</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\user_settings.json</td>
+<td>state_changed_2fa</td>
+<td>String</td>
+<td>None</td>
+<td>1970-01-01 00:00:00.0</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\user_settings.json</td>
+<td>tos_accepted_version</td>
+<td>Integer</td>
+<td>None</td>
+<td>0</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\user_settings.json</td>
+<td>tos_current_version</td>
+<td>Integer</td>
+<td>None</td>
+<td>1527058800000</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\user_settings.json</td>
+<td>tos_minimum_version</td>
+<td>Integer</td>
+<td>None</td>
+<td>1527058800000</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\structure.json</td>
+<td>aux_primary_fabric_id</td>
+<td>String</td>
+<td>None</td>
+<td>12345E678FAB90C1</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\structure.json</td>
+<td>away</td>
+<td>Boolean</td>
+<td>None</td>
+<td>False</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\structure.json</td>
+<td>away_setter</td>
+<td>Integer</td>
+<td>None</td>
+<td>1</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\structure.json</td>
+<td>away_timestamp</td>
+<td>Integer</td>
+<td>None</td>
+<td>1656540710</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\structure.json</td>
+<td>clutches</td>
+<td>String</td>
+<td>None</td>
+<td>[]</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\structure.json</td>
+<td>country_code</td>
+<td>String</td>
+<td>None</td>
+<td>US</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\structure.json</td>
+<td>devices</td>
+<td>String</td>
+<td>None</td>
+<td>[]</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\structure.json</td>
+<td>dr_reminder_enabled</td>
+<td>Boolean</td>
+<td>None</td>
+<td>True</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\structure.json</td>
+<td>enable_goose</td>
+<td>Boolean</td>
+<td>None</td>
+<td>False</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\structure.json</td>
+<td>eta_preconditioning_active</td>
+<td>Boolean</td>
+<td>None</td>
+<td>False</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\structure.json</td>
+<td>fabric_ids</td>
+<td>String</td>
+<td>None</td>
+<td>['12345E678FAB90C1']</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\structure.json</td>
+<td>geofence_enhanced_autoaway.enabled</td>
+<td>Boolean</td>
+<td>None</td>
+<td>True</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\structure.json</td>
+<td>geofence_enhanced_autoaway.is_set</td>
+<td>Boolean</td>
+<td>None</td>
+<td>True</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\structure.json</td>
+<td>goose_sensor_events_enabled</td>
+<td>Boolean</td>
+<td>None</td>
+<td>False</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\structure.json</td>
+<td>hvac_safety_shutoff_enabled</td>
+<td>Boolean</td>
+<td>None</td>
+<td>True</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\structure.json</td>
+<td>hvac_smoke_safety_shutoff_enabled</td>
+<td>Boolean</td>
+<td>None</td>
+<td>False</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\structure.json</td>
+<td>ifj_primary_fabric_id</td>
+<td>String</td>
+<td>None</td>
+<td>12345E678FAB90C1</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\structure.json</td>
+<td>latitude</td>
+<td>Real</td>
+<td>None</td>
+<td>12.345678</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\structure.json</td>
+<td>location</td>
+<td>String</td>
+<td>None</td>
+<td>Los Angeles, CA</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\structure.json</td>
+<td>longitude</td>
+<td>Real</td>
+<td>None</td>
+<td>-123.456789</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\structure.json</td>
+<td>manual_away_timestamp</td>
+<td>Integer</td>
+<td>None</td>
+<td>1657669836</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\structure.json</td>
+<td>manual_eco_all</td>
+<td>Boolean</td>
+<td>None</td>
+<td>False</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\structure.json</td>
+<td>members.roles</td>
+<td>String</td>
+<td>None</td>
+<td>['owner']</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\structure.json</td>
+<td>members.user</td>
+<td>String</td>
+<td>None</td>
+<td>user.12345678</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\structure.json</td>
+<td>name</td>
+<td>String</td>
+<td>None</td>
+<td>Office</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\structure.json</td>
+<td>phone_hush_enable</td>
+<td>Boolean</td>
+<td>None</td>
+<td>True</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\structure.json</td>
+<td>postal_code</td>
+<td>String</td>
+<td>None</td>
+<td>90210</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\structure.json</td>
+<td>rcs_sensor_swarm</td>
+<td>String</td>
+<td>None</td>
+<td>[]</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\structure.json</td>
+<td>swarm</td>
+<td>String</td>
+<td>None</td>
+<td>['quartz.3def45a6b7c8d9e0f12a3456b7c89012']</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\structure.json</td>
+<td>time_zone</td>
+<td>String</td>
+<td>None</td>
+<td>America/Los_Angeles</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\structure.json</td>
+<td>topaz_away</td>
+<td>Boolean</td>
+<td>None</td>
+<td>False</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\structure.json</td>
+<td>topaz_enhanced_auto_away_enabled</td>
+<td>Boolean</td>
+<td>None</td>
+<td>False</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\structure.json</td>
+<td>topaz_hush_key</td>
+<td>String</td>
+<td>None</td>
+<td>/KGsmhM2vTNjN0eX281mzQ==</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\structure.json</td>
+<td>touched_by.touched_by</td>
+<td>Integer</td>
+<td>None</td>
+<td>0</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\structure.json</td>
+<td>touched_by.touched_id</td>
+<td>String</td>
+<td>None</td>
+<td>nan</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\structure.json</td>
+<td>touched_by.touched_user_id</td>
+<td>String</td>
+<td>None</td>
+<td>nan</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\structure.json</td>
+<td>user</td>
+<td>String</td>
+<td>None</td>
+<td>user.12345678</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\structure.json</td>
+<td>vacation_mode</td>
+<td>Boolean</td>
+<td>None</td>
+<td>False</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\cameras\3def45a6b7c8d9e0f12a3456b7c89012\camera.json</td>
+<td>activation_time</td>
+<td>Integer</td>
+<td>None</td>
+<td>1656540667598</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\cameras\3def45a6b7c8d9e0f12a3456b7c89012\camera.json</td>
+<td>audio_input_enabled</td>
+<td>Boolean</td>
+<td>None</td>
+<td>True</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\cameras\3def45a6b7c8d9e0f12a3456b7c89012\camera.json</td>
+<td>camera_type</td>
+<td>Integer</td>
+<td>None</td>
+<td>12</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\cameras\3def45a6b7c8d9e0f12a3456b7c89012\camera.json</td>
+<td>capabilities</td>
+<td>String</td>
+<td>None</td>
+<td>['image.properties', 'force_idr', 'streaming.data-usage-tier.120', 'streaming.cameraprofile.VIDEO_H264_530KBIT_L31', 'spoken_locale.da_DK', 'aspect_ratio_4x3', 'sharing', 'audio.microphone', 'spoken_locale.en_US', 'indoor_chime', 'spoken_locale.sv_SE', 'streaming.params', 'streaming.cameraprofile.VIDEO_H264_2MBIT_L40', 'stranger_detection', 'spoken_locale.es_US', 'spoken_locale.de_DE', 'statusled', 'spoken_locale.it_IT', 'streaming.data-usage-tier.300', 'streaming.cameraprofile.VIDEO_H264_100KBIT_L30', 'spoken_locale.fr_FR', 'statusled.brightness.settable', 'backfill', 'watermark', 'spoken_locale.nb_NO', 'spoken_locale.es_ES', 'labs', 'spoken_locale.fr_CA', 'audio.speaker', 'spoken_locale.fi_FI', 'dptz', 'irled', 'notify.email', 'standby', 'detectors.on_camera', 'spoken_locale.en_GB', 'streaming.start-stop', 'spoken_locale.nl_NL', 'spoken_locale', 'dptz.8x', 'streaming.data-usage-tier.30', 'statusled.watching']</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\cameras\3def45a6b7c8d9e0f12a3456b7c89012\camera.json</td>
+<td>cvr_enrolled</td>
+<td>String</td>
+<td>None</td>
+<td>30-days</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\cameras\3def45a6b7c8d9e0f12a3456b7c89012\camera.json</td>
+<td>description</td>
+<td>String</td>
+<td>None</td>
+<td>nan</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\cameras\3def45a6b7c8d9e0f12a3456b7c89012\camera.json</td>
+<td>direct_nexustalk_host</td>
+<td>String</td>
+<td>None</td>
+<td>oculus1234-us1.dropcam.com</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\cameras\3def45a6b7c8d9e0f12a3456b7c89012\camera.json</td>
+<td>download_host</td>
+<td>String</td>
+<td>None</td>
+<td>oculus1234-us1.dropcam.com:80</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\cameras\3def45a6b7c8d9e0f12a3456b7c89012\camera.json</td>
+<td>fabric_id</td>
+<td>String</td>
+<td>None</td>
+<td>12345E678FAB90C1</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\cameras\3def45a6b7c8d9e0f12a3456b7c89012\camera.json</td>
+<td>ip_address</td>
+<td>String</td>
+<td>None</td>
+<td>666.66.6.666</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\cameras\3def45a6b7c8d9e0f12a3456b7c89012\camera.json</td>
+<td>last_connect_time</td>
+<td>Integer</td>
+<td>None</td>
+<td>1657048471000</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\cameras\3def45a6b7c8d9e0f12a3456b7c89012\camera.json</td>
+<td>last_disconnect_reason</td>
+<td>String</td>
+<td>None</td>
+<td>no_reason</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\cameras\3def45a6b7c8d9e0f12a3456b7c89012\camera.json</td>
+<td>last_disconnect_time</td>
+<td>Integer</td>
+<td>None</td>
+<td>1657048466000</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\cameras\3def45a6b7c8d9e0f12a3456b7c89012\camera.json</td>
+<td>live_stream_host</td>
+<td>String</td>
+<td>None</td>
+<td>oculus1234-us1.dropcam.com:1935</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\cameras\3def45a6b7c8d9e0f12a3456b7c89012\camera.json</td>
+<td>mac_address</td>
+<td>String</td>
+<td>None</td>
+<td>f0ed98cba765</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\cameras\3def45a6b7c8d9e0f12a3456b7c89012\camera.json</td>
+<td>model</td>
+<td>String</td>
+<td>None</td>
+<td>Nest Doorbell (wired)</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\cameras\3def45a6b7c8d9e0f12a3456b7c89012\camera.json</td>
+<td>nexus_api_http_server_url</td>
+<td>String</td>
+<td>None</td>
+<td>https://nexusapi-us1.dropcam.com</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\cameras\3def45a6b7c8d9e0f12a3456b7c89012\camera.json</td>
+<td>preview_streaming_enabled</td>
+<td>Boolean</td>
+<td>None</td>
+<td>True</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\cameras\3def45a6b7c8d9e0f12a3456b7c89012\camera.json</td>
+<td>public_share_enabled</td>
+<td>Boolean</td>
+<td>None</td>
+<td>False</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\cameras\3def45a6b7c8d9e0f12a3456b7c89012\camera.json</td>
+<td>recorded_stream_host</td>
+<td>String</td>
+<td>None</td>
+<td>oculus1234-us1.dropcam.com:1935</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\cameras\3def45a6b7c8d9e0f12a3456b7c89012\camera.json</td>
+<td>serial_number</td>
+<td>String</td>
+<td>None</td>
+<td>12AB34CD567890E1</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\cameras\3def45a6b7c8d9e0f12a3456b7c89012\camera.json</td>
+<td>snapshot_url.snapshot_url_prefix</td>
+<td>String</td>
+<td>None</td>
+<td>https://www.dropcam.com/api/wwn.get_snapshot</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\cameras\3def45a6b7c8d9e0f12a3456b7c89012\camera.json</td>
+<td>snapshot_url.snapshot_url_suffix</td>
+<td>String</td>
+<td>None</td>
+<td>nan</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\cameras\3def45a6b7c8d9e0f12a3456b7c89012\camera.json</td>
+<td>software_version</td>
+<td>String</td>
+<td>None</td>
+<td>4110054</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\cameras\3def45a6b7c8d9e0f12a3456b7c89012\camera.json</td>
+<td>streaming_state</td>
+<td>String</td>
+<td>None</td>
+<td>streaming-enabled</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\cameras\3def45a6b7c8d9e0f12a3456b7c89012\camera.json</td>
+<td>structure_id</td>
+<td>String</td>
+<td>None</td>
+<td>12a3456b-7c89-0123-def4-5a6b7c8d9e0f</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\cameras\3def45a6b7c8d9e0f12a3456b7c89012\camera.json</td>
+<td>weave_device_id</td>
+<td>String</td>
+<td>None</td>
+<td>F0ED987654CBA321</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\cameras\3def45a6b7c8d9e0f12a3456b7c89012\camera.json</td>
+<td>websocket_nexustalk_host</td>
+<td>String</td>
+<td>None</td>
+<td>oculus1234-us1.dropcam.com:80</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\cameras\3def45a6b7c8d9e0f12a3456b7c89012\camera.json</td>
+<td>where_id</td>
+<td>String</td>
+<td>None</td>
+<td>00000000-0000-0000-0000-000100000004</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\user\structures\12a3456b-7c89-0123-def4-5a6b7c8d9e0f\cameras\3def45a6b7c8d9e0f12a3456b7c89012\camera.json</td>
+<td>wwn_stream_host</td>
+<td>String</td>
+<td>None</td>
+<td>stream-ue1-REDACTED.dropcam.com</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\geofence\geofence_events.jsonl</td>
+<td>state</td>
+<td>String</td>
+<td>None</td>
+<td>0</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\geofence\geofence_events.jsonl</td>
+<td>stateChangeTimestamp</td>
+<td>String</td>
+<td>None</td>
+<td>1656540709.0</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\geofence\geofence_events.jsonl</td>
+<td>structureId</td>
+<td>String</td>
+<td>None</td>
+<td>structure.12a3456b-7c89-0123-def4-5a6b7c8d9e0f</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\notifications\notifications.jsonl</td>
+<td>deviceId</td>
+<td>String</td>
+<td>None</td>
+<td>3def45a6b7c8d9e0f12a3456b7c89012</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\notifications\notifications.jsonl</td>
+<td>notificationType</td>
+<td>String</td>
+<td>None</td>
+<td>camera_activity_person</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\notifications\notifications.jsonl</td>
+<td>target</td>
+<td>String</td>
+<td>None</td>
+<td>APNS-12a3456b7c890123def45a6b7c8d9e0f12a34bcde5f67ab8cd90efa1b23c4d5e</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+<tr>
+<td>Takeout\Nest\notifications\notifications.jsonl</td>
+<td>timestamp</td>
+<td>String</td>
+<td>None</td>
+<td>1658187485.0772841</td>
+<td>2022-07-18 18:39:36</td>
+<td>2022-07-18 18:39:36</td>
+</tr>
+
+          </tbody>
+      </table>
+  </div></div>
+</div>
+</div>
+</div>
+</body>
+  <script type="text/javascript">
+
+/*
+  Derived from Fresh Bootstrap Table demo by Creative Tim http://www.creative-tim.com @CreativeTim
+  and "Fancy Sidebar Navigation" Bootstrap 3.3.0 Snippet https://bootsnipp.com/snippets/Qb83E by maridlcrmn
+*/
+
+  var $table = $('#fresh-table')
+
+  window.operateEvents = {
+    'click .like': function (e, value, row, index) {
+      alert('You click like icon, row: ' + JSON.stringify(row))
+      console.log(value, row, index)
+    },
+    'click .edit': function (e, value, row, index) {
+      alert('You click edit icon, row: ' + JSON.stringify(row))
+      console.log(value, row, index)
+    },
+    'click .remove': function (e, value, row, index) {
+      $table.bootstrapTable('remove', {
+        field: 'id',
+        values: [row.id]
+      })
+    }
+  }
+
+  function operateFormatter(value, row, index) {
+    return [
+      '<a rel="tooltip" title="Like" class="table-action like" href="javascript:void(0)" title="Like">',
+        '<i class="fa fa-heart"></i>',
+      '</a>',
+      '<a rel="tooltip" title="Edit" class="table-action edit" href="javascript:void(0)" title="Edit">',
+        '<i class="fa fa-edit"></i>',
+      '</a>',
+      '<a rel="tooltip" title="Remove" class="table-action remove" href="javascript:void(0)" title="Remove">',
+        '<i class="fa fa-remove"></i>',
+      '</a>'
+    ].join('')
+  }
+
+  $(function () {
+    $table.bootstrapTable({
+      classes: 'table table-hover table-striped',
+      toolbar: '.toolbar',
+
+      search: true,
+      showExport: true,
+      showToggle: true,
+      showColumns: true,
+      pagination: true,
+      striped: true,
+      sortable: true,
+      exportDataType: 'all',
+      exportTypes: ['json', 'xml', 'csv', 'excel', 'pdf'],
+      height: $(window).height(),
+      pageSize: 25,
+      pageList: [25, 50, 100],
+
+      formatShowingRows: function (pageFrom, pageTo, totalRows) {
+        return ''
+      },
+      formatRecordsPerPage: function (pageNumber) {
+        return pageNumber + ' rows visible'
+      }
+    })
+
+
+    $(window).resize(function () {
+      $table.bootstrapTable('resetView', {
+        height: $(window).height()
+      })
+    })
+  })
+
+  $(document).ready(function () {
+  var trigger = $('.hamburger'),
+      overlay = $('.overlay'),
+     isClosed = false;
+
+    trigger.click(function () {
+      hamburger_cross();      
+    });
+
+    function hamburger_cross() {
+
+      if (isClosed == true) {          
+        overlay.hide();
+        trigger.removeClass('is-open');
+        trigger.addClass('is-closed');
+        isClosed = false;
+      } else {   
+        overlay.show();
+        trigger.removeClass('is-closed');
+        trigger.addClass('is-open');
+        isClosed = true;
+      }
+  }
+  
+  $('[data-toggle="offcanvas"]').click(function () {
+        $('#wrapper').toggleClass('toggled');
+  });  
+});
+</script>
+</html>
