@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Ring Privacy Report</title>
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+<style>
+html { font-family: Arial !important; }
+body { margin: 10; padding: 10; }
+
+table { table-layout:fixed; }
+td { padding-right: 15px;}
+
+#map { height: 600px; width: 100%; }
+
+.marker {
+  background-image: url('https://img.favpng.com/16/12/17/ring-door-bells-chimes-smart-doorbell-wi-fi-wireless-security-camera-png-favpng-CErAZDixPfyuid3BmXmqPdAgQ.jpg');
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.mapboxgl-popup {
+  max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.highcharts-figure,
+.highcharts-data-table table {
+    min-width: 310px;
+    max-width: 600px;
+    margin: 1em auto;
+}
+
+.highcharts-data-table table {
+    font-family: Verdana, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #ebebeb;
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.highcharts-data-table caption {
+    padding: 1em 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.highcharts-data-table th {
+    font-weight: 600;
+    padding: 0.5em;
+}
+
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+    padding: 0.5em;
+}
+
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+    background: #f8f8f8;
+}
+
+.highcharts-data-table tr:hover {
+    background: #f1f7ff;
+}
+
+.toggle-box {
+  display: none;
+}
+
+.toggle-box + label {
+  cursor: pointer;
+  display: block;
+  font-weight: bold;
+  line-height: 21px;
+  margin-bottom: 5px;
+}
+
+.toggle-box + label + div {
+  display: none;
+  margin-bottom: 10px;
+}
+
+.toggle-box:checked + label + div {
+  display: block;
+}
+
+.toggle-box + label:before {
+  background-color: #4F5150;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  color: #FFFFFF;
+  content: "+";
+  display: block;
+  float: left;
+  font-weight: bold;
+  height: 20px;
+  line-height: 20px;
+  margin-right: 5px;
+  text-align: center;
+  width: 20px;
+}
+
+.toggle-box:checked + label:before {
+  content: "\2212";
+}
+
+</style>
+</head>
+<body>
+<div id="map"></div>
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1Ijoic3RldmV0cnVzaCIsImEiOiJja3VvZXhtZ28yZXdnMndvZnFqNjN1NzduIn0.LPyxnRZN5koMkoTspQxdLQ';
+const map = new mapboxgl.Map({
+    container: 'map', // container ID
+    style: 'mapbox://styles/mapbox/light-v10', // style URL
+    center: [-122.15639796846868,38.30856353951385], //[-68.137343, 45.137451], // starting position
+    zoom: 8 // starting zoom
+});
+ 
+map.on('load', () => {
+   // Add a data source containing GeoJSON data.
+   map.addSource('neighborhood', {
+      'type': 'geojson',
+      'data': {
+           'type': 'Feature',
+           'geometry': {
+              'type': 'Polygon',
+              // These coordinates outline your neighborhood.
+               'coordinates': [[[-122.15639796846868,38.30856353951385],[-122.08590781975154,38.30734342677488],[-122.03720989365418,38.26734389445522],[-122.0388265757492,38.212032075901],[-122.08971942705146,38.173807229466796],[-122.16008028324836,38.17502510319766],[-122.20878391098832,38.21497386166193],[-122.20729652108824,38.27028791921658],[-122.15639796846868,38.30856353951385]]]
+            }
+        }
+    });
+ 
+    // Add a new layer to visualize the polygon.
+    map.addLayer({
+        'id': 'neighborhood',
+        'type': 'fill',
+        'source': 'neighborhood', // reference the data source
+        'layout': {},
+        'paint': {
+            'fill-color': '#0080ff', // blue color fill
+            'fill-opacity': 0.5
+        }
+    });
+
+    // Add a black outline around the polygon.
+    map.addLayer({
+        'id': 'outline',
+        'type': 'line',
+        'source': 'neighborhood',
+        'layout': {},
+        'paint': {
+            'line-color': '#000',
+            'line-width': 3
+        }
+    });
+    
+        el = document.createElement('div');
+        el.className = 'marker';
+
+        // make a marker for each feature and add to the map
+        new mapboxgl.Marker(el).setLngLat([-122.123024,38.24119])
+            .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
+            .setHTML('<h4> 9c7613757eea </h4><p> 4100 Suisun Valley Rd , Fairfield, CA 94534 </p>'))
+            .addTo(map);
+     
+});
+</script>
+
+<input class="toggle-box" id="identifier-users" type="checkbox" >
+<label for="identifier-users">Account/Subscriber Information</label>
+<div><table><tr><td></td><td>
+    
+    <p><b>steve.sjcamera+ring@gmail.com:</b></p>
+    <p>An account for SJ Camera was created on 2022-02-13 22:39:50.346000 using email address steve.sjcamera+ring@gmail.com and no phone number.<br>Subscripion Plan: ring-trial (created 2022-02-13 22:58:10, last active from 2022-03-15 07:00:00 to 2022-04-15 07:00:00) is canceled.<br>User account was not linked with Amazon.<br>The feature Neighbors was not manually disabled.<br>The feature Neighbors has notifications enabled.<br>Neighbors notifications were last checked on 2022-03-09T05:39:14.884Z.<br></p>
+     
+</td></tr></table></div>
+
+<input class="toggle-box" id="identifier-rings" type="checkbox" >
+<label for="identifier-rings">Ring Device Information</label>
+<div><table><tr><td></td><td>
+    
+        <p><b>9c7613757eea:</b></p>
+        <p>Name: Front Door<br>Device ID: 98873957<br>MAC Address: 9c7613757eea<br>Created on 2022-02-13 22:55:49.423349 (timezone: America/Los_Angeles)<br>Updated on 2022-02-13 22:57:56.713289<br>Location: 4100 Suisun Valley Rd , Fairfield, CA 94534, (38.24119, -122.123024)<br>WiFi network: Network1<br>The device has no shared user.<br>Events on 2022-02-13: [('on_demand', 11)]<br>Events on 2022-02-14: [('ding', 1), ('motion', 132), ('on_demand', 13)]<br>Events on 2022-02-15: [('motion', 79)]<br>Events on 2022-02-16: [('motion', 123)]<br>Events on 2022-02-17: [('ding', 1), ('motion', 72)]<br>Events on 2022-02-18: [('motion', 55)]<br>Events on 2022-02-19: [('motion', 43)]<br>Events on 2022-02-20: [('motion', 135)]<br></p>
+        <figure class="highcharts-figure">
+            <div id="activity_container_9c7613757eea"></div>
+        </figure>
+        <script>
+            Highcharts.chart('activity_container_9c7613757eea', {
+                chart: {type: 'column', height: 600},
+                title: {text: 'Ring Device Activations'},
+                xAxis: { categories: ["2022-02-13","2022-02-14","2022-02-15","2022-02-16","2022-02-17","2022-02-18","2022-02-19","2022-02-20"] 
+                },
+                yAxis: {
+                    min: 0,
+                    title: {text: 'Number of activation events'},
+                    stackLabels: {
+                        enabled: true,
+                        style: {
+                            fontWeight: 'bold',
+                            color: ( // theme
+                                Highcharts.defaultOptions.title.style &&
+                                Highcharts.defaultOptions.title.style.color
+                            ) || 'gray',
+                            textOutline: 'none'
+                       }
+                    }
+                },
+                legend: { align: 'right', x: -30, verticalAlign: 'top', y: 25, floating: true,
+                          backgroundColor: Highcharts.defaultOptions.legend.backgroundColor || 'white',
+                          borderColor: '#CCC', borderWidth: 1, shadow: false
+                },
+                tooltip: {
+                    headerFormat: '<b>{point.x}</b><br/>',
+                    pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
+                },
+                plotOptions: {
+                    column: { stacking: 'normal', dataLabels: { enabled: true } }
+                },
+                series:  [{name: "on_demand", data: [11, 13, 0, 0, 0, 0, 0, 0]},{name: "ding", data: [0, 1, 0, 0, 1, 0, 0, 0]},{name: "motion", data: [0, 132, 79, 123, 72, 55, 43, 135]}]
+            });
+        </script>
+     
+</td></tr></table></div>
+<input class="toggle-box" id="identifier-clients" type="checkbox" >
+<label for="identifier-clients">Client Device Information</label>
+<div><table><tr><td></td><td>
+    
+        <input class="toggle-box" id="identifier-client-9BDB97CB-DD8E-4896-8001-15EE15072AE7" type="checkbox" >
+        <label for="identifier-client-9BDB97CB-DD8E-4896-8001-15EE15072AE7">9BDB97CB-DD8E-4896-8001-15EE15072AE7 - iPhone</label>
+        <div>
+            <p>Ring was accessed using on an iPhone (OS version 15.1) named NSA Vacuum.<br>Model: iPhone. Device first seen on 2022-02-13 22:39:50.430839.<br>Push notifications for this device is authorized.<br>Device used IP address 24.6.86.197 (830 times, )<br>Device used IP address 174.194.202.22 (302 times, )<br>Device used IP address 174.194.197.64 (479 times, )<br>Device used IP address 174.194.206.151 (377 times, )<br>Device used IP address 174.194.194.2 (142 times, )<br></p>
+            <figure class="highcharts-figure">
+                <div id="ip_container_9BDB97CB-DD8E-4896-8001-15EE15072AE7"></div>
+            </figure>
+            <script>
+                Highcharts.chart('ip_container_9BDB97CB-DD8E-4896-8001-15EE15072AE7', {
+                chart: { type: 'column', height: 600},
+                title: { text: 'IP addresses used to access app' },
+                subtitle: { text: 'A count of IP addresses used by user app' },
+                xAxis: { type: 'category', labels: { rotation: -10, style: { fontSize: '13px', fontFamily: 'Verdana, sans-serif' } } },
+                yAxis: { min: 0, title: { text: 'Number of times used' } },
+                legend: { enabled: false },
+                tooltip: { pointFormat: 'IP address count: <b>{point.y} times</b>' },
+                series: [{
+                    name: 'IP address count',
+                    data: [['24.6.86.197', 830], ['174.194.202.22', 302], ['174.194.197.64', 479], ['174.194.206.151', 377], ['174.194.194.2', 142]],
+                    dataLabels: { enabled: true, rotation: 0, color: '#FFFFFF', align: 'right', format: '{point.y}', y: 30, 
+                                style: { fontSize: '13px', fontFamily: 'Verdana, sans-serif' } }
+                }]
+            });
+            </script>
+            <p>Usage by date for 9BDB97CB-DD8E-4896-8001-15EE15072AE7:</p>
+            
+                <div><table><tr><td></td><td>
+                <input class="toggle-box" id="client-9BDB97CB-DD8E-4896-8001-15EE15072AE7-2022-02-13" type="checkbox" >
+                <label for="client-9BDB97CB-DD8E-4896-8001-15EE15072AE7-2022-02-13">2022-02-13</label>
+                <div>
+                    
+                        App Opened (19 times)<br>
+                    
+                        Viewed Device Dashboard (19 times)<br>
+                    
+                        History - Filtered View (18 times)<br>
+                    
+                        Opened Deep Link (16 times)<br>
+                    
+                        LiveCallStatsMain (13 times)<br>
+                    
+                        Received Prompt - Info (12 times)<br>
+                    
+                        Tapped Device Option (11 times)<br>
+                    
+                        Viewed Device Settings (11 times)<br>
+                    
+                        Tapped Side Menu (10 times)<br>
+                    
+                        Toggled mic (10 times)<br>
+                    
+                        Tapped Side Menu Option (9 times)<br>
+                    
+                        Saved Device Settings (8 times)<br>
+                    
+                        Toggled speaker (8 times)<br>
+                    
+                        Viewed Main Dashboard (8 times)<br>
+                    
+                        Adjusted Volume Slider (7 times)<br>
+                    
+                        HQ Event Starting Time (7 times)<br>
+                    
+                        History - Viewed Event On Timeline (7 times)<br>
+                    
+                        LV Session Orientation (7 times)<br>
+                    
+                        Timeline Loading State - Thumbnail Decoding (7 times)<br>
+                    
+                        Asset Session Connection (4 times)<br>
+                    
+                        Tapped Tile (4 times)<br>
+                    
+                        Timeline Loading State - LQ Loading (4 times)<br>
+                    
+                        Closed Device Settings (3 times)<br>
+                    
+                        Closed Prompt (3 times)<br>
+                    
+                        Setup - Connected To Device (3 times)<br>
+                    
+                        Setup - Entered Password (3 times)<br>
+                    
+                        Setup - Entered Setup Mode (3 times)<br>
+                    
+                        Setup - Prompted To Connect To Device (3 times)<br>
+                    
+                        Setup - Scanned Code (3 times)<br>
+                    
+                        Setup - Selected Wi-Fi (3 times)<br>
+                    
+                        Setup - Sent Credentials To Ring Device (3 times)<br>
+                    
+                        Timeline Loading State - UI Loading (3 times)<br>
+                    
+                        view.displayed (3 times)<br>
+                    
+                        Closed Event Timeline (2 times)<br>
+                    
+                        Event History - Opened Tab (2 times)<br>
+                    
+                        History - Navigated Event Timeline (2 times)<br>
+                    
+                        History - Tapped Event (2 times)<br>
+                    
+                        Lookback Window (2 times)<br>
+                    
+                        Opened Event Timeline (2 times)<br>
+                    
+                        Ring Player iOS Initialize (2 times)<br>
+                    
+                        Selected Device Health Option (2 times)<br>
+                    
+                        Setup - Named Device (2 times)<br>
+                    
+                        Setup - Opened Scanning Screen (2 times)<br>
+                    
+                        Setup - Reset (2 times)<br>
+                    
+                        Setup - Selected Location (2 times)<br>
+                    
+                        Setup - Selected Product Category (2 times)<br>
+                    
+                        Setup - Small Screws Used (2 times)<br>
+                    
+                        Showed Battery Damage Warning (2 times)<br>
+                    
+                        Tapped fullscreen button (2 times)<br>
+                    
+                        WiFi Password Reminder (2 times)<br>
+                    
+                        2fa - Confirmed Phone Number (1 times)<br>
+                    
+                        2fa - Entered 2fa Code (1 times)<br>
+                    
+                        Accessibility Features (1 times)<br>
+                    
+                        Account Linking - Tapped Skip For Now Button (1 times)<br>
+                    
+                        Account Linking - Viewed Account Linking Screen (1 times)<br>
+                    
+                        Device Locale (1 times)<br>
+                    
+                        Email Verification - Email Verification Required (1 times)<br>
+                    
+                        Email Verification - Email Verified (1 times)<br>
+                    
+                        Expanded Location Dropdown (1 times)<br>
+                    
+                        History - Closed Calendar (1 times)<br>
+                    
+                        History - Fake Event On Timeline (1 times)<br>
+                    
+                        History - Opened Calendar (1 times)<br>
+                    
+                        History - Viewed History (1 times)<br>
+                    
+                        Location Map - Confirmed Address (1 times)<br>
+                    
+                        Location Map - Selected Address (1 times)<br>
+                    
+                        Location Map - Viewed Setup (1 times)<br>
+                    
+                        Modes - Begin Setup (1 times)<br>
+                    
+                        Modes - Customize (1 times)<br>
+                    
+                        Modes - Settings (1 times)<br>
+                    
+                        Modes - Setup Complete (1 times)<br>
+                    
+                        Neighbor left Geofence Setup Flow (1 times)<br>
+                    
+                        Password Enhancements - Successful Password (1 times)<br>
+                    
+                        Received Prompt - Error (1 times)<br>
+                    
+                        Requested Permission (1 times)<br>
+                    
+                        Selected Device (1 times)<br>
+                    
+                        Selected Motion Frequency Option (1 times)<br>
+                    
+                        Setup - Asked If Device Is In Setup Mode (1 times)<br>
+                    
+                        Setup - Cancelled Setup (1 times)<br>
+                    
+                        Setup - Failed (1 times)<br>
+                    
+                        Setup - Prompted To Enable Camera (1 times)<br>
+                    
+                        Setup - Succeeded (1 times)<br>
+                    
+                        Sign Up - Account Created (1 times)<br>
+                    
+                        Tapped answer button (1 times)<br>
+                    
+                        Tapped expand button (1 times)<br>
+                    
+                        Toggled Option (1 times)<br>
+                    
+                        Viewed Account Settings (1 times)<br>
+                    
+                        Went to settings (1 times)<br>
+                    
+                        Zoomed In (1 times)<br>
+                    
+                        account.authChallenge (1 times)<br>
+                    
+                        account.authChallengeCompleted (1 times)<br>
+                     
+                </div>
+                </td></tr></table></div>
+            
+                <div><table><tr><td></td><td>
+                <input class="toggle-box" id="client-9BDB97CB-DD8E-4896-8001-15EE15072AE7-2022-02-14" type="checkbox" >
+                <label for="client-9BDB97CB-DD8E-4896-8001-15EE15072AE7-2022-02-14">2022-02-14</label>
+                <div>
+                    
+                        History - Viewed Event On Timeline (182 times)<br>
+                    
+                        PN Received (130 times)<br>
+                    
+                        Rich Notification - Network metrics (129 times)<br>
+                    
+                        Timeline Loading State - Thumbnail Decoding (100 times)<br>
+                    
+                        HQ Event Starting Time (72 times)<br>
+                    
+                        Timeline Loading State - UI Loading (58 times)<br>
+                    
+                        Timeline Loading State - LQ Loading (51 times)<br>
+                    
+                        Closed Event Timeline (42 times)<br>
+                    
+                        Lookback Window (42 times)<br>
+                    
+                        History - Navigated Event Timeline (37 times)<br>
+                    
+                        Watch time Tracking (33 times)<br>
+                    
+                        App Opened (24 times)<br>
+                    
+                        Changed video orientation (21 times)<br>
+                    
+                        Viewed Device Dashboard (19 times)<br>
+                    
+                        History - Tapped Event (18 times)<br>
+                    
+                        Adjusted Volume Slider (17 times)<br>
+                    
+                        LV Session Orientation (17 times)<br>
+                    
+                        LiveCallStatsMain (17 times)<br>
+                    
+                        PN Attended (16 times)<br>
+                    
+                        Toggled speaker (14 times)<br>
+                    
+                        History - Fake Event On Timeline (11 times)<br>
+                    
+                        Rotated View (11 times)<br>
+                    
+                        Timeline Loading State - Footage Container Loading (8 times)<br>
+                    
+                        Opened Event Timeline (7 times)<br>
+                    
+                        Ring Player iOS Initialize (7 times)<br>
+                    
+                        Toggled mic (4 times)<br>
+                    
+                        Event History - Opened Tab (3 times)<br>
+                    
+                        History - Filtered View (3 times)<br>
+                    
+                        History - Viewed History (3 times)<br>
+                    
+                        Opened Deep Link (3 times)<br>
+                    
+                        Tapped Device Option (3 times)<br>
+                    
+                        Tapped Side Menu (3 times)<br>
+                    
+                        Tapped renderer (3 times)<br>
+                    
+                        Tapped Side Menu Option (2 times)<br>
+                    
+                        Tapped collapse button (2 times)<br>
+                    
+                        Zoomed In (2 times)<br>
+                    
+                        History - Prepared Video (1 times)<br>
+                    
+                        History - Sharing Event Completed (1 times)<br>
+                    
+                        Tapped exit fullscreen button (1 times)<br>
+                    
+                        Tapped expand button (1 times)<br>
+                     
+                </div>
+                </td></tr></table></div>
+            
+                <div><table><tr><td></td><td>
+                <input class="toggle-box" id="client-9BDB97CB-DD8E-4896-8001-15EE15072AE7-2022-02-15" type="checkbox" >
+                <label for="client-9BDB97CB-DD8E-4896-8001-15EE15072AE7-2022-02-15">2022-02-15</label>
+                <div>
+                    
+                        PN Received (60 times)<br>
+                    
+                        Rich Notification - Network metrics (60 times)<br>
+                     
+                </div>
+                </td></tr></table></div>
+            
+                <div><table><tr><td></td><td>
+                <input class="toggle-box" id="client-9BDB97CB-DD8E-4896-8001-15EE15072AE7-2022-02-16" type="checkbox" >
+                <label for="client-9BDB97CB-DD8E-4896-8001-15EE15072AE7-2022-02-16">2022-02-16</label>
+                <div>
+                    
+                        PN Received (121 times)<br>
+                    
+                        Rich Notification - Network metrics (121 times)<br>
+                    
+                        App Opened (3 times)<br>
+                    
+                        History - Tapped Event (3 times)<br>
+                    
+                        Asset Session Connection (2 times)<br>
+                    
+                        Event History - Opened Tab (1 times)<br>
+                    
+                        ExtendedAppStartingTimeEvent (1 times)<br>
+                    
+                        History - Viewed History (1 times)<br>
+                    
+                        Mode - Disarmed (1 times)<br>
+                    
+                        Tapped Side Menu (1 times)<br>
+                    
+                        Tapped Side Menu Option (1 times)<br>
+                    
+                        Viewed Main Dashboard (1 times)<br>
+                     
+                </div>
+                </td></tr></table></div>
+            
+                <div><table><tr><td></td><td>
+                <input class="toggle-box" id="client-9BDB97CB-DD8E-4896-8001-15EE15072AE7-2022-02-19" type="checkbox" >
+                <label for="client-9BDB97CB-DD8E-4896-8001-15EE15072AE7-2022-02-19">2022-02-19</label>
+                <div>
+                    
+                        PN Received (20 times)<br>
+                    
+                        Rich Notification - Network metrics (20 times)<br>
+                     
+                </div>
+                </td></tr></table></div>
+            
+                <div><table><tr><td></td><td>
+                <input class="toggle-box" id="client-9BDB97CB-DD8E-4896-8001-15EE15072AE7-2022-02-20" type="checkbox" >
+                <label for="client-9BDB97CB-DD8E-4896-8001-15EE15072AE7-2022-02-20">2022-02-20</label>
+                <div>
+                    
+                        PN Received (120 times)<br>
+                    
+                        Rich Notification - Network metrics (119 times)<br>
+                    
+                        Tapped Side Menu (2 times)<br>
+                    
+                        Tapped Side Menu Option (2 times)<br>
+                    
+                        App Opened (1 times)<br>
+                    
+                        History - Filtered View (1 times)<br>
+                    
+                        Received Prompt - Info (1 times)<br>
+                    
+                        Toggled Option (1 times)<br>
+                    
+                        device_dashboard_toggle_api_call_end (1 times)<br>
+                    
+                        device_dashboard_toggle_api_call_start (1 times)<br>
+                     
+                </div>
+                </td></tr></table></div>
+            
+                <div><table><tr><td></td><td>
+                <input class="toggle-box" id="client-9BDB97CB-DD8E-4896-8001-15EE15072AE7-2022-02-21" type="checkbox" >
+                <label for="client-9BDB97CB-DD8E-4896-8001-15EE15072AE7-2022-02-21">2022-02-21</label>
+                <div>
+                    
+                        App Opened (1 times)<br>
+                     
+                </div>
+                </td></tr></table></div>
+            
+                <div><table><tr><td></td><td>
+                <input class="toggle-box" id="client-9BDB97CB-DD8E-4896-8001-15EE15072AE7-2022-03-09" type="checkbox" >
+                <label for="client-9BDB97CB-DD8E-4896-8001-15EE15072AE7-2022-03-09">2022-03-09</label>
+                <div>
+                    
+                        Neighborhoods - Visited (5 times)<br>
+                    
+                        view.displayed (4 times)<br>
+                    
+                        Asset Session Connection (2 times)<br>
+                    
+                        nh-push (2 times)<br>
+                    
+                        signup.carouselSwiped (2 times)<br>
+                    
+                        App Opened (1 times)<br>
+                    
+                        NH - Push Notification Opened (1 times)<br>
+                    
+                        NH Push Notification - Opened (1 times)<br>
+                    
+                        Neighbors Session (1 times)<br>
+                     
+                </div>
+                </td></tr></table></div>
+             
+            <figure class="highcharts-figure">
+                <div id="activity_container_9BDB97CB-DD8E-4896-8001-15EE15072AE7"></div>
+            </figure>
+            <script>
+                Highcharts.chart('activity_container_9BDB97CB-DD8E-4896-8001-15EE15072AE7', {
+                chart: { type: 'column', height: 600 },
+                title: { text: 'App Activity by Date' },
+                subtitle: { text: 'A count of \"events\" on the user app' },
+                xAxis: { type: 'category', labels: { rotation: -45, style: { fontSize: '13px', fontFamily: 'Verdana, sans-serif' } } },
+                yAxis: { min: 0, title: { text: 'App events (number of times)' } },
+                legend: { enabled: false },
+                tooltip: { pointFormat: 'App events by Date: <b>{point.y} times</b>' },
+                series: [{
+                    name: 'App Events',
+                    data: [['2022-02-13', 326], ['2022-02-14', 1118], ['2022-02-15', 120], ['2022-02-16', 257], ['2022-02-19', 40], ['2022-02-20', 249], ['2022-02-21', 1], ['2022-03-09', 19]],
+                    dataLabels: { enabled: true, rotation: 0, color: '#FFFFFF', align: 'right', format: '{point.y}', y: 30, 
+                                  style: { fontSize: '13px', fontFamily: 'Verdana, sans-serif' } }
+                }]
+            });
+            </script>
+
+        </div>
+    
+        <input class="toggle-box" id="identifier-client-23613f4a-939d-4c96-9723-39c482735c46" type="checkbox" >
+        <label for="identifier-client-23613f4a-939d-4c96-9723-39c482735c46">23613f4a-939d-4c96-9723-39c482735c46 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36</label>
+        <div>
+            <p>Ring was accessed using the browser Chrome 101.0.4951.54 on a computer running Windows 10.<br>Model: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36. Device first seen on 2022-05-16 17:27:01.065270.<br>Push notifications for this device is disabled.<br>Device used IP address 24.6.86.197 (2 times, )<br></p>
+            <figure class="highcharts-figure">
+                <div id="ip_container_23613f4a-939d-4c96-9723-39c482735c46"></div>
+            </figure>
+            <script>
+                Highcharts.chart('ip_container_23613f4a-939d-4c96-9723-39c482735c46', {
+                chart: { type: 'column', height: 600},
+                title: { text: 'IP addresses used to access app' },
+                subtitle: { text: 'A count of IP addresses used by user app' },
+                xAxis: { type: 'category', labels: { rotation: -10, style: { fontSize: '13px', fontFamily: 'Verdana, sans-serif' } } },
+                yAxis: { min: 0, title: { text: 'Number of times used' } },
+                legend: { enabled: false },
+                tooltip: { pointFormat: 'IP address count: <b>{point.y} times</b>' },
+                series: [{
+                    name: 'IP address count',
+                    data: [['24.6.86.197', 2]],
+                    dataLabels: { enabled: true, rotation: 0, color: '#FFFFFF', align: 'right', format: '{point.y}', y: 30, 
+                                style: { fontSize: '13px', fontFamily: 'Verdana, sans-serif' } }
+                }]
+            });
+            </script>
+            <p>Usage by date for 23613f4a-939d-4c96-9723-39c482735c46:</p>
+            
+                <div><table><tr><td></td><td>
+                <input class="toggle-box" id="client-23613f4a-939d-4c96-9723-39c482735c46-2022-05-16" type="checkbox" >
+                <label for="client-23613f4a-939d-4c96-9723-39c482735c46-2022-05-16">2022-05-16</label>
+                <div>
+                    
+                        Login (2 times)<br>
+                     
+                </div>
+                </td></tr></table></div>
+             
+            <figure class="highcharts-figure">
+                <div id="activity_container_23613f4a-939d-4c96-9723-39c482735c46"></div>
+            </figure>
+            <script>
+                Highcharts.chart('activity_container_23613f4a-939d-4c96-9723-39c482735c46', {
+                chart: { type: 'column', height: 600 },
+                title: { text: 'App Activity by Date' },
+                subtitle: { text: 'A count of \"events\" on the user app' },
+                xAxis: { type: 'category', labels: { rotation: -45, style: { fontSize: '13px', fontFamily: 'Verdana, sans-serif' } } },
+                yAxis: { min: 0, title: { text: 'App events (number of times)' } },
+                legend: { enabled: false },
+                tooltip: { pointFormat: 'App events by Date: <b>{point.y} times</b>' },
+                series: [{
+                    name: 'App Events',
+                    data: [['2022-05-16', 2]],
+                    dataLabels: { enabled: true, rotation: 0, color: '#FFFFFF', align: 'right', format: '{point.y}', y: 30, 
+                                  style: { fontSize: '13px', fontFamily: 'Verdana, sans-serif' } }
+                }]
+            });
+            </script>
+
+        </div>
+     
+</td></tr></table></div>
+
+<div>
+    <p><br> </p> 
+</div>
+</body>
+</html>
